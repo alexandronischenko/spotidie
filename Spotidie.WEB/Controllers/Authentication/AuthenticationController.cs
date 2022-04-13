@@ -9,7 +9,9 @@ public class AuthenticationController : Controller
         return View();
     }
 
-    public IActionResult Register()
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public async Task<ActionResult> Register()
     {
         return View();
     }
