@@ -1,10 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Spotidie.DAL.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 
 namespace Spotidie.DAL.EF
 {
-    public class SpotidieContext : DbContext
+    public class SpotidieContext : IdentityDbContext<IdentityUser,IdentityRole, string>
     {
         public DbSet<Author> Authors { get; set; }
         public DbSet<Playlist> Playlists { get; set; }

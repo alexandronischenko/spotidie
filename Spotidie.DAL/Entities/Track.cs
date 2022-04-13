@@ -11,6 +11,7 @@ namespace Spotidie.DAL.Entities
         public Guid TrackId { get; set; }
         public string TrackName { get; set; }
         public int TrackDuration { get; set; }
+        public byte[] TrackData { get; set; }       
         public byte[] TrackAvatar{ get; set; }
 
         //Link to Playlist

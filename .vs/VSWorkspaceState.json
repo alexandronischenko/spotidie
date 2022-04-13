@@ -1,8 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Spotidie.DAL"
+    "\\Spotidie.DAL",
+    "\\Spotidie.DAL\\EF",
+    "\\Spotidie.DAL\\Entities",
+    "\\Spotidie.DAL\\Interfaces",
+    "\\Spotidie.DAL\\Repositories"
   ],
-  "SelectedNode": "\\Spotidie.sln",
+  "SelectedNode": "\\Spotidie.DAL\\EF\\SpotidieContext.cs",
   "PreviewInSolutionExplorer": false
 }
