@@ -13,7 +13,7 @@ namespace Spotidie.DAL.Entities
         public byte[] PlaylistAvatar { get; set; }
 
         //Link to User
-        public User User { get; set; }
+        public MainUser MainUser { get; set; }
 
         //Link to Track
         public List<Track> Tracks { get; set; }
