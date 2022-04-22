@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace Spotidie.DAL.EF
 {
 
-    public class SpotidieContext : IdentityDbContext<ApplicationUser, IdentityRole, string>
+    public class SpotidieContext : IdentityDbContext<ApplicationUser>
     //public class SpotidieContext : DbContext
     {
         public DbSet<Author> Authors { get; set; }

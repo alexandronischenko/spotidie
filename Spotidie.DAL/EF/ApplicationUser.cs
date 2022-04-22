@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace Spotidie.DAL.EF
 {
-    public class ApplicationUser:IdentityUser
+    public class ApplicationUser : IdentityUser
     {
-
     }
 }
