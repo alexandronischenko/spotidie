@@ -8,14 +8,14 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 namespace Spotidie.DAL.EF
 {
 
-    public class SpotidieContext : IdentityDbContext<ApplicationUser, IdentityRole, string>
+    public class SpotidieContext : IdentityDbContext<ApplicationUser>
     //public class SpotidieContext : DbContext
     {
         public DbSet<Author> Authors { get; set; }
         public DbSet<Playlist> Playlists { get; set; }
         public DbSet<Track> Tracks { get; set; }
         public DbSet<MainUser> MainUsers { get; set; }
-
+         
 
         public SpotidieContext(DbContextOptions<SpotidieContext> options) : base(options)
         {
