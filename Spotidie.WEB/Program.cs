@@ -1,7 +1,21 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Spotidie.DAL.EF;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddEntityFrameworkNpgsql().AddDbContext<SpotidieContext>(options => options.UseNpgsql(
+                    builder.Configuration.GetConnectionString("Connect")
+                )
+            );
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+{
+    options.User.RequireUniqueEmail = true;    
+    options.SignIn.RequireConfirmedAccount = true;
+});
 
 var app = builder.Build();
 

@@ -12,7 +12,7 @@ namespace Spotidie.DAL.Interfaces
         IRepository<Author> Authors { get; }
         IRepository<Playlist> Playlists { get; }
         IRepository<Track> Tracks { get; }
-        IRepository<User> Users { get; }
+        IRepository<MainUser> MainUsers { get; }
 
         void Save();    
 }

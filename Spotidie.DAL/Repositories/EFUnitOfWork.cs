@@ -16,7 +16,7 @@ namespace Spotidie.DAL.Repositories
         private AuthorRepository _authorRepository;
         private PlaylistRepository _playlistRepository;
         private TrackRepository _trackRepository;
-        private UserRepository _userRepository;
+        private MainUserRepository _mainUserRepository;
 
         public EFUnitOfWork(DbContextOptions<SpotidieContext> options)
         {
@@ -52,15 +52,24 @@ namespace Spotidie.DAL.Repositories
             }
         }
 
-        public IRepository<User> Users
+        public IRepository<MainUser> MainUsers
         {
             get
             {
-                if (_userRepository == null)
-                    _userRepository = new UserRepository(_db);
-                return _userRepository;
+                if (_mainUserRepository == null)
+                    _mainUserRepository = new MainUserRepository(_db);
+                return _mainUserRepository;
             }
         }
+        //public IRepository<MainUser> Users
+        //{
+        //    get
+        //    {
+        //        if (_userRepository == null)
+        //            _userRepository = new UserRepository(_db);
+        //        return _userRepository;
+        //    }
+        //}
 
 
         public void Save()
