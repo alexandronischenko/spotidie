@@ -15,7 +15,7 @@ namespace Spotidie.DAL.EF
         public DbSet<Playlist> Playlists { get; set; }
         public DbSet<Track> Tracks { get; set; }
         public DbSet<MainUser> MainUsers { get; set; }
-
+         
 
         public SpotidieContext(DbContextOptions<SpotidieContext> options) : base(options)
         {
