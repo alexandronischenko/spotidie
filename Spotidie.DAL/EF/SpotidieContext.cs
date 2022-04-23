@@ -9,12 +9,13 @@ namespace Spotidie.DAL.EF
 {
 
     //dotnet ef migrations add InitialMigration -s Spotidie.WEB -p Spotidie.DAL --verbose
+    //dotnet ef database update
     public class SpotidieContextFactory : IDesignTimeDbContextFactory<SpotidieContext>
     {
         public SpotidieContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<SpotidieContext>();
-            optionsBuilder.UseNpgsql("Connect");
+            optionsBuilder.UseNpgsql("User ID=postgres; Server=localhost; port=5432; Database=SpotidieDB; Password=2002; Pooling=true;");
 
             return new SpotidieContext(optionsBuilder.Options);
         }
