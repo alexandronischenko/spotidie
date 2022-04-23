@@ -61,16 +61,6 @@ namespace Spotidie.DAL.Repositories
                 return _mainUserRepository;
             }
         }
-        //public IRepository<MainUser> Users
-        //{
-        //    get
-        //    {
-        //        if (_userRepository == null)
-        //            _userRepository = new UserRepository(_db);
-        //        return _userRepository;
-        //    }
-        //}
-
 
         public void Save()
         {

@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 using Spotidie.DAL.EF;
-using Spotidie.Areas.Identity.Data;
 
 
 var builder = WebApplication.CreateBuilder(args);
