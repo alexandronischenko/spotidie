@@ -3,11 +3,22 @@ using Spotidie.DAL.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
+using Microsoft.EntityFrameworkCore.Design;
 
 namespace Spotidie.DAL.EF
 {
 
+    //dotnet ef migrations add InitialMigration -s Spotidie.WEB -p Spotidie.DAL --verbose
+    public class SpotidieContextFactory : IDesignTimeDbContextFactory<SpotidieContext>
+    {
+        public SpotidieContext CreateDbContext(string[] args)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<SpotidieContext>();
+            optionsBuilder.UseNpgsql("Connect");
+
+            return new SpotidieContext(optionsBuilder.Options);
+        }
+    }
     public class SpotidieContext : IdentityDbContext<ApplicationUser, IdentityRole, string>
     //public class SpotidieContext : DbContext
     {
