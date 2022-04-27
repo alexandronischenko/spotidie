@@ -35,7 +35,7 @@ namespace Spotidie.DAL.Repositories
             return _db.Playlists.Include(o => o.PlaylistId).Where(predicate).ToList();
         }
 
-        public Playlist Get(int id)
+        public Playlist Get(Guid id)
         {
             return _db.Playlists.Find(id);
         }

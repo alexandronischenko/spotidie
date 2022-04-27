@@ -36,7 +36,7 @@ namespace Spotidie.DAL.Repositories
             return _db.Tracks.Include(o => o.TrackName).Where(predicate).ToList();
         }
 
-        public Track Get(int id)
+        public Track Get(Guid id)
         {
             return _db.Tracks.Find(id);
         }

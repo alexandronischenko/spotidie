@@ -36,7 +36,7 @@ namespace Spotidie.DAL.Repositories
             return _db.MainUsers.Include(o => o.MainUserId).Where(predicate).ToList();
         }
 
-        public MainUser Get(int id)
+        public MainUser Get(Guid id)
         {
             return _db.MainUsers.Find(id);
         }

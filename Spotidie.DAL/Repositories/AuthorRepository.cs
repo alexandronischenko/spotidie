@@ -36,7 +36,7 @@ namespace Spotidie.DAL.Repositories
             return _db.Authors.Include(o => o.AuthorName).Where(predicate).ToList();
         }
 
-        public Author Get(int id)
+        public Author Get(Guid id)
         {
             return _db.Authors.Find(id);
         }
