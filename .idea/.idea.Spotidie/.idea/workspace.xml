@@ -5,29 +5,7 @@
     <projectFile profileName="IIS Express">Spotidie.WEB/Spotidie.WEB.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="Test commit">
-      <change afterPath="$PROJECT_DIR$/.idea/config/applicationhost.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Data/ApplicationDbContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Data/ApplicationUser.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Login.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Login.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Logout.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Logout.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Register.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Register.cshtml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/_ViewImports.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/_ViewStart.cshtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/ScaffoldingReadMe.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_LoginPartial.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Controllers/Authentication/AuthenticationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Controllers/Authentication/AuthenticationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/appsettings.json" afterDir="false" />
-    </list>
+    <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="Test commit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,23 +14,13 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="234216de7f650985fa8d265f5d2a8dfb0cfc8af4" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="cc8dad77-d746-4fe4-b71c-2514f78e5d6b" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f5297661c332adde375e682e974228832372ef64d6fd9c55e716bce7f72c655/ResourceInvoker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7d9a41d47547e1fe7fe548b21ab4de12cc2671170a023bc8c629017837eb5f4/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/674c71843d84ca4dd4136791da5d304790392cdfdd5e202244bc5c42695743d/EndpointMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/faf4a4b37056302738a46865827c3d2d3b6b1b977603a3932b0cd749921118/Controller.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/User/RiderProjects/spotidie/Spotidie.DAL/Entities/Author.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/User/RiderProjects/spotidie/Spotidie.WEB/Controllers/HomeController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c9ca552eea9bb8fababbf1cd3f981cf68849ccc365dcca5627376f98e505c74/ControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/User/RiderProjects/spotidie/Spotidie.WEB/Views/Authentication/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -119,6 +87,7 @@
       <workItem from="1649754660318" duration="1757000" />
       <workItem from="1649775586609" duration="2477000" />
       <workItem from="1649853356668" duration="8672000" />
+      <workItem from="1651780734586" duration="579000" />
     </task>
     <task id="LOCAL-00001" summary="Added auth views">
       <created>1649853579094</created>
