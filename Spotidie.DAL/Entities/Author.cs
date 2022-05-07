@@ -10,7 +10,7 @@ namespace Spotidie.DAL.Entities
     {
         public Guid AuthorId { get; set; }
         public string AuthorName { get; set; }
-        public byte[] AuthorAvatar { get; set; }
+        public string AuthorAvatar { get; set; }
 
         //Link to Track
         public List<Track> Tracks { get; set; }
