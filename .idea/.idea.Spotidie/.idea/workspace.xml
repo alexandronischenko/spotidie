@@ -8,24 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="Test commit">
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IDownloadService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IPlaylistService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IRoleService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/ITrackService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IUserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/AuthorDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/DTOMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/PlaylistDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/TrackDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/UserDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/DownloadService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/PlaylistService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/RoleService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/UserService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Controllers/TestController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" afterDir="false" />
+    <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +35,11 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/863b81d89327499b9618d9be52f0ac427d78/0/IFormFile.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3218982119daab1ff628cd688cc3e3dcfd6c5cf229cc36c8e9ab5d90a6cb2f/IWebHostEnvironment.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/rustamhajrullin/RiderProjects/spotidie/Spotidie.BLL/ModelsDTO/AuthorDTO.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/UserDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/TrackDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d41a1693aebd4fcb2f270da1376b53ff2f1f8dbe8b15387d214d310fced98a/MapperConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/beb9de248d23e38ea4ff4d1233bf5681324b6caac12b72d62457917392f3/Future.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -149,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649857958318</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="bll">
+      <created>1651950798535</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651950798535</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +190,7 @@
     <MESSAGE value="Test identity" />
     <MESSAGE value="Added auth directory in css" />
     <MESSAGE value="Test commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test commit" />
+    <MESSAGE value="bll" />
+    <option name="LAST_COMMIT_MESSAGE" value="bll" />
   </component>
 </project>
