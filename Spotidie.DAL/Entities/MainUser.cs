@@ -14,7 +14,7 @@ namespace Spotidie.DAL.Entities
         public string MainUserName { get; set; }
         public bool MainUserIsPremium { get; set; }
         public bool MainUserIsAdmin { get; set; }
-        public byte[] MainUserAvatar { get; set; }
+        public string MainUserAvatar { get; set; }
 
         //Link to Playlist
         public List<Playlist> Playlists { get; set; }

@@ -10,7 +10,7 @@ namespace Spotidie.DAL.Entities
     {
         public Guid PlaylistId { get; set; }
         public string PlaylistName { get; set; }       
-        public byte[] PlaylistAvatar { get; set; }
+        public string PlaylistAvatar { get; set; }
 
         //Link to User
         public MainUser MainUser { get; set; }
