@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+@font-face {
+    font-family: 'Circular Std';
+    src: url('font/CircularStd-Medium.eot');
+    src: local('Circular Std Medium'), local('CircularStd-Medium'),
+    url('font/CircularStd-Medium.eot?#iefix') format('embedded-opentype'),
+    url('font/CircularStd-Medium.woff2') format('woff2'),
+    url('font/CircularStd-Medium.woff') format('woff'),
+    url('font/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+p{
+    vertical-align: middle;
+}
+.side-navbar {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #040404;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+}
+.side-navbar {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    font-size: 13px;
+    font-weight: bolder;
+    color: #aaaaaa;
+}
+.spotify-logo {
+    width: 130px;
+    height: 39px;
+    padding: 0px  0px 27px 25px;
+    color: #fff;
+}
+.navbar-links .navbar-links-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    margin-bottom: 24px;
+}
+.navbar-link-item{
+    color: #aaaaaa;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.navbar-link-item-t{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.navbar-link-item:hover{
+    color: #fff
+}
+.item-text{
+    font-family: 'Circular Std';
+    font-weight: bold;
+    font-size: 12px;
+    padding-left: 12px;
+}
+.playlist{
+    flex-grow: 0.8;
+}
+.add-playlist{
+    display: flex;
+    color: #aaaaaa;
+    text-decoration: none;
+    align-items: center;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+.add-playlist:hover{
+    color: #fff;
+}
+.favplay{
+    display: flex;
+    color: #aaaaaa;
+    text-decoration: none;
+    align-items: center;
+    padding-left: 25px;
+}
+.favplay:hover{
+    color: #fff;
+}
+.side-footer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+}
+.footer-link{
+    color: #aaaaaa;
+    text-decoration: none;
+    font-family: 'Circular Std';
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.footer-link:hover{
+    color: #fff;
+}
+.main{
+    background-color: #181818;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+.user-nav{
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px;
+    width: calc(100vw - 250px);
+    height: 100vh;
+    background-color: #181818;
+}
+.head{
+    width: calc(100vw - 250px);
+    height: 65px;
+    background-color: #0c0c0b;
+    position: fixed;
+}
+.navigation-arrows svg {
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+    color: #888888;
+}
+.navigation-arrows svg:hover {
+    color: #fff;
+    cursor: pointer;
+}
+.head-nav{
+    display: flex;
+    height: 65px;
+    vertical-align: middle;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+.head{
+    display: flex;
+    justify-content:space-between;
+}
+.user{
+    display: flex;
+    height: 65px;
+    vertical-align: middle;
+    align-items: center;
+    margin: 0 50px 0 50px;
+
+}
+.reg{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'Circular Std';
+    background: none;
+    margin-right: 20px;
+    border: none;
+    color: #fff;
+}
+.log{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    background-color: #fff;
+    font-family: 'Circular Std';
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+.category{
+    margin-top: 90px;
+    padding: 0 45px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Circular Std';
+    font-size: 13px;
+    color: #aaaaaa;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+.title{
+    color: #fff;
+    font-size: 24px;
+}
+.title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.see-all:hover{
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+.albuns .albuns-list {
+    display: flex;
+}
+.albuns{
+    margin-left: 15px;
+}
+.albuns .albuns-list .list-item {
+    background-color: #292626;
+    display: flex;
+    flex-direction: column;
+
+    width: 220px;
+    height: 250px;
+    padding-bottom: 10px;
+    border-radius: 8px;
+    margin-right: 18px;
+}
+
+.albuns .albuns-list .list-item:hover {
+    cursor: pointer;
+}
+
+.albuns .album-image {
+    width: 175px;
+    height: 175px;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.albuns .albun-infos {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 14px;
+}
+.album-title {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-bottom: 8px;
+    font-family: 'Circular Std';
+}
+
+.album-creator {
+    font-size: 11px;
+    color: #aaaaaa;
+}
+.author-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.author-img{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    margin-top: 65px;
+    width: 100vw;
+    height: 450px;
+}
+.author-info{
+    margin-top: -25px;
+    width: calc(100vw - 250px);
+    height: 50px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color:#181818;
+    border-bottom: 1px solid rgb(58, 58, 58);
+}
+.author-name{
+    margin-top: 8px;
+    color: #fff;
+    vertical-align: middle;
+    font-family: 'Circular Std';
+    font-size: 26px;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.track{
+    margin-top: 30px;
+    display: flex;
+    vertical-align: middle;
+    width: 50vw;
+    justify-content: space-around;
+    color: #fff;
+    font-family: 'Circular Std';
+}
+.track-name{
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.track-logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.track-play{
+    margin-top: 5px;
+    width: 45px;
+    height: 45px;
+}
+.search{
+    display: flex;
+    margin-top: 50px;
+    vertical-align: middle;
+    justify-content: center;
+}
+.search-field{
+    padding-left: 10px;
+    font-family: 'Circular Std';
+    height: 40px;
+    width: 85vw;
+    font-size: 18px;
+    border: 0px solid #fff;
+}
+.search-butt{
+    padding-right: 10px;
+    height: 40px;
+    background-color: #fff;
+    border: 0px solid #fff;
+}
+.notfound{
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(85, 85, 85);
+    font-family: 'Circular Std';
+}
+.search-tracks{
+    display: flex;
+    justify-content: center;
+}
