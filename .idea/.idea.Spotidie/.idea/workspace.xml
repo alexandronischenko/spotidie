@@ -9,7 +9,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Black.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Black.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BlackItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BlackItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BlackItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BoldItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BoldItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BoldItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Book.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Book.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Book.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Book.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BookItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BookItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BookItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BookItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-MediumItalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-MediumItalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-MediumItalic.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/DJS2P9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/TheWhiteStripes.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/addplay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/album1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/fav.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/play-button-svgrepo-com.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/spotify.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/the-white-stripes-portrait-2001-02-billboard-1548.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,25 +66,13 @@
         <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="cc8dad77-d746-4fe4-b71c-2514f78e5d6b" />
-  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/add5571e3cffe7239743e45c9fda8291491449b84461214d2d365c77084f5dd/OkResult.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/93bf8ca51564b3532dce6442f8ec6d3856e11622b484427b6e965ca60aba4b1/IdentityDbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c9134c2f169c16ef29955aa19492c6f31e8f60d4958e518551bd99a10d52033/Guid.Unix.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ffcaccdb699eb1d5444850edb7642342f5bde7f870a89d68e13069a77aabac94/IdentityRole.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5330988bfaacf93f15e30f9b3dd6018a768f89da3b38d874fda77299c62164/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/863b81d89327499b9618d9be52f0ac427d78/0/IFormFile.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c3218982119daab1ff628cd688cc3e3dcfd6c5cf229cc36c8e9ab5d90a6cb2f/IWebHostEnvironment.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/rustamhajrullin/RiderProjects/spotidie/Spotidie.BLL/ModelsDTO/AuthorDTO.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/UserDTO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/TrackDTO.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d41a1693aebd4fcb2f270da1376b53ff2f1f8dbe8b15387d214d310fced98a/MapperConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/beb9de248d23e38ea4ff4d1233bf5681324b6caac12b72d62457917392f3/Future.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -109,6 +141,7 @@
       <workItem from="1649775586609" duration="2477000" />
       <workItem from="1649853356668" duration="8672000" />
       <workItem from="1651780734586" duration="579000" />
+      <workItem from="1652283203845" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="Added auth views">
       <created>1649853579094</created>
