@@ -24,15 +24,16 @@ builder.Services.AddEntityFrameworkNpgsql().AddDbContext<SpotidieContext>(option
                 )
             );
 
-builder.Services.AddDbContext<SpotidieContext>();
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
     options.User.RequireUniqueEmail = true;    
     options.SignIn.RequireConfirmedAccount = true;
 }).AddEntityFrameworkStores<SpotidieContext>().AddDefaultTokenProviders();
 
-builder.Services.AddScoped<IUserService, UserService>();
+// builder.Services.AddScoped<IUserService, UserService>();
+// builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddHttpClient();
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 
