@@ -8,52 +8,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Black.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BlackItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BlackItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BlackItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BlackItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BoldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Book.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Book.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Book.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Book.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BookItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BookItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BookItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-BookItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-MediumItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-MediumItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-MediumItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/font/CircularStd-MediumItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/DJS2P9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/TheWhiteStripes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/addplay.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/album1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/fav.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/play-button-svgrepo-com.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/spotify.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/img/the-white-stripes-portrait-2001-02-billboard-1548.jpg" afterDir="false" />
+    <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="Test commit">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +26,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/UserDTO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/TrackDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/UserDTO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -91,19 +56,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.ChangelistConflict" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Spotidie.WEB: IIS Express">
     <configuration name="Spotidie.WEB: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net6.0" />
-      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="LAUNCH_PROFILE_NAME" value="Spotidie" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
+      <browser name="e5120d43-2c3f-47ef-9f26-65e539e05186" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
-      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="1" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
       <method v="2">
@@ -125,6 +91,10 @@
         <option name="Build" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.Spotidie.WEB: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.Spotidie.WEB: Spotidie" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">

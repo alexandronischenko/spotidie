@@ -23,11 +23,13 @@ builder.Services.AddEntityFrameworkNpgsql().AddDbContext<SpotidieContext>(option
                     builder.Configuration.GetConnectionString("Connect")
                 )
             );
+
+builder.Services.AddDbContext<SpotidieContext>();
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
     options.User.RequireUniqueEmail = true;    
     options.SignIn.RequireConfirmedAccount = true;
-});
+}).AddEntityFrameworkStores<SpotidieContext>().AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IUserService, UserService>();
 
