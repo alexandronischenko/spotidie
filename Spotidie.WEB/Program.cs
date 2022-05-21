@@ -1,5 +1,5 @@
-using BAL.Interfaces;
-using BAL.Services;
+using BLL.Interfaces;
+using BLL.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -32,6 +32,7 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 }).AddEntityFrameworkStores<SpotidieContext>().AddDefaultTokenProviders();
 
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 

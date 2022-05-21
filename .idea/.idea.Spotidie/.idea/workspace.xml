@@ -10,6 +10,23 @@
   <component name="ChangeListManager">
     <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="Test commit">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IDownloadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IDownloadService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IPlaylistService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IPlaylistService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IRoleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IRoleService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/ITrackService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/ITrackService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IUserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IUserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/AuthorDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/AuthorDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/DTOMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/DTOMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/PlaylistDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/PlaylistDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/TrackDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/TrackDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/UserDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/UserDTO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/DownloadService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/DownloadService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/PlaylistService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/PlaylistService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/RoleService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/RoleService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/UserService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Spotidie.BLL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Spotidie.BLL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

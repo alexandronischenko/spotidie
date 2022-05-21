@@ -1,7 +1,7 @@
-using BAL.Interfaces;
+using BLL.Interfaces;
 using Spotidie.DAL.Interfaces;
 
-namespace BAL.Services;
+namespace BLL.Services;
 
 public class RoleService : IRoleService
 {

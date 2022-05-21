@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Http;
 
-namespace BAL.Interfaces;
+namespace BLL.Interfaces;
 
 public interface IDownloadService
 {
