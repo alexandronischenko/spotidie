@@ -1,6 +1,6 @@
 using Spotidie.DAL.Entities;
 
-namespace BAL.ModelsDTO;
+namespace BLL.ModelsDTO;
 
 public class DTOMapper
 {

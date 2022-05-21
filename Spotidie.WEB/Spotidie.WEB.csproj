@@ -43,5 +43,10 @@
       <Folder Include="wwwroot\Content\TrackCovers" />
       <Folder Include="wwwroot\Content\UserAvatars" />
     </ItemGroup>
+	
+
+    <ItemGroup>
+      <Content Remove="wwwroot\img\TheWhiteStripes.jpg" />
+    </ItemGroup>
 
 </Project>

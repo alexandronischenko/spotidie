@@ -23,10 +23,10 @@ namespace Spotidie.DAL.EF
     public class SpotidieContext : IdentityDbContext<ApplicationUser, IdentityRole, string>
     //public class SpotidieContext : DbContext
     {
-        public DbSet<Author> Authors { get; set; }
-        public DbSet<Playlist> Playlists { get; set; }
-        public DbSet<Track> Tracks { get; set; }
-        public DbSet<MainUser> MainUsers { get; set; }
+        public DbSet<Author> Authors { get; private set; }
+        public DbSet<Playlist> Playlists { get; private set; }
+        public DbSet<Track> Tracks { get; private set; }
+        public DbSet<MainUser> MainUsers { get; private set; }
 
 
         public SpotidieContext(DbContextOptions<SpotidieContext> options) : base(options)

@@ -1,5 +1,5 @@
-using BAL.Interfaces;
-using BAL.Services;
+using BLL.Interfaces;
+using BLL.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,13 +23,17 @@ builder.Services.AddEntityFrameworkNpgsql().AddDbContext<SpotidieContext>(option
                     builder.Configuration.GetConnectionString("Connect")
                 )
             );
+
 builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
 {
     options.User.RequireUniqueEmail = true;    
     options.SignIn.RequireConfirmedAccount = true;
-});
+}).AddEntityFrameworkStores<SpotidieContext>().AddDefaultTokenProviders();
 
-builder.Services.AddScoped<IUserService, UserService>();
+// builder.Services.AddScoped<IUserService, UserService>();
+// builder.Services.AddTransient<IUserService, UserService>();
+builder.Services.AddHttpClient();
+builder.Services.AddRazorPages();
 
 var app = builder.Build();
 

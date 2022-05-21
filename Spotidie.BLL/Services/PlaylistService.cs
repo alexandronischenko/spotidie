@@ -1,10 +1,10 @@
 using AutoMapper;
-using BAL.Interfaces;
-using BAL.ModelsDTO;
+using BLL.Interfaces;
+using BLL.ModelsDTO;
 using Spotidie.DAL.Entities;
 using Spotidie.DAL.Interfaces;
 
-namespace BAL.Services;
+namespace BLL.Services;
 
 public class PlaylistService : IPlaylistService
 {

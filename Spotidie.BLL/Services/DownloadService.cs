@@ -1,7 +1,7 @@
-using BAL.Interfaces;
+using BLL.Interfaces;
 using Microsoft.AspNetCore.Http;
 
-namespace BAL.Services;
+namespace BLL.Services;
 
 public class DownloadService
 {

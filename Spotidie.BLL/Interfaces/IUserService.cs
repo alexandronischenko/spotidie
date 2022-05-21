@@ -1,6 +1,6 @@
-using BAL.ModelsDTO;
+using BLL.ModelsDTO;
 
-namespace BAL.Interfaces;
+namespace BLL.Interfaces;
 
 public interface IUserService
 {
