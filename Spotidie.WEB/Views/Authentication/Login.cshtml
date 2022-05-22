@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@using Spotidie.Views.Authentication
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model UserViewModel
+@{
+    Layout = "";
+}
+<!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="/css/auth/auth.css">
@@ -17,28 +23,28 @@
             <h2>Spotidie</h2>   
             <h1 style="text-align: center">Login</h1>
 
-            <form>
+            <form asp-action="Login" asp-controller="Authentication" asp-antiforgery="true" method="post">
                 <p>
                     Your email adress
-                    <input type="" name="" placeholder="Input your email adress" class="container-center-input">
+                    <input type="text" name="email" asp-for="UserEmail" placeholder="Input your email adress" class="container-center-input">
                 </p>
 
                 <p>
                     Enter a password
-                    <input type="" name="" placeholder="Pick a password" class="container-center-input">
+                    <input type="password" name="password" asp-for="UserPassword" placeholder="Pick a password" class="container-center-input">
                 </p>
 
                 <div class="registerbtn">
-                    <button>
+                    <button type="submit">
                         Login
                     </button>
                 </div>
             </form>
         
             <span style="margin: 10px;">
-                Already have an account?
-                 <a href="">Login</a>
-             </span>
+                Not registered yet?
+                <a href="@Url.Action("Register", "Authentication")">Register</a>
+            </span>
         </div>
     </body>
 </html>
