@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@model UserViewModel
+@{
+    Layout = "";
+}
 <html>
     <head>
         <link rel="stylesheet" href="/css/auth/auth.css">
@@ -20,17 +23,17 @@
             <form>
                 <p>
                     Your email adress
-                    <input type="" name="" placeholder="Input your email adress" class="container-center-input">
+                    <input type="" name="" placeholder="Input your email address" class="container-center-input">
                 </p>
 
                 <p>
                     Confirm email address
-                    <input type="" name="" placeholder="Input your email adress again" class="container-center-input">
+                    <input type="" name="" placeholder="Input your password" class="container-center-input">
                 </p>
 
                 <p>
                     Pick a password
-                    <input type="" name="" placeholder="Pick a password" class="container-center-input">
+                    <input type="" name="" placeholder="Input your password again" class="container-center-input">
                 </p>
 
                 <p>
@@ -73,7 +76,7 @@
         
             <span style="margin: 10px;">
                 Already have an account?
-                 <a href="">Login</a>
+                 <a href="@Url.Action("Login", "Authentication")">Login</a>
              </span>
         </div>
     </body>

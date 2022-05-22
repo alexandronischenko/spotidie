@@ -9,7 +9,7 @@ namespace Spotidie.DAL.EF
 {
 
     //dotnet ef migrations add InitialMigration -s Spotidie.WEB -p Spotidie.DAL --verbose
-    //dotnet ef database update
+    //dotnet ef database update -s Spotidie.WEB -p Spotidie.DAL --verbose
     public class SpotidieContextFactory : IDesignTimeDbContextFactory<SpotidieContext>
     {
         public SpotidieContext CreateDbContext(string[] args)
@@ -30,6 +30,10 @@ namespace Spotidie.DAL.EF
 
 
         public SpotidieContext(DbContextOptions<SpotidieContext> options) : base(options)
+        {
+        }
+
+        public SpotidieContext() : base()
         {
         }
 
