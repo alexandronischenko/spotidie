@@ -1,11 +1,15 @@
-﻿using Microsoft.AspNet.Identity;
+﻿using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Spotidie.DAL.EF;
 using Spotidie.Models;
 using Owin;
+using Spotidie.Models.Auth;
+using DbContext = System.Data.Entity.DbContext;
+using IdentityUser = Microsoft.AspNet.Identity.EntityFramework.IdentityUser;
 
 namespace Spotidie.Controllers.Authentication;
 
@@ -14,18 +18,17 @@ public class AuthenticationController : Controller
 {
     readonly SpotidieContext db;
     readonly IConfiguration _configuration;
-    private readonly UserManager<ApplicationUser> _userManager;
+    private readonly Microsoft.AspNet.Identity.UserManager<ApplicationUser> _userManager;
     private readonly SignInManager<ApplicationUser> _signInManager;
 
-    public AuthenticationController(UserManager<ApplicationUser> userManager,
+    public AuthenticationController(Microsoft.AspNet.Identity.UserManager<ApplicationUser> userManager,
         SignInManager<ApplicationUser> signInManager)
     {
         _userManager = userManager;
         _signInManager = signInManager;
     }
 
-    public AuthenticationController() : this(
-        new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new SpotidieContext())))
+    public AuthenticationController() : this(new Microsoft.AspNet.Identity.UserManager<IdentityUser>(new UserStore<IdentityUser>(new DbContext())))
     {
     }
 
@@ -55,7 +58,7 @@ public class AuthenticationController : Controller
                 {
                     return RedirectToAction("Privacy", "Home");
                 }
-                return RedirectToAction("Login", "Account");
+                return RedirectToAction("Login", "Authentication");
             }
             else
             {
@@ -79,7 +82,7 @@ public class AuthenticationController : Controller
     {
         if (ModelState.IsValid)
         {
-            User user = new User {Email = model.Email, UserName = model.Email};
+            var user = new ApplicationUser() {Email = model.Email, UserName = model.Email};
 
             var result = await _userManager.CreateAsync(user, model.Password);
             if (result.Succeeded)
@@ -91,7 +94,7 @@ public class AuthenticationController : Controller
             {
                 foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError(string.Empty, error.Description);
+                    ModelState.AddModelError(string.Empty, error);
                 }
             }
         }
@@ -104,7 +107,7 @@ public class AuthenticationController : Controller
     [ValidateAntiForgeryToken]
     public ActionResult LogOff()
     {
-        AuthenticationManager.SignOut();
+        SignOut();
         return RedirectToAction("Index", "Home");
     }
 }
