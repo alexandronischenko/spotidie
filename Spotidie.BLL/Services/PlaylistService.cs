@@ -47,4 +47,10 @@ public class PlaylistService : IPlaylistService
         
         Db.Playlists.Delete(Guid.Parse(id));
     }
+
+    public IEnumerable<PlaylistDTO> GetPlaylists()
+    {
+        // TODO
+        throw new NotImplementedException();
+    }
 }
