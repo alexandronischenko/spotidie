@@ -1,4 +1,5 @@
-﻿@using Microsoft.AspNetCore.Identity
+﻿@model IEnumerable<PlaylistViewModel>
+@using Microsoft.AspNetCore.Identity
 @using Spotidie.DAL.EF
 
 @inject SignInManager<ApplicationUser> SignInManager
@@ -47,48 +48,71 @@
                 </div>
                 <div class="albuns">
                     <ul class="albuns-list">
+                        <table class="table">
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PlaylistName)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.PlaylistAvatar)
+                                </th>
+                                <th></th>
+                            </tr>
+                         
+                        @foreach (var item in Model) {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PlaylistName)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PlaylistAvatar)
+                                </td>
+                            </tr>
+                        }
+                         
+                        </table>
                         <li class="list-item">
-                           <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                           <div class="albun-infos">
-                               <span class="album-title">pop/punk 2000's</span>
-                               <p class="album-creator">De bignay92</p>
-                           </div>
+                            <img src="./img/album1.jpg" alt="album" class="album-image">
+                            <div class="albun-infos">
+                                <span class="album-title">pop/punk 2000's</span>
+                                <p class="album-creator">De bignay92</p>
+                            </div>
                         </li>
                         <li class="list-item">
-                          <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                          <div class="albun-infos">
-                              <span class="album-title">Sepultura</span>
-                              <p class="album-creator">De andreas kisser</p>
-                          </div>
-                       </li>
-                       <li class="list-item">
-                          <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                          <div class="albun-infos">
-                              <span class="album-title">Iron Maiden</span>
-                              <p class="album-creator">De bruce dickson</p>
-                          </div>
-                       </li>
-                       <li class="list-item">
-                        <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                        <div class="albun-infos">
-                            <span class="album-title">Sepultura</span>
-                            <p class="album-creator">De andreas kisser</p>
-                        </div>
-                     </li>
-                     <li class="list-item">
-                        <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                        <div class="albun-infos">
-                            <span class="album-title">Sepultura</span>
-                            <p class="album-creator">De andreas kisser</p>
-                        </div>
-                     </li>
-                       <li class="list-item">
-                          <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                          <div class="albun-infos">
-                              <span class="album-title">Shaman</span>
-                              <p class="album-creator">De ritual</p>
-                          </div>
-                       </li>
+                            <img src="./img/album1.jpg" alt="album" class="album-image">
+                            <div class="albun-infos">
+                                <span class="album-title">Sepultura</span>
+                                <p class="album-creator">De andreas kisser</p>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <img src="./img/album1.jpg" alt="album" class="album-image">
+                            <div class="albun-infos">
+                                <span class="album-title">Iron Maiden</span>
+                                <p class="album-creator">De bruce dickson</p>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <img src="./img/album1.jpg" alt="album" class="album-image">
+                            <div class="albun-infos">
+                                <span class="album-title">Sepultura</span>
+                                <p class="album-creator">De andreas kisser</p>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <img src="./img/album1.jpg" alt="album" class="album-image">
+                            <div class="albun-infos">
+                                <span class="album-title">Sepultura</span>
+                                <p class="album-creator">De andreas kisser</p>
+                            </div>
+                        </li>
+                        <li class="list-item">
+                            <img src="./img/album1.jpg" alt="album" class="album-image">
+                            <div class="albun-infos">
+                                <span class="album-title">Shaman</span>
+                                <p class="album-creator">De ritual</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </section>
