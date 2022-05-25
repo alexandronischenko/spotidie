@@ -10,6 +10,7 @@ using Microsoft.Owin.Security.Cookies;
 using Spotidie.DAL.EF;
 
 var builder = WebApplication.CreateBuilder(args);
+
 //var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection");;
 
 //Я не знаю ,что здесь это делает,ведь у нас контекст даже по-другому называется,поэтому пока что закомменчу
@@ -27,11 +28,15 @@ builder.Services.AddEntityFrameworkNpgsql().AddDbContext<SpotidieContext>(option
                 )
             );
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
-{
-    options.User.RequireUniqueEmail = true;    
-    options.SignIn.RequireConfirmedAccount = true;
-}).AddEntityFrameworkStores<SpotidieContext>().AddDefaultTokenProviders();
+// builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+// {
+//     options.User.RequireUniqueEmail = true;
+//     options.SignIn.RequireConfirmedAccount = true;
+// }).AddEntityFrameworkStores<SpotidieContext>();
+
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<SpotidieContext>()
+    .AddDefaultTokenProviders();
 
 // builder.Services.AddScoped<IUserService, UserService>();
 // builder.Services.AddTransient<IUserService, UserService>();

@@ -17,7 +17,6 @@
 		<PackageReference Include="Microsoft.AspNet.Identity.Core" Version="2.2.3" />
 		<PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.3" />
 		<PackageReference Include="Microsoft.AspNet.Identity.Owin" Version="2.2.3" />
-		<PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.4" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.3">
@@ -44,6 +43,7 @@
 	
 
     <ItemGroup>
+      <Folder Include="Controllers\Authentication" />
       <Folder Include="wwwroot\Content\Music" />
       <Folder Include="wwwroot\Content\TrackCovers" />
       <Folder Include="wwwroot\Content\UserAvatars" />
