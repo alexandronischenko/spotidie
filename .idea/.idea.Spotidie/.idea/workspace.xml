@@ -8,31 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220521140245_AlexMigration.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220521140245_AlexMigration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Models/Auth/LoginViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Models/Auth/RegisterViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Models/AuthorViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Models/PlaylistViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Models/TrackViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Models/UserViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220521133553_MacOsOlegsMigrationAdded.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220521133553_MacOsOlegsMigrationAdded.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2022,_19_45_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/shelf/Uncommitted_changes_before_Update_at_07_05_2022__19_45__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Controllers/Authentication/AuthenticationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Controllers/Authentication/AuthenticationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Authentication/Login.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Authentication/Login.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Authentication/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Authentication/Register.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" afterDir="false" />
-
-    </list>
+    <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +37,28 @@
     <setting file="file://$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/UserDTO.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.BLL/Services/UserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ExternalLogin.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Logout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Manage/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Register.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ResetPassword.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Models/Auth/LoginViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Authentication/Register1.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d43ef061d8284d73a9523604117dc70cb55200/64/4f25d837/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/efba74977a3f49308bc4c731e573a00d72c00/c5/8ff62e69/UserManager`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7733bdb26b2be012c4266979a95d3728e74790201f91a02df4529ee6c2f37/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bebd253e21dcf766929bfdfd74615bfe46e6e1693b289273dbdb82152893/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e4efcb931893386674ac17d2a44a95d3509f6ff87625829bedbcb3bddf6730/IdentityServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eda66d8c7aff6647d653292d4ea2f696b8f6ba94b9f24bc275d4f924599d8f/ControllerEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -74,19 +71,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -150,6 +139,10 @@
       <workItem from="1653225019692" duration="6278000" />
       <workItem from="1653134861353" duration="2502000" />
       <workItem from="1653137707009" duration="2703000" />
+      <workItem from="1653316618479" duration="1097000" />
+      <workItem from="1653377677592" duration="356000" />
+      <workItem from="1653498083968" duration="1395000" />
+      <workItem from="1653501398152" duration="1828000" />
     </task>
     <task id="LOCAL-00001" summary="Added auth views">
       <created>1649853579094</created>
@@ -233,5 +226,9 @@
     <MESSAGE value="Test commit" />
     <MESSAGE value="bll" />
     <option name="LAST_COMMIT_MESSAGE" value="bll" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

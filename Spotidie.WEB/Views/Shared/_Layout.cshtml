@@ -32,11 +32,11 @@
     </div>
     <div class="playlist">
         <a class="add-playlist" href="#">
-            <img src="img/addplay.svg" alt="add">
+            <img src="~/img/addplay.svg" alt="add">
             <p class="item-text">Создать плейлист</p>
         </a>
         <a class="favplay" href="#">
-            <img src="img/fav.svg" alt="fav">
+            <img src="~/img/fav.svg" alt="fav">
             <p class="item-text">Любимые треки</p>
         </a>
     </div>
@@ -46,21 +46,11 @@
         <a class="footer-link" href="#">Форма для Ваших обращений</a>
     </div>
 </div>
-
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
+    @RenderBody()
 </div>
-</div>
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2022 - Spotidie.WEB - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-    </div>
-</footer>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
-@await RenderSectionAsync("Scripts", required: false)
+@RenderSection("Scripts", required: false)
 </body>
 </html>

@@ -1,4 +1,9 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@using Spotidie.DAL.EF
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -10,10 +15,26 @@
                         <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss"><path fill="currentColor" d="M7.96 21.15l-.65-.76 9.555-8.16L7.31 4.07l.65-.76 10.445 8.92"></path></svg>
                     </div>
                 </div>
-                <div class="user">
-                    <button class="reg">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-                    <button class="log">ВОЙТИ</button>
-                </div>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <li class="nav-item">
+                        <a id="manage" class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+                    </li>
+                    <li class="nav-item">
+                        <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                            <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+                        </form>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                    </li>
+                }
             </div>
             <section class="category">
                 <div class="header">
