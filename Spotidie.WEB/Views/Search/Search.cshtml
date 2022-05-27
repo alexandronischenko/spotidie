@@ -1,7 +1,9 @@
-@{
-    ViewData["Title"] = "Author";
-}
-<body>
+@using Microsoft.AspNetCore.Identity
+@using Spotidie.DAL.EF
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
     <div class="main">
         <div class="user-nav">
             <div class="head">
@@ -37,4 +39,3 @@
             <p class="notfound">Ничего не найдено.</p>
         </div>
     </div>
-</body>
