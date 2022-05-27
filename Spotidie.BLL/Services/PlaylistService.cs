@@ -50,7 +50,11 @@ public class PlaylistService : IPlaylistService
 
     public IEnumerable<PlaylistDTO> GetPlaylists()
     {
-        // TODO
-        throw new NotImplementedException();
+        var playlists = Db.Playlists.GetAll();
+
+        if (playlists == null)
+            throw new Exception("Playlist not found");
+
+        return DTOMapper.MapPlaylists(playlists);
     }
 }
