@@ -9,19 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220527153147_AddedData1.1.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220527153147_AddedData1.1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220527171550_AddedData1.2.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220527171550_AddedData1.2.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220527172123_AddedData1.3.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220527172123_AddedData1.3.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/Entities/Author.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/Entities/Author.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/Entities/MainUser.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/Entities/MainUser.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/Entities/Playlist.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/Entities/Playlist.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/Entities/Track.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/Entities/Track.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/Migrations/SpotidieContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/SpotidieContextModelSnapshot.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

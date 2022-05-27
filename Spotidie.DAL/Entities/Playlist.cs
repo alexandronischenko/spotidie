@@ -14,7 +14,6 @@ namespace Spotidie.DAL.Entities
         public string PlaylistAvatar { get; set; }
         
         public int PlaylistForeignKey{ get; set; }
-        public Guid PlaylistForeignKeyGuid{ get; set; }
 
 
         //Link to User

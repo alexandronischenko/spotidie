@@ -13,7 +13,6 @@ namespace Spotidie.DAL.Entities
         public string AuthorAvatar { get; set; }
 
         public int AuthorForeignKey { get; set; }
-        public Guid AuthorForeignKeyGuid { get; set; }
 
         
         //Link to Track
