@@ -2,6 +2,7 @@
 using AutoMapper;
 using BLL.Interfaces;
 using BLL.ModelsDTO;
+using BLL.Services;
 using Microsoft.AspNetCore.Mvc;
 using Spotidie.Models;
 
@@ -35,7 +36,21 @@ public class HomeController : Controller
     {
         return View();
     }
+    
+    [HttpGet]
+    public IActionResult SendMail()
+    {
+        return View();
+    }
 
+    [HttpPost]
+    public IActionResult SendMail(string name, string email, string phonenumber, string adress, string title, string messagetitle)
+    {
+        Service.SendEmail(name, email, phonenumber, adress, title, messagetitle);
+        
+        return View();
+    }
+    
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

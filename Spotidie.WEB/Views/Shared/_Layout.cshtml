@@ -44,7 +44,7 @@
     <div class="side-footer">
         <a class="footer-link" asp-controller="Chat" asp-action="Chat">Чат</a>
         <a class="footer-link" asp-controller="Home" asp-action="Privacy">Конфиденциальность</a>
-        <a class="footer-link" href="#">Форма для Ваших обращений</a>
+        <a class="footer-link" asp-controller="Home" asp-action="SendMail">Форма для Ваших обращений</a>
     </div>
 </div>
     @RenderBody()
