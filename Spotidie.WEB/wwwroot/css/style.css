@@ -445,5 +445,35 @@ p{
     top: -17px;
 }
 /*там выше коммент*/
-  
+
+.search{
+    display: flex;
+    margin-top: 50px;
+    vertical-align: middle;
+    justify-content: center;
+}
+.search-field{
+    padding-left: 10px;
+    font-family: 'Circular Std';
+    height: 40px;
+    width: 85vw;
+    font-size: 18px;
+    border: 0px solid #fff;
+}
+.search-butt{
+    padding-right: 10px;
+    height: 40px;
+    background-color: #fff;
+    border: 0px solid #fff;
+}
+.notfound{
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(85, 85, 85);
+    font-family: 'Circular Std';
+}
+.search-tracks{
+    display: flex;
+    justify-content: center;
+}
   
