@@ -35,6 +35,17 @@ public class DTOMapper
         };
     }
 
+    public static IEnumerable<PlaylistDTO> MapPlaylists(IEnumerable<Playlist> playlists)
+    {
+        var playlistsDTO = new List<PlaylistDTO>();
+        foreach (var playlist in playlists)
+        {
+            playlistsDTO.Add(MapPlaylist(playlist));
+        }
+
+        return playlistsDTO;
+    }
+
     public static TrackDTO MapTrack(Track track)
     {
         return new TrackDTO
