@@ -51,6 +51,7 @@ builder.Services.AddScoped<IUnitOfWork, EFUnitOfWork>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<ITrackService, TrackService>();
+builder.Services.AddScoped<IAuthorService, AuthorService>();
 
 
 var app = builder.Build();

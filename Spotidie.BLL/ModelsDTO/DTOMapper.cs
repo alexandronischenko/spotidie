@@ -65,4 +65,16 @@ public class DTOMapper
             Tracks = tracksDTO
         };
     }
+    
+    public static IEnumerable<AuthorDTO> MapAuthors(IEnumerable<Author> authors)
+    {
+        // TODO
+        var authorDTOs = new List<AuthorDTO>();
+        foreach (var author in authors)
+        {
+            authorDTOs.Add(MapAuthor(author));
+        }
+
+        return authorDTOs;
+    }
 }

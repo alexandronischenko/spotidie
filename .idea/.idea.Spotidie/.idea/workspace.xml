@@ -9,8 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IAuthorService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/AuthorService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Controllers/AuthorController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/DTOMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/DTOMapper.cs" afterDir="false" />
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/PlaylistService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/PlaylistService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Controllers/HomeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" afterDir="false" />
@@ -19,6 +23,10 @@
       <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Search/Search.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Search/Search.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/style.css" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Autor.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Author.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Autor.cshtml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Author.cshtml.cs" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
