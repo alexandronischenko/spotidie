@@ -1,50 +1,19 @@
 
-@using Microsoft.AspNetCore.Identity
-@using Spotidie.DAL.EF
-
-@inject SignInManager<ApplicationUser> SignInManager
-@inject UserManager<ApplicationUser> UserManager
 
 
-<div class="user-nav">
-    <div class="head">
-        @* <div class="head-nav"> *@
-        @*     <div class="navigation-arrows"> *@
-        @*         <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss"> *@
-        @*             <path fill="currentColor" d="M15.54 21.15L5.095 12.23 15.54 3.31l.65.76-9.555 8.16 9.555 8.16"></path> *@
-        @*         </svg> *@
-        @*         <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss"> *@
-        @*             <path fill="currentColor" d="M7.96 21.15l-.65-.76 9.555-8.16L7.31 4.07l.65-.76 10.445 8.92"></path> *@
-        @*         </svg> *@
-        @*     </div> *@
-        @* </div> *@
-        @if (SignInManager.IsSignedIn(User))
-        {
-            <li class="nav-item">
-                <a id="manage" class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
-            </li>
-            <li class="nav-item">
-                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new {area = ""})">
-                    <button id="logout" type="submit" class="nav-link btn btn-link text-white">Logout</button>
-                </form>
-            </li>
-        }
-        else
-        {
-            <li class="nav-item">
-                <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
-            </li>
-        }
-    </div>
-</div>
-<div class="main-mail" style="margin-top: 100px">
-<div style="display: flex; flex-direction: column; align-items: center; height: 100%; width: 100%;margin-bottom : 100px; justify-content: center; margin: 20px;color: white">
-    <form method="post" class="container" style="justify-content: flex-start
-                                                  
-">
+
+<div style="display: flex; flex-direction: column; align-items: center; height: 100%; width: 100%; justify-content: center; margin: 20px;margin-left: 100px;color: white">
+
+    @*<form method="post">
+                    <input type="text" name="name" placeholder="Phone number, username, or email" style="border: 1px solid rgba(var(--ca6,219,219,219),1); border-radius: 3px; margin-top: 24px; margin: 0 40px 6px; stretch">
+                    <input type="text" name="email" placeholder="Password" style="border: 1px solid rgba(var(--ca6,219,219,219),1); border-radius: 3px; margin: 0 40px 6px;">
+                    <button asp-controller="Mainpage" asp-action="SendMail" asp-area="" style="margin-top: 8px; margin-right: 40px; margin-left: 40px; margin-bottom: 8px; justify-content: flex-start; align-items: stretch; background-color: rgba(var(--d69,0,149,246),.3);
+        opacity: 1; border: 1px solid transparent; font-family: Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        font-size: 14px; text-decoration-color: white;">
+                        Log In
+                    </button>
+                    <</form>>*@
+    <form method="post" class="container">
         <div class="row" style="width: 80%">
             <div class="col-sm">
                 <p>Имя</p>
@@ -90,5 +59,3 @@
     </form>
 
 </div>
-</div>
-
