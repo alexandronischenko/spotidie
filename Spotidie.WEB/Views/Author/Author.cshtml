@@ -1,0 +1,59 @@
+@model AuthorViewModel
+@{
+    ViewData["Title"] = "Author";
+}
+
+<div class="user-nav">
+    <div class="head">
+        <div class="head-nav">
+            <div class="navigation-arrows">
+                <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss">
+                    <path fill="currentColor" d="M15.54 21.15L5.095 12.23 15.54 3.31l.65.76-9.555 8.16 9.555 8.16"></path>
+                </svg>
+                <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss">
+                    <path fill="currentColor" d="M7.96 21.15l-.65-.76 9.555-8.16L7.31 4.07l.65-.76 10.445 8.92"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="user">
+            <button class="reg">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            <button class="log">ВОЙТИ</button>
+        </div>
+    </div>
+    <div class="author-card">
+        <div class="author-img" style="background-image: url( @Html.DisplayFor(model => model.AuthorAvatar));" alt="avatar"></div>
+        <div class="author-info">
+            <p class="author-name">@Html.DisplayFor(model => model.AuthorName)</p>
+        </div>
+
+
+        <div class="tracks">
+            <div class="track">
+                <div style="display: flex;">
+                    <img class="track-logo" src="img/DJS2P9.jpg" alt="">
+                    <p class="track-name">The White Stripes - The Cold, Cold Night</p>
+                </div>
+                <img class="track-play" src="img/play-button-svgrepo-com.svg" alt="">
+            </div>
+            <div class="track">
+                <div style="display: flex;">
+                    <img class="track-logo" src="img/DJS2P9.jpg" alt="">
+                    <p class="track-name">The White Stripes - The Cold, Cold Night</p>
+                </div>
+                <img class="track-play" src="img/play-button-svgrepo-com.svg" alt="">
+            </div>
+            <div style="width: 1px; height: 100px;"></div>
+            <div class="albums">
+                <ul class="albums-list">
+                    <li class="list-item">
+                        <img src="./img/album1.jpg" alt="album" class="album-image">
+                        <div class="album-infos">
+                            <span class="album-title">pop/punk 2000's</span>
+                            <p class="album-creator">De bignay92</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

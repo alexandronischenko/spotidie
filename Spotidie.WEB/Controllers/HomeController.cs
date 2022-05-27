@@ -22,8 +22,8 @@ public class HomeController : Controller
     {
         IEnumerable<PlaylistDTO> playlistDtos = _service.GetPlaylists();
         var mapper = new MapperConfiguration(cfg => cfg.CreateMap<PlaylistDTO, PlaylistViewModel>()).CreateMapper();
-        var phones = mapper.Map<IEnumerable<PlaylistDTO>, List<PlaylistViewModel>>(playlistDtos);
-        return View();
+        var playlist = mapper.Map<IEnumerable<PlaylistDTO>, List<PlaylistViewModel>>(playlistDtos);
+        return View(playlist);
     }
 
     public IActionResult Privacy()

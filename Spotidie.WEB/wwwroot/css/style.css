@@ -36,8 +36,7 @@ p{
 }
 .spotify-logo {
     width: 130px;
-    height: 39px;
-    padding: 0px  0px 27px 25px;
+    padding: 0 0 27px 25px;
     color: #fff;
 }
 .navbar-links .navbar-links-list {
@@ -67,7 +66,7 @@ p{
     font-family: 'Circular Std';
     font-weight: bold;
     font-size: 12px;
-    padding-left: 12px;
+    padding-left: 8px;
 }
 .playlist{
     flex-grow: 0.8;
@@ -129,6 +128,8 @@ p{
     height: 65px;
     background-color: #0c0c0b;
     position: fixed;
+    display: flex;
+    justify-content:flex-end;
 }
 .navigation-arrows svg {
     width: 22px;
@@ -146,10 +147,6 @@ p{
     vertical-align: middle;
     align-items: center;
     margin: 0 50px 0 50px;
-}
-.head{
-    display: flex;
-    justify-content:space-between;
 }
 .user{
     display: flex;
@@ -208,13 +205,14 @@ p{
     cursor: pointer;
 }
 
-.albuns .albuns-list {
+.albums .albums-list {
     display: flex;
 }
-.albuns{
-    margin-left: 15px;
+.albums{
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
 }
-.albuns .albuns-list .list-item {
+.albums .albums-list .list-item {
     background-color: #292626;
     display: flex;
     flex-direction: column;
@@ -226,23 +224,24 @@ p{
     margin-right: 18px;
 }
 
-.albuns .albuns-list .list-item:hover {
+.albums .albums-list .list-item:hover {
     cursor: pointer;
 }
 
-.albuns .album-image {
+.albums .album-image {
     width: 175px;
     height: 175px;
     align-self: center;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    /*margin-top: 20px;*/
+    margin-bottom: 5px;
 }
 
-.albuns .albun-infos {
+.albums .album-infos {
     display: flex;
     flex-direction: column;
     text-align: left;
     padding-left: 14px;
+    padding-right: 14px;
 }
 .album-title {
     color: #fff;
@@ -286,7 +285,6 @@ p{
     font-size: 26px;
     height: auto;
     text-align: center;
-    vertical-align: middle;
 }
 .track{
     margin-top: 30px;

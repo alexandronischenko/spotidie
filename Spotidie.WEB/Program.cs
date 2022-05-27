@@ -1,13 +1,16 @@
 using BLL.Interfaces;
+using BLL.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Owin;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-
-
+using Ninject.Modules;
 using Spotidie.DAL.EF;
+using Spotidie.DAL.Interfaces;
+using Spotidie.DAL.Repositories;
+using Spotidie.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,9 +27,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<SpotidieContext>(options => options.UseNpgsql(
-                    builder.Configuration.GetConnectionString("Connect")
-                )
-            );
+        builder.Configuration.GetConnectionString("Connect")
+    )
+);
 
 // builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 // {
@@ -42,6 +45,14 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 // builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddHttpClient();
 builder.Services.AddRazorPages();
+
+builder.Services.AddScoped<IPlaylistService, PlaylistService>();
+builder.Services.AddScoped<IUnitOfWork, EFUnitOfWork>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<ITrackService, TrackService>();
+builder.Services.AddScoped<IAuthorService, AuthorService>();
+
 
 var app = builder.Build();
 
