@@ -19,19 +19,23 @@ public class DTOMapper
 
     public static PlaylistDTO MapPlaylist(Playlist playlist)
     {
-        var tracksDTO = new List<TrackDTO>();
-        // foreach (var track in playlist.Tracks)
-        // {
-        //     tracksDTO.Add(MapTrack(track));
-        // }
+        var playlistDtos = new List<PlaylistDTO>();
 
+        // if (playlist.Track != null)
+        // {
+        //     foreach (var track in playlist.Track)
+        //     {
+        //         playlistDtos.Add(MapTrack(track));
+        //     }
+        // }
+        
         return new PlaylistDTO
         {
             PlaylistId = playlist.PlaylistId,
             PlaylistAvatar = playlist.PlaylistAvatar,
             PlaylistName = playlist.PlaylistName,
+            PlaylistForeignKey = playlist.PlaylistForeignKey,
             // User = MapUser(playlist.MainUser),
-            Tracks = tracksDTO
         };
     }
 
@@ -55,8 +59,7 @@ public class DTOMapper
             TrackDuration = track.TrackDuration,
             TrackData = track.TrackData,
             TrackAvatar = track.TrackAvatar,
-            Playlist = MapPlaylist(track.Playlist),
-            Author = MapAuthor(track.Author)
+            TrackForeignKey = track.TrackForeignKey
         };
     }
 
@@ -75,7 +78,7 @@ public class DTOMapper
             AuthorId = author.AuthorId,
             AuthorName = author.AuthorName,
             AuthorAvatar = author.AuthorAvatar,
-            Tracks = tracksDTO
+            AuthorForeignKey = author.AuthorForeignKey
         };
     }
     

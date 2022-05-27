@@ -10,13 +10,13 @@ connection.on("ReceiveMessage", function (user, message) {
     console.log(message);
     console.log(user);
     
-    var h = document.createElement("h1");
+    var h = document.createElement("h5");
     h.style.color = "white"
     document.getElementById("messagesList").appendChild(h);
     // We can assign user-supplied strings to an element's textContent because it
     // is not interpreted as markup. If you're assigning in any other way, you 
     // should be aware of possible script injection concerns.
-    h.textContent = `${user} says ${message}`;
+    h.textContent = `${user}: ${message}`;
 });
 
 connection.start().then(function () {

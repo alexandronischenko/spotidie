@@ -5,7 +5,11 @@ namespace BLL.Interfaces;
 
 public interface ITrackService
 {
-    Task<TrackDTO> GetTrack(string id);
+    TrackDTO GetTrack(string id);
+    
+    IEnumerable<TrackDTO> GetTracks(string id);
+
+    IEnumerable<TrackDTO> FindTrack(string name);
 
     Task CreateTrack(TrackDTO track);
 

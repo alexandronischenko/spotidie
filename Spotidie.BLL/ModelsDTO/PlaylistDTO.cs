@@ -6,6 +6,6 @@ public class PlaylistDTO
     public string PlaylistName { get; set; }       
     public string PlaylistAvatar { get; set; }
     
-    public UserDTO User { get; set; }
+    public int PlaylistForeignKey{ get; set; }
     public List<TrackDTO> Tracks { get; set; }
 }

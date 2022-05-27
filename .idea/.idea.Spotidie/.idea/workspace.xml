@@ -9,6 +9,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Models/SearchViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IAuthorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IAuthorService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IPlaylistService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IPlaylistService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/ITrackService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/ITrackService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/DTOMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/DTOMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/AuthorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/AuthorService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/PlaylistService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/PlaylistService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Spotidie.BLL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Spotidie.BLL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/Interfaces/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/Interfaces/IRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Controllers/SearchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Controllers/SearchController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Chat/Chat.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Chat/Chat.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Search/Search.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Search/Search.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +82,22 @@
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d43ef061d8284d73a9523604117dc70cb55200/64/4f25d837/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d43ef061d8284d73a9523604117dc70cb55200/c0/64b9a1fe/Guid.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/efba74977a3f49308bc4c731e573a00d72c00/c5/8ff62e69/UserManager`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/155c4297b0eac42935e9a911382fb6262e4d4afaedd48d5cba145f422c10/IClientProxy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/17a25bf4cd58852e31b6bc798fef1d6289441360eea1912bf89a9b4fd337a3/SingleQueryingEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/32a8fec31814a6d95cb2de6313166ce452e65f782d0bf7af8d21d2cc7b12e9a/SignalRDependencyInjectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3b6e6a47179af0cc67d5434bad6aca4c7b77f9b7ba6b4a67bed78c8d3b9e80/AuthorizationMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7262732eee179af215faab36a7f3c3cfac93ba12af52a3888d839fe7e53420/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7733bdb26b2be012c4266979a95d3728e74790201f91a02df4529ee6c2f37/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/795846fb557629c996e9157d4227b4d6f6821536d179c375955fc977527fbb/DefaultHubDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d4f4ac7db6d2c5d183ab2d92602280ed4349fd6e6a1b6313546b3d01fdab5/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bcae882191178c8bf44c9add4cdeffa874a7afe629e3e56e9280f5896e953425/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bebd253e21dcf766929bfdfd74615bfe46e6e1693b289273dbdb82152893/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e4258c75edc3d01abcad9b615683a9bc848e23178c7dca388bd44871fe993d2/ClientProxyExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e4efcb931893386674ac17d2a44a95d3509f6ff87625829bedbcb3bddf6730/IdentityServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eda66d8c7aff6647d653292d4ea2f696b8f6ba94b9f24bc275d4f924599d8f/ControllerEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="JsBowerSettings">
     <bower-package value="" />
@@ -85,12 +117,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Spotidie.WEB: IIS Express">
     <configuration name="Spotidie.WEB: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" />
@@ -191,6 +223,21 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="UnitTestsCoverage.Settings">
+    <option name="coveragePercentColumnWidth" value="75" />
+    <option name="sortOrder" value="DESCENDING" />
+    <option name="sortedColumn" value="1" />
+    <option name="symbolColumnWidth" value="75" />
+    <coverage-tree-state>
+      <expand>
+        <path>
+          <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
+          <item name="Total 0% 4216/4216" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+        </path>
+      </expand>
+      <select />
+    </coverage-tree-state>
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />

@@ -1,0 +1,1 @@
+namespace Spotidie.Models;
