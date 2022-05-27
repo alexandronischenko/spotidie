@@ -5,13 +5,13 @@
 <div class="container">
     <div class="row">&nbsp;</div>
     <div class="row">
-        <div class="col-2">User</div>
+        <div class="col-2" style="color: white">User</div>
         <div class="col-4">
-            <input type="text" id="userInput"/>
+            <input type="text" id="userInput" value=""/>
         </div>
     </div>
     <div class="row">
-        <div class="col-2">Message</div>
+        <div class="col-2" style="color: white">Message</div>
         <div class="col-4">
             <input type="text" id="messageInput"/>
         </div>
@@ -22,16 +22,17 @@
             <input type="button" id="sendButton" value="Send Message"/>
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-12">
-        <hr/>
+    <div class="row">
+        <div class="col-12">
+            <hr/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-6">
-        <ul id="messagesList"></ul>
-    </div>
-</div>
+
 
 <script src="~/js/chat.js"></script>
