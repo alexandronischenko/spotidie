@@ -8,6 +8,8 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Ninject.Modules;
 using Spotidie.DAL.EF;
+using Spotidie.DAL.Interfaces;
+using Spotidie.DAL.Repositories;
 using Spotidie.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -43,7 +45,12 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 // builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddHttpClient();
 builder.Services.AddRazorPages();
+
 builder.Services.AddScoped<IPlaylistService, PlaylistService>();
+builder.Services.AddScoped<IUnitOfWork, EFUnitOfWork>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<ITrackService, TrackService>();
 
 
 var app = builder.Build();

@@ -20,17 +20,17 @@ public class DTOMapper
     public static PlaylistDTO MapPlaylist(Playlist playlist)
     {
         var tracksDTO = new List<TrackDTO>();
-        foreach (var track in playlist.Tracks)
-        {
-            tracksDTO.Add(MapTrack(track));
-        }
+        // foreach (var track in playlist.Tracks)
+        // {
+        //     tracksDTO.Add(MapTrack(track));
+        // }
 
         return new PlaylistDTO
         {
             PlaylistId = playlist.PlaylistId,
             PlaylistAvatar = playlist.PlaylistAvatar,
             PlaylistName = playlist.PlaylistName,
-            User = MapUser(playlist.MainUser),
+            // User = MapUser(playlist.MainUser),
             Tracks = tracksDTO
         };
     }

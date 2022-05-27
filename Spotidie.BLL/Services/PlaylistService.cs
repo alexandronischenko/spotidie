@@ -50,7 +50,17 @@ public class PlaylistService : IPlaylistService
 
     public IEnumerable<PlaylistDTO> GetPlaylists()
     {
-        // TODO
-        throw new NotImplementedException();
+        // var config = new MapperConfiguration(cfg => cfg.CreateMap<IEnumerable<Playlist>, IEnumerable<PlaylistDTO>>());
+        // var mapper = new Mapper(config);
+
+        var playlists = Db.Playlists.GetAll();
+        List<PlaylistDTO> result = new List<PlaylistDTO>();
+
+        foreach (var playlist in playlists)
+        {
+            result.Add(DTOMapper.MapPlaylist(playlist));
+        }
+
+        return result;
     }
 }
