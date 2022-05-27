@@ -8,7 +8,8 @@ namespace BLL.Services;
 
 public class TrackService : ITrackService
 {
-    
+    private ITrackService _trackServiceImplementation;
+
     public TrackService(IUnitOfWork db)
     {
         Db = db;
@@ -16,7 +17,7 @@ public class TrackService : ITrackService
 
     private IUnitOfWork Db { get; set; }
     
-    public async Task<TrackDTO> GetTrack(string id)
+    public TrackDTO GetTrack(string id)
     {
         if (id == null)
             throw new Exception("id is null");
@@ -26,6 +27,23 @@ public class TrackService : ITrackService
             throw new Exception("Track not found");
 
         return DTOMapper.MapTrack(track);
+    }
+
+    public IEnumerable<TrackDTO> GetTracks(string id)
+    {
+        if (id == null)
+            throw new Exception("id is null");
+        var tracks = Db.Tracks.GetAll();
+        tracks = tracks.Select(x=>x).Where(x => x.TrackForeignKey.ToString() == id);
+
+        var result = new List<TrackDTO>();
+        
+        foreach (var track in tracks)
+        {
+            result.Add(DTOMapper.MapTrack(track));
+        }
+
+        return result;
     }
 
     public async Task CreateTrack(TrackDTO trackDTO)

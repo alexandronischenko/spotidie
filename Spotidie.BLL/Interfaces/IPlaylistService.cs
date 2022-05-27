@@ -10,5 +10,7 @@ public interface IPlaylistService
     Task CreatePlaylist(PlaylistDTO playlist);
 
     Task DeletePlaylist(string id);
+    IEnumerable<PlaylistDTO> GetPlaylists(string id);
+
     IEnumerable<PlaylistDTO> GetPlaylists();
 }

@@ -9,4 +9,5 @@ public class UserViewModel
     public bool UserIsAdmin { get; set; }
     public string UserAvatar { get; set; }
     public string UserPassword { get; set; }
+    public int MainUserForeignKey{ get; set; }
 }

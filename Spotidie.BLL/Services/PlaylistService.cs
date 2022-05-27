@@ -48,10 +48,27 @@ public class PlaylistService : IPlaylistService
         Db.Playlists.Delete(Guid.Parse(id));
     }
 
+    public IEnumerable<PlaylistDTO> GetPlaylists(string id)
+    {
+        var playlists = Db.Playlists.GetAll();
+        playlists = playlists.Select(x=>x).Where(x => x.PlaylistForeignKey.ToString() == id);
+                if (playlists == null)
+            throw new Exception("Playlist not found");
+
+        List<PlaylistDTO> result = new List<PlaylistDTO>();
+
+        foreach (var playlist in playlists)
+        {
+            result.Add(DTOMapper.MapPlaylist(playlist));
+        }
+
+        return result;
+    }
+    
     public IEnumerable<PlaylistDTO> GetPlaylists()
     {
         var playlists = Db.Playlists.GetAll();
-                if (playlists == null)
+        if (playlists == null)
             throw new Exception("Playlist not found");
 
         List<PlaylistDTO> result = new List<PlaylistDTO>();
