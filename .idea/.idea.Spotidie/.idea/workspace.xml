@@ -8,13 +8,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/libman.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Utils/ChatHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Utils/ChatHub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Chat/Chat.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Chat/Chat.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/js/chat.js" afterDir="false" />
-    </list>
+    <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,7 +166,7 @@
       <workItem from="1653588111092" duration="948000" />
       <workItem from="1653589077896" duration="2512000" />
       <workItem from="1653655721273" duration="13182000" />
-      <workItem from="1653671722090" duration="5057000" />
+      <workItem from="1653671722090" duration="5279000" />
     </task>
     <task id="LOCAL-00001" summary="Added auth views">
       <created>1649853579094</created>
