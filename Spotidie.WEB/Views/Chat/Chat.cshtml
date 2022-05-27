@@ -8,6 +8,8 @@
 <script type="text/javascript" src="~/js/signalr/dist/browser/signalr.min.js"></script>
 <script type="text/javascript" src="~/js/signalr/dist/browser/signalr.js"></script>
 
+<div class="main">
+
 <div class="user-nav">
     <div class="head">
         @* <div class="head-nav"> *@
@@ -42,37 +44,38 @@
         }
     </div>
 
-<div class="container" style="    margin-top: 50px;">
-    <div class="row">&nbsp;</div>
-    <div class="row">
-        <div class="col-2" style="color: white">User</div>
-        <div class="col-4">
-            <input type="text" id="userInput" value=""/>
+    <div class="container" style="    margin-top: 50px;">
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-2" style="color: white">User</div>
+            <div class="col-4">
+                <input type="text" id="userInput" value=""/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2" style="color: white">Message</div>
+            <div class="col-4">
+                <input type="text" id="messageInput"/>
+            </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-6">
+                <input type="button" id="sendButton" value="Send Message"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <hr/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <ul id="messagesList"></ul>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-2" style="color: white">Message</div>
-        <div class="col-4">
-            <input type="text" id="messageInput"/>
-        </div>
-    </div>
-    <div class="row">&nbsp;</div>
-    <div class="row">
-        <div class="col-6">
-            <input type="button" id="sendButton" value="Send Message"/>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <hr/>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-6">
-            <ul id="messagesList"></ul>
-        </div>
-    </div>
-</div>
 
+</div>
 </div>
 <script src="~/js/chat.js"></script>
