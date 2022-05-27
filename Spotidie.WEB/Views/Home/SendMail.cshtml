@@ -1,0 +1,61 @@
+
+
+
+
+<div style="display: flex; flex-direction: column; align-items: center; height: 100%; width: 100%; justify-content: center; margin: 20px;margin-left: 100px;color: white">
+
+    @*<form method="post">
+                    <input type="text" name="name" placeholder="Phone number, username, or email" style="border: 1px solid rgba(var(--ca6,219,219,219),1); border-radius: 3px; margin-top: 24px; margin: 0 40px 6px; stretch">
+                    <input type="text" name="email" placeholder="Password" style="border: 1px solid rgba(var(--ca6,219,219,219),1); border-radius: 3px; margin: 0 40px 6px;">
+                    <button asp-controller="Mainpage" asp-action="SendMail" asp-area="" style="margin-top: 8px; margin-right: 40px; margin-left: 40px; margin-bottom: 8px; justify-content: flex-start; align-items: stretch; background-color: rgba(var(--d69,0,149,246),.3);
+        opacity: 1; border: 1px solid transparent; font-family: Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+        font-size: 14px; text-decoration-color: white;">
+                        Log In
+                    </button>
+                    <</form>>*@
+    <form method="post" class="container">
+        <div class="row" style="width: 80%">
+            <div class="col-sm">
+                <p>Имя</p>
+                <input type="text" placeholder="Phone number, username, or email" name="name">
+            </div>
+            <div class="col-sm">
+                <p>Эл. почта</p>
+                <input type="text" placeholder="Phone number, username, or email" name="email">
+            </div>
+        </div>
+
+        <div class="row" style="width: 80%">
+            <div class="col-sm">
+                <p>Телефон</p>
+                <input type="text" name="phonenumber">
+            </div>
+            <div class="col-sm">
+                <p>Адрес</p>
+                <input type="text" name="adress">
+            </div>
+        </div>
+
+        <div class="row" style="width: 80%;">
+            <div class="col-sm">
+                <p>Тема</p>
+                <input type="text" name="title">
+            </div>
+        </div>
+        <div class="row" style="width: 80%">
+            <div class="col-sm">
+                <p>Сообщение</p>
+                <input type="text" name="messagetitle">
+            </div>
+        </div>
+
+        <button asp-controller="Home" asp-action="SendMail" asp-area="" style="margin-top: 8px; margin-right: 40px; margin-left: 40px; margin-bottom: 8px; justify-content: flex-start; align-items: stretch; background-color: white;
+    opacity: 1; border: 1px solid transparent; font-family: Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px; text-decoration-color: white;">
+            Отправить
+        </button>
+        @*<button asp-controller="MainPage" asp-action="SendMail" asp-area="" type="button" class="btn btn-dark registration-button" style="width: 80%">Отправить</button>*@
+
+    </form>
+
+</div>
