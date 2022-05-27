@@ -37,6 +37,22 @@ public class AuthorService : IAuthorService
     {
         throw new NotImplementedException();
     }
+    
+    public IEnumerable<AuthorDTO> FindAuthor(string name)
+    {
+        if (name == null)
+            throw new Exception("name is null");
+        var authors = Db.Authors.Find(x => x.AuthorName.ToLower().Contains(name.ToLower()));
+
+        var result = new List<AuthorDTO>();
+        
+        foreach (var author in authors)
+        {
+            result.Add(DTOMapper.MapAuthor(author));
+        }
+
+        return result;
+    }
 
     public IEnumerable<AuthorDTO> GetAuthor()
     {

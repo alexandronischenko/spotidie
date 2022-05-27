@@ -45,6 +45,22 @@ public class TrackService : ITrackService
 
         return result;
     }
+    
+    public IEnumerable<TrackDTO> FindTrack(string name)
+    {
+        if (name == null)
+            throw new Exception("name is null");
+        var tracks = Db.Tracks.Find(x => x.TrackName.ToLower().Contains(name.ToLower()));
+
+        var result = new List<TrackDTO>();
+        
+        foreach (var track in tracks)
+        {
+            result.Add(DTOMapper.MapTrack(track));
+        }
+
+        return result;
+    }
 
     public async Task CreateTrack(TrackDTO trackDTO)
     {

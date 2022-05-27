@@ -71,12 +71,28 @@ public class PlaylistService : IPlaylistService
         if (playlists == null)
             throw new Exception("Playlist not found");
 
-        List<PlaylistDTO> result = new List<PlaylistDTO>();
+        var result = new List<PlaylistDTO>();
 
         foreach (var playlist in playlists)
         {
             result.Add(DTOMapper.MapPlaylist(playlist));
         }
+
+        return result;
+    }
+    
+    public IEnumerable<PlaylistDTO> FindPlaylist(string name)
+    {
+        if (name == null)
+            throw new Exception("name is null");
+        var playlists = Db.Playlists.Find(x => x.PlaylistName.ToLower().Contains(name.ToLower())).ToList();
+
+        var result = new List<PlaylistDTO>();
+        
+        // foreach (var playlist in playlists)
+        // {
+            result = DTOMapper.MapPlaylists(playlists).ToList();
+        // }
 
         return result;
     }

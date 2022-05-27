@@ -13,4 +13,6 @@ public interface IPlaylistService
     IEnumerable<PlaylistDTO> GetPlaylists(string id);
 
     IEnumerable<PlaylistDTO> GetPlaylists();
+
+    IEnumerable<PlaylistDTO> FindPlaylist(string name);
 }

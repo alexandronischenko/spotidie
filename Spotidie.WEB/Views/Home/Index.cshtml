@@ -42,6 +42,27 @@
         }
     </div>
     <section class="category">
+        <div class="user container-center" style="padding-bottom: 30px">
+            <p class="subsc">Больше возможностей с подпиской!</p>
+            <a href="#popup_subsc" class="subsc_btn">ПОДРОБНЕЕ</a>
+            <div id="popup_subsc">
+                <a href="#" class="close">x</a>
+                <p class="subsc-first">
+                    Получите доступ ко всему контенту <br>
+                    с подпиской Premium!
+                </p>
+                <p class="subsc-last">
+                    Укажите адресс электронной <br>
+                    почты для оформления подписки
+                </p>
+                <form class="subsc-pup-form" action="">
+                    <input class="e-mail-subsc" type="email" placeholder="E-mail">
+                    <button class="e-mail-subsc-btn" type="submit">
+                        <p class="send-subsc">Отправить</p>
+                    </button>
+                </form>
+            </div>
+        </div>
         <div class="header">
             <h1 class="title">
                 Плейлисты
@@ -52,7 +73,7 @@
         </div>
         <div class="albums">
             <ul class="albums-list">
-
+    
                 @foreach (var item in Model)
                 {
                     <li class="list-item">

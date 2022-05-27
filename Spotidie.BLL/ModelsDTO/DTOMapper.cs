@@ -19,15 +19,15 @@ public class DTOMapper
 
     public static PlaylistDTO MapPlaylist(Playlist playlist)
     {
-        var tracksDTO = new List<TrackDTO>();
+        var playlistDtos = new List<PlaylistDTO>();
 
-        if (playlist.Track != null)
-        {
-            foreach (var track in playlist.Track)
-            {
-                tracksDTO.Add(MapTrack(track));
-            }
-        }
+        // if (playlist.Track != null)
+        // {
+        //     foreach (var track in playlist.Track)
+        //     {
+        //         playlistDtos.Add(MapTrack(track));
+        //     }
+        // }
         
         return new PlaylistDTO
         {
@@ -36,7 +36,6 @@ public class DTOMapper
             PlaylistName = playlist.PlaylistName,
             PlaylistForeignKey = playlist.PlaylistForeignKey,
             // User = MapUser(playlist.MainUser),
-            Tracks = tracksDTO
         };
     }
 

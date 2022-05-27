@@ -151,8 +151,8 @@ p{
 .user{
     display: flex;
     height: 65px;
-    vertical-align: middle;
     align-items: center;
+    justify-content: space-around;
     margin: 0 50px 0 50px;
 
 }
@@ -486,4 +486,106 @@ p{
     height: 100%;
     align-items: center;
     justify-content: center;
+}
+
+.please_buy{
+    display: flex;
+    background-color: rgb(35, 35, 35);
+    justify-content: space-between;
+}
+.subsc{
+    color: #fff;
+    font-family:'Circular Std';
+    margin-right: 30px;
+    font-size: 16px;
+}
+.subsc_btn{
+    font-size: 14px;
+    color: #fff;
+    font-family:'Circular Std';
+    background-color: rgb(1, 121, 1);
+    border: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+}
+.subsc_btn{
+    cursor: pointer;
+}
+#popup_subsc{
+    display: none;
+    width: 350px;
+    background-color:#242424;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #292929;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+#popup_subsc:target{
+    display: block;
+}
+.popup_subsc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subsc-first{
+    font-size: 16px;
+    color: #fff;
+    font-family:'Circular Std';
+    margin-bottom: 30px;
+}
+.subsc-last{
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+    font-family:'Circular Std';
+    margin-bottom: 10px;
+}
+.subsc-pup-form{
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+}
+.e-mail-subsc{
+    height: 30px;
+    font-family:'Circular Std';
+    width: 190px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.e-mail-subsc-btn{
+    font-size: 14px;
+    color: #fff;
+    font-family:'Circular Std';
+    background-color: rgb(1, 121, 1);
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 15px;
+}
+.close{
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+    font-family:'Circular Std';
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    right: -15px;
+    top: -17px;
 }

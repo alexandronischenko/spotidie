@@ -13,4 +13,6 @@ public interface IAuthorService
     IEnumerable<AuthorDTO> GetAuthor();
 
     IEnumerable<AuthorDTO> GetAuthors();
+
+    IEnumerable<AuthorDTO> FindAuthor(string name);
 }
