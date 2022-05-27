@@ -3,6 +3,6 @@
 
 // Write your JavaScript code.
 
-$( function() {
-    $( "#datepicker" ).datepicker();
-} );
+// $( function() {
+//     $( "#datepicker" ).datepicker();
+// } );

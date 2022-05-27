@@ -16,6 +16,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -48,19 +55,39 @@
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ResetPassword.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Controllers/ChatController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Controllers/HomeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Models/Auth/LoginViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Utils/ChatHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Authentication/Register1.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Author/Author.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Chat/Chat.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d43ef061d8284d73a9523604117dc70cb55200/64/4f25d837/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/efba74977a3f49308bc4c731e573a00d72c00/c5/8ff62e69/UserManager`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/155c4297b0eac42935e9a911382fb6262e4d4afaedd48d5cba145f422c10/IClientProxy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/32a8fec31814a6d95cb2de6313166ce452e65f782d0bf7af8d21d2cc7b12e9a/SignalRDependencyInjectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7262732eee179af215faab36a7f3c3cfac93ba12af52a3888d839fe7e53420/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7733bdb26b2be012c4266979a95d3728e74790201f91a02df4529ee6c2f37/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/795846fb557629c996e9157d4227b4d6f6821536d179c375955fc977527fbb/DefaultHubDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d4f4ac7db6d2c5d183ab2d92602280ed4349fd6e6a1b6313546b3d01fdab5/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bebd253e21dcf766929bfdfd74615bfe46e6e1693b289273dbdb82152893/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e4258c75edc3d01abcad9b615683a9bc848e23178c7dca388bd44871fe993d2/ClientProxyExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e4efcb931893386674ac17d2a44a95d3509f6ff87625829bedbcb3bddf6730/IdentityServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eda66d8c7aff6647d653292d4ea2f696b8f6ba94b9f24bc275d4f924599d8f/ControllerEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="JsBowerSettings">
+    <bower-package value="" />
+    <bower.json value="" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="Toolset" />
   </component>
   <component name="ProjectId" id="27gvfm5tRhOCWFDx0BocdyzesZq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -72,6 +99,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "SolutionBuilderGeneralOptionsPage",
+    "vue.rearranger.settings.migration": "true"
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -83,7 +118,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <browser name="e5120d43-2c3f-47ef-9f26-65e539e05186" />
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="1" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
@@ -99,6 +134,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
+      <browser with-js-debugger="true" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
@@ -132,6 +168,8 @@
       <workItem from="1653137707009" duration="2703000" />
       <workItem from="1653588111092" duration="948000" />
       <workItem from="1653589077896" duration="2512000" />
+      <workItem from="1653655721273" duration="13182000" />
+      <workItem from="1653671722090" duration="5279000" />
     </task>
     <task id="LOCAL-00001" summary="Added auth views">
       <created>1649853579094</created>
@@ -215,5 +253,9 @@
     <MESSAGE value="Test commit" />
     <MESSAGE value="bll" />
     <option name="LAST_COMMIT_MESSAGE" value="bll" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
