@@ -36,8 +36,7 @@ p{
 }
 .spotify-logo {
     width: 130px;
-    height: 39px;
-    padding: 0px  0px 27px 25px;
+    padding: 0 0 27px 25px;
     color: #fff;
 }
 .navbar-links .navbar-links-list {
@@ -67,7 +66,7 @@ p{
     font-family: 'Circular Std';
     font-weight: bold;
     font-size: 12px;
-    padding-left: 12px;
+    padding-left: 8px;
 }
 .playlist{
     flex-grow: 0.8;

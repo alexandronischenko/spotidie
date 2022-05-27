@@ -52,10 +52,12 @@ public class DTOMapper
     public static AuthorDTO MapAuthor(Author author)
     {
         var tracksDTO = new List<TrackDTO>();
-        foreach (var track in author.Tracks)
-        {
-            tracksDTO.Add(MapTrack(track));
-        }
+        
+        // TODO
+        // foreach (var track in author.Tracks)
+        // {
+        //     tracksDTO.Add(MapTrack(track));
+        // }
 
         return new AuthorDTO
         {
