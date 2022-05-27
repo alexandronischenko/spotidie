@@ -13,12 +13,16 @@ namespace Spotidie.DAL.Entities
         public int TrackDuration { get; set; }
         public string TrackData { get; set; }       
         public string TrackAvatar{ get; set; }
+        
+        public int TrackForeignKey{ get; set; }
+        public Guid TrackForeignKeyGuid{ get; set; }
 
-        //Link to Playlist
-        public Playlist Playlist { get; set; }
+
+        // //Link to Playlist
+        // public Playlist Playlist { get; set; }
 
         //Link to Author
         public Author Author { get; set; }
-
+        public Playlist Playlist { get; set; }
     }
 }
