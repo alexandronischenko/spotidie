@@ -14,15 +14,6 @@ using Spotidie.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection");;
-
-//Я не знаю ,что здесь это делает,ведь у нас контекст даже по-другому называется,поэтому пока что закомменчу
-//builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//    options.UseSqlServer(connectionString));;
-
-//builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
-//    .AddEntityFrameworkStores<ApplicationDbContext>();;
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -31,20 +22,13 @@ builder.Services.AddEntityFrameworkNpgsql().AddDbContext<SpotidieContext>(option
     )
 );
 
-// builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
-// {
-//     options.User.RequireUniqueEmail = true;
-//     options.SignIn.RequireConfirmedAccount = true;
-// }).AddEntityFrameworkStores<SpotidieContext>();
-
 builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<SpotidieContext>()
     .AddDefaultTokenProviders();
 
-// builder.Services.AddScoped<IUserService, UserService>();
-// builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddHttpClient();
 builder.Services.AddRazorPages();
+builder.Services.AddSignalR();
 
 builder.Services.AddScoped<IPlaylistService, PlaylistService>();
 builder.Services.AddScoped<IUnitOfWork, EFUnitOfWork>();
@@ -70,8 +54,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 app.UseAuthentication();
-
 app.UseAuthorization();
+
+app.MapHub<ChatHub>("/chat/hub");
 
 app.MapControllerRoute(
     name: "default",
