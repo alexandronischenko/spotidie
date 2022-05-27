@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,12 +12,22 @@ namespace Spotidie.DAL.Entities
         public Guid PlaylistId { get; set; }
         public string PlaylistName { get; set; }       
         public string PlaylistAvatar { get; set; }
+        
+        public int PlaylistForeignKey{ get; set; }
+
 
         //Link to User
-        public MainUser MainUser { get; set; }
-
+        // [NotMapped]
+        // public MainUser MainUser { get; set; }
+        // [ForeignKey("MainUserForeignKey")]
+        // public Guid MainUserForeignKey { get; set; }
+        
         //Link to Track
-        public List<Track> Tracks { get; set; }
+        public List<Track> Track { get; set; }
 
+        // public Guid? MainUserId { get; set; } // Foreign key
+        // public MainUser MainUser { get; set; } // Reference navigation
+        //
+        // public IList<Track> Tracks { get; set; } = new List<Track>(); // Skip collection navigation
     }
 }

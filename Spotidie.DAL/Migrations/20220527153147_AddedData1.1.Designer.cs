@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Spotidie.DAL.EF;
@@ -11,9 +12,10 @@ using Spotidie.DAL.EF;
 namespace Spotidie.DAL.Migrations
 {
     [DbContext(typeof(SpotidieContext))]
-    partial class SpotidieContextModelSnapshot : ModelSnapshot
+    [Migration("20220527153147_AddedData1.1")]
+    partial class AddedData11
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -227,52 +229,12 @@ namespace Spotidie.DAL.Migrations
                     b.Property<string>("AuthorAvatar")
                         .HasColumnType("text");
 
-                    b.Property<int>("AuthorForeignKey")
-                        .HasColumnType("integer");
-
                     b.Property<string>("AuthorName")
                         .HasColumnType("text");
 
                     b.HasKey("AuthorId");
 
                     b.ToTable("Authors");
-
-                    b.HasData(
-                        new
-                        {
-                            AuthorId = new Guid("3ed42979-541b-4862-a3f2-66363827f225"),
-                            AuthorAvatar = "https://miro.medium.com/max/1400/1*NhL0RhtXr4tYhYExPyHW4g.jpeg",
-                            AuthorForeignKey = 0,
-                            AuthorName = "Awolnation"
-                        },
-                        new
-                        {
-                            AuthorId = new Guid("acb49cc1-a4bb-4795-844e-bdd7cfed8ba4"),
-                            AuthorAvatar = "http://sun9-10.userapi.com/s/v1/if1/CSawlnOoYN9CC6IgDfCSUjqvluyGA9KqvJ8ujexQy5KVmJw5mxnsAxKwBY7o8mazS9svVxf_.jpg?size=604x604&quality=96&type=album",
-                            AuthorForeignKey = 1,
-                            AuthorName = "Morgenstern"
-                        },
-                        new
-                        {
-                            AuthorId = new Guid("e9fe734e-7674-4f15-bce2-d0241b14a77d"),
-                            AuthorAvatar = "https://i.scdn.co/image/ab6761610000e5ebf5c9cb7c03d1e4e5226fc232",
-                            AuthorForeignKey = 0,
-                            AuthorName = "Баста"
-                        },
-                        new
-                        {
-                            AuthorId = new Guid("63ee7ecd-8ec5-4b6a-8cde-b9918ced00e1"),
-                            AuthorAvatar = "https://upload.wikimedia.org/wikipedia/commons/4/40/Michael_Jackson_Dangerous_World_Tour_1993.jpg",
-                            AuthorForeignKey = 0,
-                            AuthorName = "Michael Jackson"
-                        },
-                        new
-                        {
-                            AuthorId = new Guid("d7c58ab7-585d-4b81-ab03-ecf339da59f4"),
-                            AuthorAvatar = "https://www.buro247.ua/thumb/670x830_0/images/2020/09/billie-eilish-photos-bodyshaming-01.jpg",
-                            AuthorForeignKey = 2,
-                            AuthorName = "Billie Eilish"
-                        });
                 });
 
             modelBuilder.Entity("Spotidie.DAL.Entities.MainUser", b =>
@@ -286,9 +248,6 @@ namespace Spotidie.DAL.Migrations
 
                     b.Property<string>("MainUserEmail")
                         .HasColumnType("text");
-
-                    b.Property<int>("MainUserForeignKey")
-                        .HasColumnType("integer");
 
                     b.Property<bool>("MainUserIsAdmin")
                         .HasColumnType("boolean");
@@ -309,10 +268,9 @@ namespace Spotidie.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            MainUserId = new Guid("393a5f57-39aa-4e86-a369-2b8169f909b0"),
+                            MainUserId = new Guid("4fba6a8c-36c7-4033-9582-214d2f1692e4"),
                             MainUserAvatar = "https://i.ytimg.com/vi/3UF96jzrX4o/hqdefault.jpg",
                             MainUserEmail = "test5@mail.ru",
-                            MainUserForeignKey = 1,
                             MainUserIsAdmin = true,
                             MainUserIsPremium = true,
                             MainUserName = "test1",
@@ -326,14 +284,11 @@ namespace Spotidie.DAL.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid?>("MainUserId")
+                    b.Property<Guid>("MainUserId")
                         .HasColumnType("uuid");
 
                     b.Property<string>("PlaylistAvatar")
                         .HasColumnType("text");
-
-                    b.Property<int>("PlaylistForeignKey")
-                        .HasColumnType("integer");
 
                     b.Property<string>("PlaylistName")
                         .HasColumnType("text");
@@ -343,43 +298,6 @@ namespace Spotidie.DAL.Migrations
                     b.HasIndex("MainUserId");
 
                     b.ToTable("Playlists");
-
-                    b.HasData(
-                        new
-                        {
-                            PlaylistId = new Guid("d74cf760-f840-4cf3-aefd-1d425965f93c"),
-                            PlaylistAvatar = "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0vvwas-large.jpg",
-                            PlaylistForeignKey = 1,
-                            PlaylistName = "This is MORGENSTERN"
-                        },
-                        new
-                        {
-                            PlaylistId = new Guid("ff8cbdca-f685-4ad1-aa90-66fa4308573c"),
-                            PlaylistAvatar = "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/19/97/5e/19975ec4-e9a5-0e07-0600-8592238a1765/849320046806.png/1200x1200bf-60.jpg",
-                            PlaylistForeignKey = 0,
-                            PlaylistName = "Angel Miners & the Lightning Riders"
-                        },
-                        new
-                        {
-                            PlaylistId = new Guid("b2428626-f5a8-4447-9ef9-73e7a5975f96"),
-                            PlaylistAvatar = "https://thisis-images.scdn.co/37i9dQZF1DZ06evO4eXcRP-large.jpg",
-                            PlaylistForeignKey = 0,
-                            PlaylistName = "This is Basta"
-                        },
-                        new
-                        {
-                            PlaylistId = new Guid("180377a1-561b-4f29-9b4b-7c63ea571919"),
-                            PlaylistAvatar = "https://i.scdn.co/image/ab67706f00000003e8e28219724c2423afa4d320",
-                            PlaylistForeignKey = 0,
-                            PlaylistName = "This Is Michael Jackson"
-                        },
-                        new
-                        {
-                            PlaylistId = new Guid("65c0ac78-f11a-441c-b87b-c15cfe663ab6"),
-                            PlaylistAvatar = "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e",
-                            PlaylistForeignKey = 2,
-                            PlaylistName = "This Is Billie Eilish"
-                        });
                 });
 
             modelBuilder.Entity("Spotidie.DAL.Entities.Track", b =>
@@ -403,9 +321,6 @@ namespace Spotidie.DAL.Migrations
                     b.Property<int>("TrackDuration")
                         .HasColumnType("integer");
 
-                    b.Property<int>("TrackForeignKey")
-                        .HasColumnType("integer");
-
                     b.Property<string>("TrackName")
                         .HasColumnType("text");
 
@@ -416,53 +331,6 @@ namespace Spotidie.DAL.Migrations
                     b.HasIndex("PlaylistId");
 
                     b.ToTable("Tracks");
-
-                    b.HasData(
-                        new
-                        {
-                            TrackId = new Guid("1536301d-5ceb-4a7b-ba9a-1d1016ab52fc"),
-                            TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/4/49/Cadillac_%28%D0%BF%D0%B5%D1%81%D0%BD%D1%8F%29.jpg",
-                            TrackData = "https://open.spotify.com/track/3aVNCtmLR9BSgFALSySejF?si=c4bac8e332144863",
-                            TrackDuration = 177,
-                            TrackForeignKey = 1,
-                            TrackName = "Cadillac"
-                        },
-                        new
-                        {
-                            TrackId = new Guid("11277b16-c604-4198-bfe7-41d7fa37d86b"),
-                            TrackAvatar = "https://i.ytimg.com/vi/zdUIpi3WC5s/maxresdefault.jpg",
-                            TrackData = "https://open.spotify.com/track/3SOHFsSinxM6flLceYl5BT?si=9a73e3a45760441c",
-                            TrackDuration = 160,
-                            TrackForeignKey = 1,
-                            TrackName = "Селяви"
-                        },
-                        new
-                        {
-                            TrackId = new Guid("7750d141-afba-469d-a3fd-b819356af204"),
-                            TrackAvatar = "https://spiritofrock.ru/wp-content/uploads/2021/10/Billie-Eilish-Happier-Than-Ever-Tour-1000x600-1.jpg",
-                            TrackData = "https://open.spotify.com/track/0UJAH9v2PmS7sBcuBquprR?si=2fc802a0d83c4470",
-                            TrackDuration = 210,
-                            TrackForeignKey = 2,
-                            TrackName = "Oxytocin"
-                        },
-                        new
-                        {
-                            TrackId = new Guid("78075bc4-670a-496b-9d11-1405f0bef8bf"),
-                            TrackAvatar = "https://spiritofrock.ru/wp-content/uploads/2021/10/Billie-Eilish-Happier-Than-Ever-Tour-1000x600-1.jpg",
-                            TrackData = "https://open.spotify.com/track/4RVwu0g32PAqgUiJoXsdF8?si=62abafa4e4da4f89",
-                            TrackDuration = 298,
-                            TrackForeignKey = 2,
-                            TrackName = "Happier Than Ever"
-                        },
-                        new
-                        {
-                            TrackId = new Guid("ffb6dc14-d784-4b89-8fce-988400c2d442"),
-                            TrackAvatar = "https://lastfm.freetls.fastly.net/i/u/ar0/8bccd9c4336ffdbe502671287bc1b85c.jpg",
-                            TrackData = "https://open.spotify.com/track/04sN26COy28wTXYj3dMoiZ?si=bccdf3f86317456c",
-                            TrackDuration = 180,
-                            TrackForeignKey = 2,
-                            TrackName = "Bored"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -520,7 +388,9 @@ namespace Spotidie.DAL.Migrations
                 {
                     b.HasOne("Spotidie.DAL.Entities.MainUser", null)
                         .WithMany("Playlists")
-                        .HasForeignKey("MainUserId");
+                        .HasForeignKey("MainUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Spotidie.DAL.Entities.Track", b =>
@@ -529,13 +399,11 @@ namespace Spotidie.DAL.Migrations
                         .WithMany()
                         .HasForeignKey("AuthorId");
 
-                    b.HasOne("Spotidie.DAL.Entities.Playlist", "Playlist")
-                        .WithMany("Track")
+                    b.HasOne("Spotidie.DAL.Entities.Playlist", null)
+                        .WithMany("Tracks")
                         .HasForeignKey("PlaylistId");
 
                     b.Navigation("Author");
-
-                    b.Navigation("Playlist");
                 });
 
             modelBuilder.Entity("Spotidie.DAL.Entities.MainUser", b =>
@@ -545,7 +413,7 @@ namespace Spotidie.DAL.Migrations
 
             modelBuilder.Entity("Spotidie.DAL.Entities.Playlist", b =>
                 {
-                    b.Navigation("Track");
+                    b.Navigation("Tracks");
                 });
 #pragma warning restore 612, 618
         }

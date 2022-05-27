@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Spotidie.DAL.EF;
@@ -11,9 +12,10 @@ using Spotidie.DAL.EF;
 namespace Spotidie.DAL.Migrations
 {
     [DbContext(typeof(SpotidieContext))]
-    partial class SpotidieContextModelSnapshot : ModelSnapshot
+    [Migration("20220527172123_AddedData1.3")]
+    partial class AddedData13
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
