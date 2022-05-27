@@ -6,6 +6,10 @@
 @inject UserManager<ApplicationUser> UserManager
 @{
     ViewData["Title"] = "Home Page";
+    int count1= 0;
+    int count2= 0;
+    int count3= 0;
+
 }
 
 <div class="user-nav">
@@ -52,9 +56,10 @@
         </div>
         <div class="albums">
             <ul class="albums-list">
-
                 @foreach (var item in Model)
                 {
+                    count1++;
+                    if (count1 == 5) break;
                     <li class="list-item">
                         <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
                         <div class="album-infos">
@@ -62,8 +67,42 @@
                             @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
                         </div>
                     </li>
+                    
                 }
             </ul>
         </div>
+        <div class="albums">
+            <ul class="albums-list">
+                @foreach (var item in Model)
+                {
+                    count2++;
+                    if (count2 == 5) break;
+                    <li class="list-item">
+                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
+                        <div class="album-infos">
+                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
+                            @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
+                        </div>
+                    </li>
+                            
+                }
+            </ul>
+        </div>
+        <div class="albums">
+                    <ul class="albums-list">
+                        @foreach (var item in Model)
+                        {
+                            count3++;
+                            if (count3 == 5) break;
+                            <li class="list-item">
+                                <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
+                                <div class="album-infos">
+                                    <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
+                                    @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
+                                </div>
+                            </li>
+                        }
+                    </ul>
+                </div>
     </section>
 </div>
