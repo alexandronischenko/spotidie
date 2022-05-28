@@ -49,7 +49,6 @@ namespace Spotidie.DAL.Repositories
         public void Update(Track item)
         {
             _db.Entry(item).State = (Microsoft.EntityFrameworkCore.EntityState)EntityState.Modified;
-
         }
     }
 }

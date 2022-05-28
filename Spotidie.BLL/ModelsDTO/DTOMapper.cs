@@ -19,20 +19,35 @@ public class DTOMapper
 
     public static PlaylistDTO MapPlaylist(Playlist playlist)
     {
-        var tracksDTO = new List<TrackDTO>();
-        foreach (var track in playlist.Tracks)
-        {
-            tracksDTO.Add(MapTrack(track));
-        }
+        var playlistDtos = new List<PlaylistDTO>();
 
+        // if (playlist.Track != null)
+        // {
+        //     foreach (var track in playlist.Track)
+        //     {
+        //         playlistDtos.Add(MapTrack(track));
+        //     }
+        // }
+        
         return new PlaylistDTO
         {
             PlaylistId = playlist.PlaylistId,
             PlaylistAvatar = playlist.PlaylistAvatar,
             PlaylistName = playlist.PlaylistName,
-            User = MapUser(playlist.MainUser),
-            Tracks = tracksDTO
+            PlaylistForeignKey = playlist.PlaylistForeignKey,
+            // User = MapUser(playlist.MainUser),
         };
+    }
+
+    public static IEnumerable<PlaylistDTO> MapPlaylists(IEnumerable<Playlist> playlists)
+    {
+        var playlistsDTO = new List<PlaylistDTO>();
+        foreach (var playlist in playlists)
+        {
+            playlistsDTO.Add(MapPlaylist(playlist));
+        }
+
+        return playlistsDTO;
     }
 
     public static TrackDTO MapTrack(Track track)
@@ -44,25 +59,38 @@ public class DTOMapper
             TrackDuration = track.TrackDuration,
             TrackData = track.TrackData,
             TrackAvatar = track.TrackAvatar,
-            Playlist = MapPlaylist(track.Playlist),
-            Author = MapAuthor(track.Author)
+            TrackForeignKey = track.TrackForeignKey
         };
     }
 
     public static AuthorDTO MapAuthor(Author author)
     {
         var tracksDTO = new List<TrackDTO>();
-        foreach (var track in author.Tracks)
-        {
-            tracksDTO.Add(MapTrack(track));
-        }
+        
+        // TODO
+        // foreach (var track in author.Tracks)
+        // {
+        //     tracksDTO.Add(MapTrack(track));
+        // }
 
         return new AuthorDTO
         {
             AuthorId = author.AuthorId,
             AuthorName = author.AuthorName,
             AuthorAvatar = author.AuthorAvatar,
-            Tracks = tracksDTO
+            AuthorForeignKey = author.AuthorForeignKey
         };
+    }
+    
+    public static IEnumerable<AuthorDTO> MapAuthors(IEnumerable<Author> authors)
+    {
+        // TODO
+        var authorDTOs = new List<AuthorDTO>();
+        foreach (var author in authors)
+        {
+            authorDTOs.Add(MapAuthor(author));
+        }
+
+        return authorDTOs;
     }
 }

@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - Spotidie.WEB</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    <link rel="stylesheet" href="~/Spotidie.styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/css/auth/auth.css" asp-append-version="true"/>
 </head>
 <body>
 <div class="main">
@@ -16,51 +16,39 @@
     </div>
     <div class="navbar-links">
         <div class="navbar-links-list">
-            <a class="navbar-link-item-t" href="#">
-                <svg viewBox="0 0 512 512" width="27" height="27" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
+            <a class="navbar-link-item-t" asp-controller="Home" asp-action="Index">
+                <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path></svg>
                 <p class="item-text">Главная</p>
             </a>
-            <a class="navbar-link-item" href="#">
-                <svg viewBox="0 0 512 512" width="27" height="27" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>
+            <a class="navbar-link-item" asp-controller="Search" asp-action="Search">
+                <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path></svg>
                 <p class="item-text">Поиск</p>
             </a>
-            <a class="navbar-link-item">
-                <svg viewBox="0 0 512 512" width="27" height="27" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg>
+            <a class="navbar-link-item" asp-controller="Author" asp-action="Author">
+                <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path></svg>
                 <p class="item-text">Моя медиатека</p>
             </a>
         </div>
     </div>
     <div class="playlist">
-        <a class="add-playlist" href="#">
-            <img src="img/addplay.svg" alt="add">
-            <p class="item-text">Создать плейлист</p>
-        </a>
-        <a class="favplay" href="#">
-            <img src="img/fav.svg" alt="fav">
-            <p class="item-text">Любимые треки</p>
-        </a>
-    </div>
-    <div class="side-footer">
-        <a class="footer-link" href="#">Файлы cookie</a>
-        <a class="footer-link" href="#">Конфиденциальность</a>
-        <a class="footer-link" href="#">Форма для Ваших обращений</a>
-    </div>
-</div>
 
-<div class="container">
-    <main role="main" class="pb-3">
-        @RenderBody()
-    </main>
-</div>
-</div>
-<footer class="border-top footer text-muted">
-    <div class="container">
-        &copy; 2022 - Spotidie.WEB - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <a class="favplay" href="#">
+            <img src="~/img/fav.svg" alt="fav">
+            <p class="item-text">Random Track!</p>
+        </a>
     </div>
-</footer>
+    
+    <div class="side-footer">
+        <a class="footer-link" asp-controller="Chat" asp-action="Chat">Чат</a>
+        <a class="footer-link" asp-controller="Home" asp-action="Privacy">Конфиденциальность</a>
+        <a class="footer-link" asp-controller="Home" asp-action="SendMail">Форма для Ваших обращений</a>
+    </div>
+</div>
+    @RenderBody()
+</div>
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
-@await RenderSectionAsync("Scripts", required: false)
+@RenderSection("Scripts", required: false)
 </body>
 </html>

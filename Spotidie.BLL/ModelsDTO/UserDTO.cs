@@ -8,4 +8,6 @@ public class UserDTO
     public bool UserIsPremium { get; set; }
     public bool UserIsAdmin { get; set; }
     public string UserAvatar { get; set; }
+    
+    public int MainUserForeignKey{ get; set; }
 }

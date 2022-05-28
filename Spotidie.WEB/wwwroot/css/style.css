@@ -36,8 +36,7 @@ p{
 }
 .spotify-logo {
     width: 130px;
-    height: 39px;
-    padding: 0px  0px 27px 25px;
+    padding: 0 0 27px 25px;
     color: #fff;
 }
 .navbar-links .navbar-links-list {
@@ -67,7 +66,7 @@ p{
     font-family: 'Circular Std';
     font-weight: bold;
     font-size: 12px;
-    padding-left: 12px;
+    padding-left: 8px;
 }
 .playlist{
     flex-grow: 0.8;
@@ -111,16 +110,23 @@ p{
 }
 .main{
     background-color: #181818;
-    height: 100vh;
-    width: 100vw;
+    height: 1200px;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    color: gray;
+}
+.main-mail{
+    background-color: #181818;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 .user-nav{
     display: flex;
     flex-direction: column;
     margin-left: 250px;
-    width: calc(100vw - 250px);
     height: 100vh;
     background-color: #181818;
 }
@@ -129,6 +135,8 @@ p{
     height: 65px;
     background-color: #0c0c0b;
     position: fixed;
+    display: flex;
+    justify-content:flex-end;
 }
 .navigation-arrows svg {
     width: 22px;
@@ -147,15 +155,11 @@ p{
     align-items: center;
     margin: 0 50px 0 50px;
 }
-.head{
-    display: flex;
-    justify-content:space-between;
-}
 .user{
     display: flex;
     height: 65px;
-    vertical-align: middle;
     align-items: center;
+    justify-content: space-around;
     margin: 0 50px 0 50px;
 
 }
@@ -208,13 +212,14 @@ p{
     cursor: pointer;
 }
 
-.albuns .albuns-list {
+.albums .albums-list {
     display: flex;
 }
-.albuns{
-    margin-left: 15px;
+.albums{
+    /*margin-left: 5px;*/
+    /*margin-right: 5px;*/
 }
-.albuns .albuns-list .list-item {
+.albums .albums-list .list-item {
     background-color: #292626;
     display: flex;
     flex-direction: column;
@@ -226,23 +231,24 @@ p{
     margin-right: 18px;
 }
 
-.albuns .albuns-list .list-item:hover {
+.albums .albums-list .list-item:hover {
     cursor: pointer;
 }
 
-.albuns .album-image {
+.albums .album-image {
     width: 175px;
     height: 175px;
     align-self: center;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    /*margin-top: 20px;*/
+    margin-bottom: 5px;
 }
 
-.albuns .albun-infos {
+.albums .album-infos {
     display: flex;
     flex-direction: column;
     text-align: left;
     padding-left: 14px;
+    padding-right: 14px;
 }
 .album-title {
     color: #fff;
@@ -260,6 +266,8 @@ p{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #181818;
+    width: 100%;
 }
 .author-img{
     background-repeat: no-repeat;
@@ -286,7 +294,6 @@ p{
     font-size: 26px;
     height: auto;
     text-align: center;
-    vertical-align: middle;
 }
 .track{
     margin-top: 30px;
@@ -321,7 +328,7 @@ p{
     padding-left: 10px;
     font-family: 'Circular Std';
     height: 40px;
-    width: 85vw;
+    width: 55vw;
     font-size: 18px;
     border: 0px solid #fff;
 }
@@ -340,4 +347,251 @@ p{
 .search-tracks{
     display: flex;
     justify-content: center;
+}
+
+
+
+/*лулц*/
+.please_buy{
+      display: flex;
+      background-color: rgb(35, 35, 35);
+      justify-content: space-between;
+  }
+.subsc{
+    color: #fff;
+    font-family:'Circular Std';
+    margin-right: 30px;
+    font-size: 16px;
+}
+.subsc_btn{
+    font-size: 14px;
+    color: #fff;
+    font-family:'Circular Std';
+    background-color: rgb(1, 121, 1);
+    border: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+}
+.subsc_btn{
+    cursor: pointer;
+}
+#popup_subsc{
+    display: none;
+    width: 350px;
+    background-color:#242424;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #292929;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+#popup_subsc:target{
+    display: block;
+}
+.popup_subsc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subsc-first{
+    font-size: 16px;
+    color: #fff;
+    font-family:'Circular Std';
+    margin-bottom: 30px;
+}
+.subsc-last{
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+    font-family:'Circular Std';
+    margin-bottom: 10px;
+}
+.subsc-pup-form{
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+}
+.e-mail-subsc{
+    height: 30px;
+    font-family:'Circular Std';
+    width: 190px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.e-mail-subsc-btn{
+    font-size: 14px;
+    color: #fff;
+    font-family:'Circular Std';
+    background-color: rgb(1, 121, 1);
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 15px;
+}
+.close{
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+    font-family:'Circular Std';
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    right: -15px;
+    top: -17px;
+}
+/*там выше коммент*/
+
+.search{
+    display: flex;
+    margin-top: 50px;
+    vertical-align: middle;
+    justify-content: center;
+}
+.search-field{
+    padding-left: 10px;
+    font-family: 'Circular Std';
+    height: 40px;
+    width: 55vw;
+    font-size: 18px;
+    border: 0px solid #fff;
+}
+.search-butt{
+    padding-right: 10px;
+    height: 40px;
+    background-color: #fff;
+    border: 0px solid #fff;
+}
+.notfound{
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(85, 85, 85);
+    font-family: 'Circular Std';
+}
+.search-tracks{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.please_buy{
+    display: flex;
+    background-color: rgb(35, 35, 35);
+    justify-content: space-between;
+}
+.subsc{
+    color: #fff;
+    font-family:'Circular Std';
+    margin-right: 30px;
+    font-size: 16px;
+}
+.subsc_btn{
+    font-size: 14px;
+    color: #fff;
+    font-family:'Circular Std';
+    background-color: rgb(1, 121, 1);
+    border: none;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+}
+.subsc_btn{
+    cursor: pointer;
+}
+#popup_subsc{
+    display: none;
+    width: 350px;
+    background-color:#242424;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #292929;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+}
+#popup_subsc:target{
+    display: block;
+}
+.popup_subsc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.subsc-first{
+    font-size: 16px;
+    color: #fff;
+    font-family:'Circular Std';
+    margin-bottom: 30px;
+}
+.subsc-last{
+    font-size: 14px;
+    color: rgb(130, 130, 130);
+    font-family:'Circular Std';
+    margin-bottom: 10px;
+}
+.subsc-pup-form{
+    flex-direction: column;
+    width: 200px;
+    margin: 0 auto;
+}
+.e-mail-subsc{
+    height: 30px;
+    font-family:'Circular Std';
+    width: 190px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.e-mail-subsc-btn{
+    font-size: 14px;
+    color: #fff;
+    font-family:'Circular Std';
+    background-color: rgb(1, 121, 1);
+    border: none;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 15px;
+}
+.close{
+    font-size: 18px;
+    color: rgb(255, 0, 0);
+    font-family:'Circular Std';
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    right: -15px;
+    top: -17px;
 }

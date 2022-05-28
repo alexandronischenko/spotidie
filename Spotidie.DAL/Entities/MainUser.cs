@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,9 +17,15 @@ namespace Spotidie.DAL.Entities
         public bool MainUserIsPremium { get; set; }
         public bool MainUserIsAdmin { get; set; }
         public string MainUserAvatar { get; set; }
+        
+        public int MainUserForeignKey{ get; set; }
 
+            
         //Link to Playlist
-        public List<Playlist> Playlists { get; set; }
-
+         public List<Playlist> Playlists { get; set; }
+        
+        
+        // public IList<Playlist> Playlists { get; set; } = new List<Playlist>(); // Collection navigation
     }
+    
 }

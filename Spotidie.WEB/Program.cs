@@ -2,38 +2,41 @@ using BLL.Interfaces;
 using BLL.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-
+using Owin;
+using Microsoft.AspNet.Identity;
+using Microsoft.Owin;
+using Microsoft.Owin.Security.Cookies;
+using Ninject.Modules;
 using Spotidie.DAL.EF;
-
+using Spotidie.DAL.Interfaces;
+using Spotidie.DAL.Repositories;
+using Spotidie.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
-//var connectionString = builder.Configuration.GetConnectionString("ApplicationDbContextConnection");;
-
-//Я не знаю ,что здесь это делает,ведь у нас контекст даже по-другому называется,поэтому пока что закомменчу
-//builder.Services.AddDbContext<ApplicationDbContext>(options =>
-//    options.UseSqlServer(connectionString));;
-
-//builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
-//    .AddEntityFrameworkStores<ApplicationDbContext>();;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<SpotidieContext>(options => options.UseNpgsql(
-                    builder.Configuration.GetConnectionString("Connect")
-                )
-            );
+        builder.Configuration.GetConnectionString("Connect")
+    )
+);
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
-{
-    options.User.RequireUniqueEmail = true;    
-    options.SignIn.RequireConfirmedAccount = true;
-}).AddEntityFrameworkStores<SpotidieContext>().AddDefaultTokenProviders();
+builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<SpotidieContext>()
+    .AddDefaultTokenProviders();
 
-// builder.Services.AddScoped<IUserService, UserService>();
-// builder.Services.AddTransient<IUserService, UserService>();
 builder.Services.AddHttpClient();
 builder.Services.AddRazorPages();
+builder.Services.AddSignalR();
+
+builder.Services.AddScoped<IPlaylistService, PlaylistService>();
+builder.Services.AddScoped<IUnitOfWork, EFUnitOfWork>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
+builder.Services.AddScoped<ITrackService, TrackService>();
+builder.Services.AddScoped<IAuthorService, AuthorService>();
+
 
 var app = builder.Build();
 
@@ -50,9 +53,10 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseAuthentication();;
-
+app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapHub<ChatHub>("/chat/hub");
 
 app.MapControllerRoute(
     name: "default",

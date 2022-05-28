@@ -1,74 +1,126 @@
-﻿@{
+﻿@model IEnumerable<PlaylistViewModel>
+@using Microsoft.AspNetCore.Identity
+@using Spotidie.DAL.EF
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
     ViewData["Title"] = "Home Page";
+    int count1 = 0;
+    int count2 = 0;
+    int count3 = 0;
 }
 
 <div class="user-nav">
-            <div class="head">
-                <div class="head-nav">
-                    <div class="navigation-arrows">
-                        <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss"><path fill="currentColor" d="M15.54 21.15L5.095 12.23 15.54 3.31l.65.76-9.555 8.16 9.555 8.16"></path></svg>
-                        <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss"><path fill="currentColor" d="M7.96 21.15l-.65-.76 9.555-8.16L7.31 4.07l.65-.76 10.445 8.92"></path></svg>
-                    </div>
-                </div>
-                <div class="user">
-                    <button class="reg">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-                    <button class="log">ВОЙТИ</button>
-                </div>
+    <div class="head">
+        @* <div class="head-nav"> *@
+        @*     <div class="navigation-arrows"> *@
+        @*         <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss"> *@
+        @*             <path fill="currentColor" d="M15.54 21.15L5.095 12.23 15.54 3.31l.65.76-9.555 8.16 9.555 8.16"></path> *@
+        @*         </svg> *@
+        @*         <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss"> *@
+        @*             <path fill="currentColor" d="M7.96 21.15l-.65-.76 9.555-8.16L7.31 4.07l.65-.76 10.445 8.92"></path> *@
+        @*         </svg> *@
+        @*     </div> *@
+        @* </div> *@
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <li class="nav-item">
+                <a id="manage" class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+            </li>
+            <li class="nav-item">
+                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new {area = ""})">
+                    <button id="logout" type="submit" class="nav-link btn btn-link text-white">Logout</button>
+                </form>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            </li>
+        }
+    </div>
+    <section class="category" style="flex-direction: revert">
+        <div class="user container-center" style="padding-bottom: 30px">
+            <p class="subsc">Больше возможностей с подпиской!</p>
+            <a href="#popup_subsc" class="subsc_btn">ПОДРОБНЕЕ</a>
+            <div id="popup_subsc">
+                <a href="#" class="close">x</a>
+                <p class="subsc-first">
+                    Получите доступ ко всему контенту <br>
+                    с подпиской Premium!
+                </p>
+                <p class="subsc-last">
+                    Укажите адресс электронной <br>
+                    почты для оформления подписки
+                </p>
+                <form class="subsc-pup-form" action="">
+                    <input class="e-mail-subsc" type="email" placeholder="E-mail">
+                    <button class="e-mail-subsc-btn" type="submit">
+                        <p class="send-subsc">Отправить</p>
+                    </button>
+                </form>
             </div>
-            <section class="category">
-                <div class="header">
-                    <h1 class="title">
-                        Музыка для заботы о себе
-                    </h1>
-                    <span class="see-all">
-                        ВСЕ
-                    </span>
-                </div>
-                <div class="albuns">
-                    <ul class="albuns-list">
-                        <li class="list-item">
-                           <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                           <div class="albun-infos">
-                               <span class="album-title">pop/punk 2000's</span>
-                               <p class="album-creator">De bignay92</p>
-                           </div>
-                        </li>
-                        <li class="list-item">
-                          <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                          <div class="albun-infos">
-                              <span class="album-title">Sepultura</span>
-                              <p class="album-creator">De andreas kisser</p>
-                          </div>
-                       </li>
-                       <li class="list-item">
-                          <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                          <div class="albun-infos">
-                              <span class="album-title">Iron Maiden</span>
-                              <p class="album-creator">De bruce dickson</p>
-                          </div>
-                       </li>
-                       <li class="list-item">
-                        <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                        <div class="albun-infos">
-                            <span class="album-title">Sepultura</span>
-                            <p class="album-creator">De andreas kisser</p>
-                        </div>
-                     </li>
-                     <li class="list-item">
-                        <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                        <div class="albun-infos">
-                            <span class="album-title">Sepultura</span>
-                            <p class="album-creator">De andreas kisser</p>
-                        </div>
-                     </li>
-                       <li class="list-item">
-                          <img src="./img/album1.jpg" alt="album" class="album-image"> 
-                          <div class="albun-infos">
-                              <span class="album-title">Shaman</span>
-                              <p class="album-creator">De ritual</p>
-                          </div>
-                       </li>
-                    </ul>
-                </div>
-            </section>
         </div>
+        <div class="header">
+            <h1 class="title">
+                Плейлисты
+            </h1>
+            @* <span class="see-all"> *@
+            @*     ВСЕ *@
+            @* </span> *@
+        </div>
+        <div class="albums">
+            <ul class="albums-list">
+                @foreach (var item in Model)
+                {
+                    count1++;
+                    if (count1 == 5) break;
+                    <li class="list-item">
+                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
+                        <div class="album-infos">
+                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
+                            @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="albums">
+            <ul class="albums-list">
+                @foreach (var item in Model)
+                {
+                    count2++;
+                    if (count2 == 5) break;
+                    <li class="list-item">
+                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
+                        <div class="album-infos">
+                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
+                            @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="albums">
+            <ul class="albums-list">
+                @foreach (var item in Model)
+                {
+                    count3++;
+                    if (count3 == 5) break;
+                    <li class="list-item">
+                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
+                        <div class="album-infos">
+                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
+                            @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+    </section>
+</div>
