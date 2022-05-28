@@ -149,7 +149,7 @@ namespace Spotidie.DAL.EF
                     new Author{AuthorId = Guid.NewGuid(),AuthorName = "Баста",AuthorAvatar = "https://i.scdn.co/image/ab6761610000e5ebf5c9cb7c03d1e4e5226fc232",AuthorForeignKey = bastaAuthorId},
                     new Author{AuthorId = Guid.NewGuid(),AuthorName = "Michael Jackson",AuthorAvatar = "https://upload.wikimedia.org/wikipedia/commons/4/40/Michael_Jackson_Dangerous_World_Tour_1993.jpg",AuthorForeignKey = michaeljacksonAuthorId},
                     new Author{AuthorId = Guid.NewGuid(),AuthorName = "Billie Eilish",AuthorAvatar = "https://www.buro247.ua/thumb/670x830_0/images/2020/09/billie-eilish-photos-bodyshaming-01.jpg",AuthorForeignKey = billieilishAuthorId},
-                    new Author{AuthorId = Guid.NewGuid(),AuthorName = "Your Favourite Music",AuthorAvatar = "https://sun9-22.userapi.com/s/v1/if1/CSm8zW35urd67tfqeWMkGkJsxa0yobAc4rC3_O6Yh4hRi4PJpzyBeU64yDdrZz6P_KYmAD8v.jpg?size=604x453&quality=96&type=album",AuthorForeignKey = userAuthorId},
+                    new Author{AuthorId = Guid.NewGuid(),AuthorName = "Your Favourite Music",AuthorAvatar = "https://i.scdn.co/image/ab6761610000e5ebf5c9cb7c03d1e4e5226fc232",AuthorForeignKey = userAuthorId},
                 });
             
             builder.Entity<Track>().HasData(

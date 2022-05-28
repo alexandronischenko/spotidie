@@ -9,7 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +217,7 @@
       <expand>
         <path>
           <item name="rootNode" type="c53c71d1:RiderDotCoverCoverageTreeModel$RootNode" />
-          <item name="Total 0% 4494/4494" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
+          <item name="Total 0% 4522/4522" type="8b8fad3a:RiderDotCoverCoverageTreeNode" />
         </path>
       </expand>
       <select />
