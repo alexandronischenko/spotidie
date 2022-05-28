@@ -9,7 +9,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/temp/MORGEN.mp3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Controllers/AuthorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Controllers/AuthorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Author/Author.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Author/Author.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Search/Search.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Search/Search.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +120,7 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
-      <browser name="e5120d43-2c3f-47ef-9f26-65e539e05186" />
+      <browser name="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="1" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
