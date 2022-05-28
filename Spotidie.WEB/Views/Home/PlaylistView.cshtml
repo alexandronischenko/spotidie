@@ -12,7 +12,6 @@
 <div class="main">
 <div class="user-nav">
     <div class="head">
-
         @if (SignInManager.IsSignedIn(User))
         {
             <li class="nav-item">
@@ -38,6 +37,7 @@
     <div class="author-card">
         <div class="author-img" style="width: 600px;height: 600px;background-image: url( @Html.DisplayFor(model => model.AuthorAvatar));" alt="avatar"></div>
         <div class="author-info">
+
             <p class="author-name">@Html.DisplayFor(model => model.AuthorName)</p>
         </div>
 
