@@ -42,7 +42,7 @@ public class SearchController : Controller
         
         IEnumerable<PlaylistDTO> playlistDtos = _playlistService.FindPlaylist(searchString);
         mapper = new MapperConfiguration(cfg => cfg.CreateMap<PlaylistDTO, PlaylistViewModel>()).CreateMapper();
-        var playlists = mapper.Map<IEnumerable<PlaylistDTO>, List<PlaylistViewModel>>(playlistDtos);
+        List<Models.PlaylistViewModel> playlists = mapper.Map<IEnumerable<PlaylistDTO>, List<PlaylistViewModel>>(playlistDtos);
         _searchViewModel.Playlists = playlists;
         
         IEnumerable<AuthorDTO> authorDtos = _authorService.FindAuthor(searchString);

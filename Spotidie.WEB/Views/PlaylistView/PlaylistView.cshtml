@@ -1,4 +1,4 @@
-@model AuthorViewModel
+@model PlaylistViewModel
 
 @using Microsoft.AspNetCore.Identity
 @using Spotidie.DAL.EF
@@ -35,10 +35,10 @@
     </div>
 
     <div class="author-card">
-        <div class="author-img" style="width: 600px;height: 600px;background-image: url( @Html.DisplayFor(model => model.AuthorAvatar));" alt="avatar"></div>
+        <div class="author-img" style="width: 600px;height: 600px;background-image: url( @Html.DisplayFor(model => model.PlaylistAvatar));" alt="avatar"></div>
         <div class="author-info">
 
-            <p class="author-name">@Html.DisplayFor(model => model.AuthorName)</p>
+            <p class="author-name">@Html.DisplayFor(model => model.PlaylistName)</p>
         </div>
 
         @foreach (var item in Model.Tracks)
@@ -49,28 +49,31 @@
                         <img class="track-logo" src="@Html.DisplayFor(modelItem => item.TrackAvatar)" alt="">
                         <p class="track-name">@Html.DisplayFor(modelItem => item.TrackName)</p>
                     </div>
-                    <img class="track-play" src="~/img/play-button-svgrepo-com.svg" alt="">
+                    
+                    @* <button id="playTrack" onClick="playPause()" style="background-image: url(img/play-button-svgrepo-com.svg);" class="track-play"> *@
+                                            <audio src="~/temp/MORGEN.mp3" controls>
+                                            </audio>
+                                            @* Play *@
+                                        @* </button> *@
+                    
+                                        <script>
+                                              var aud = document.getElementById("playTrack").children[0];
+                                              var isPlaying = false;
+                                              aud.pause();
+                                            
+                                              function playPause() {
+                                               if (isPlaying) {
+                                                  aud.pause();
+                                               } else {
+                                                  aud.play();
+                                                }
+                                                isPlaying = !isPlaying;
+                                              }
+                                            </script>
                 </div>
             </div>
         }
         <div style="width: 1px; height: 100px;"></div>
-        <div class="albums">
-            <ul class="albums-list">
-                @foreach (var item in Model.Playlists)
-                {
-                    count++;
-                    if (count == 5) break;
-                    <li class="list-item">
-                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
-                        <div class="album-infos">
-                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
-                            <p class="album-creator">@Html.DisplayFor(modelItem => modelItem.AuthorName)</p>
-                        </div>
-                    </li>
-                }
-            </ul>
-        </div>
-
     </div>
 </div>
 </div>
