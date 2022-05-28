@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="IisPath" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^/Users/alexandronischenko/Documents/GitHub/spotidie/Spotidie\.WEB/bin/Release/net6\.0/publish/$" />
+  </parameter>
+</parameters>

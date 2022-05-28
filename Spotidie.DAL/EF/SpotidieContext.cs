@@ -155,6 +155,7 @@ namespace Spotidie.DAL.EF
             builder.Entity<Track>().HasData(
                 new Track[]
                 {
+                    new Track{TrackId = Guid.NewGuid(),TrackName = "Timerhan",TrackDuration = 177,TrackData = "https://open.spotify.com/track/3aVNCtmLR9BSgFALSySejF?si=c4bac8e332144863",TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/4/49/Cadillac_%28%D0%BF%D0%B5%D1%81%D0%BD%D1%8F%29.jpg",TrackForeignKey = morgenAuthorId},
                     //Morgen
                     new Track{TrackId = Guid.NewGuid(),TrackName = "Cadillac",TrackDuration = 177,TrackData = "https://open.spotify.com/track/3aVNCtmLR9BSgFALSySejF?si=c4bac8e332144863",TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/4/49/Cadillac_%28%D0%BF%D0%B5%D1%81%D0%BD%D1%8F%29.jpg",TrackForeignKey = morgenAuthorId},
                     new Track{TrackId = Guid.NewGuid(),TrackName = "Селяви",TrackDuration = 160,TrackData = "https://open.spotify.com/track/3SOHFsSinxM6flLceYl5BT?si=9a73e3a45760441c",TrackAvatar = "https://i.ytimg.com/vi/zdUIpi3WC5s/maxresdefault.jpg",TrackForeignKey = morgenAuthorId},
