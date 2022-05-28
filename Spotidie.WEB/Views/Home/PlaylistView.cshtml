@@ -1,0 +1,76 @@
+@model AuthorViewModel
+
+@using Microsoft.AspNetCore.Identity
+@using Spotidie.DAL.EF
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Author";
+    int count = 0;
+}
+<div class="main">
+<div class="user-nav">
+    <div class="head">
+        @if (SignInManager.IsSignedIn(User))
+        {
+            <li class="nav-item">
+                <a id="manage" class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
+            </li>
+            <li class="nav-item">
+                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new {area = ""})">
+                    <button id="logout" type="submit" class="nav-link btn btn-link text-white">Logout</button>
+                </form>
+            </li>
+        }
+        else
+        {
+            <li class="nav-item">
+                <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
+            </li>
+        }
+    </div>
+
+    <div class="author-card">
+        <div class="author-img" style="width: 600px;height: 600px;background-image: url( @Html.DisplayFor(model => model.AuthorAvatar));" alt="avatar"></div>
+        <div class="author-info">
+
+            <p class="author-name">@Html.DisplayFor(model => model.AuthorName)</p>
+        </div>
+
+        @foreach (var item in Model.Tracks)
+        {
+            <div class="tracks">
+                <div class="track">
+                    <div style="display: flex;">
+                        <img class="track-logo" src="@Html.DisplayFor(modelItem => item.TrackAvatar)" alt="">
+                        <p class="track-name">@Html.DisplayFor(modelItem => item.TrackName)</p>
+                    </div>
+                    <img class="track-play" src="~/img/play-button-svgrepo-com.svg" alt="">
+                </div>
+            </div>
+        }
+        <div style="width: 1px; height: 100px;"></div>
+        <div class="albums">
+            <ul class="albums-list">
+                @foreach (var item in Model.Playlists)
+                {
+                    count++;
+                    if (count == 5) break;
+                    <li class="list-item">
+                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
+                        <div class="album-infos">
+                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
+                            <p class="album-creator">@Html.DisplayFor(modelItem => modelItem.AuthorName)</p>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </div>
+
+    </div>
+</div>
+</div>
