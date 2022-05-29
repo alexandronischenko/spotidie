@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using Spotidie.DAL.EF;
@@ -11,9 +12,10 @@ using Spotidie.DAL.EF;
 namespace Spotidie.DAL.Migrations
 {
     [DbContext(typeof(SpotidieContext))]
-    partial class SpotidieContextModelSnapshot : ModelSnapshot
+    [Migration("20220528005633_AddedData2.4")]
+    partial class AddedData24
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -240,42 +242,42 @@ namespace Spotidie.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            AuthorId = new Guid("aad8d97f-2ca3-4c93-bc3a-c14660ceecad"),
+                            AuthorId = new Guid("7b0b2e29-71d5-41b8-bdb5-24ac5436722b"),
                             AuthorAvatar = "https://miro.medium.com/max/1400/1*NhL0RhtXr4tYhYExPyHW4g.jpeg",
                             AuthorForeignKey = 3,
                             AuthorName = "Awolnation"
                         },
                         new
                         {
-                            AuthorId = new Guid("11f08f47-5fe4-4888-84ab-9aa674ac14d7"),
+                            AuthorId = new Guid("fa9c6b17-d5ee-4752-a01e-3715206bc8a5"),
                             AuthorAvatar = "http://sun9-10.userapi.com/s/v1/if1/CSawlnOoYN9CC6IgDfCSUjqvluyGA9KqvJ8ujexQy5KVmJw5mxnsAxKwBY7o8mazS9svVxf_.jpg?size=604x604&quality=96&type=album",
                             AuthorForeignKey = 1,
                             AuthorName = "Morgenstern"
                         },
                         new
                         {
-                            AuthorId = new Guid("da4c0aa0-221e-42da-baa1-9b7fcf2b1b80"),
+                            AuthorId = new Guid("93bbb433-81a7-4bd3-a6ef-62cc37c5e757"),
                             AuthorAvatar = "https://i.scdn.co/image/ab6761610000e5ebf5c9cb7c03d1e4e5226fc232",
                             AuthorForeignKey = 4,
                             AuthorName = "Баста"
                         },
                         new
                         {
-                            AuthorId = new Guid("7f3a3f3b-da32-4ac0-91da-a02f0cc28b64"),
+                            AuthorId = new Guid("ce6dd03a-2aad-4276-9875-931d7103e949"),
                             AuthorAvatar = "https://upload.wikimedia.org/wikipedia/commons/4/40/Michael_Jackson_Dangerous_World_Tour_1993.jpg",
                             AuthorForeignKey = 5,
                             AuthorName = "Michael Jackson"
                         },
                         new
                         {
-                            AuthorId = new Guid("cbff566e-0bd4-4b8a-8136-8685d38ade1c"),
+                            AuthorId = new Guid("31c5ebbb-890c-4d5e-905b-ad8c31f016db"),
                             AuthorAvatar = "https://www.buro247.ua/thumb/670x830_0/images/2020/09/billie-eilish-photos-bodyshaming-01.jpg",
                             AuthorForeignKey = 2,
                             AuthorName = "Billie Eilish"
                         },
                         new
                         {
-                            AuthorId = new Guid("6b3c9e14-26ec-41d7-9dce-a060778cc8da"),
+                            AuthorId = new Guid("9f6ec3e5-978f-4a04-bac6-33a886e3dffb"),
                             AuthorAvatar = "https://i.ytimg.com/vi/3UF96jzrX4o/hqdefault.jpg",
                             AuthorForeignKey = 6,
                             AuthorName = "Your Favourite Music"
@@ -316,7 +318,7 @@ namespace Spotidie.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            MainUserId = new Guid("45b8c5c7-e4d7-46a7-9860-ba83e1f54896"),
+                            MainUserId = new Guid("8d499bda-547f-4045-845f-0eb9867d5507"),
                             MainUserAvatar = "https://i.ytimg.com/vi/3UF96jzrX4o/hqdefault.jpg",
                             MainUserEmail = "test5@mail.ru",
                             MainUserForeignKey = 6,
@@ -354,84 +356,84 @@ namespace Spotidie.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            PlaylistId = new Guid("8e31768b-fc0c-490c-b4e0-582cf31498b3"),
+                            PlaylistId = new Guid("34120a5e-f4f5-4e77-ac91-660fe79bdb20"),
                             PlaylistAvatar = "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0vvwas-large.jpg",
                             PlaylistForeignKey = 1,
                             PlaylistName = "This is MORGENSTERN"
                         },
                         new
                         {
-                            PlaylistId = new Guid("aed0147f-9f92-4fe2-ac1b-a6ec19a3dd92"),
+                            PlaylistId = new Guid("2fd4d44d-6a1a-4fd9-8895-5ab0ecec7db8"),
                             PlaylistAvatar = "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/19/97/5e/19975ec4-e9a5-0e07-0600-8592238a1765/849320046806.png/1200x1200bf-60.jpg",
                             PlaylistForeignKey = 3,
                             PlaylistName = "Angel Miners & the Lightning Riders"
                         },
                         new
                         {
-                            PlaylistId = new Guid("bda24790-403f-4347-8514-27f0402db23e"),
+                            PlaylistId = new Guid("f540c136-0f14-426b-949d-d20a9e0c42c2"),
                             PlaylistAvatar = "https://thisis-images.scdn.co/37i9dQZF1DZ06evO4eXcRP-large.jpg",
                             PlaylistForeignKey = 4,
                             PlaylistName = "This is Basta"
                         },
                         new
                         {
-                            PlaylistId = new Guid("ccd54c32-14f0-4b36-a100-8f3fab676e64"),
+                            PlaylistId = new Guid("a7f15785-b716-42f1-b2f9-a1a3bb713bc8"),
                             PlaylistAvatar = "https://i.scdn.co/image/ab67706f00000003e8e28219724c2423afa4d320",
                             PlaylistForeignKey = 5,
                             PlaylistName = "This Is Michael Jackson"
                         },
                         new
                         {
-                            PlaylistId = new Guid("479d38ce-0e2a-4232-a61e-09b5716ba138"),
+                            PlaylistId = new Guid("6087e803-a6c6-4cef-9796-46aa0859cb1e"),
                             PlaylistAvatar = "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e",
                             PlaylistForeignKey = 2,
                             PlaylistName = "This Is Billie Eilish"
                         },
                         new
                         {
-                            PlaylistId = new Guid("90bef63a-22f6-4129-b42b-10944ba175aa"),
+                            PlaylistId = new Guid("55566b8b-2a4e-4fc0-a73d-bb11efea0655"),
                             PlaylistAvatar = "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/1200x1200bf-60.jpg",
                             PlaylistForeignKey = 2,
                             PlaylistName = "dont smile at me"
                         },
                         new
                         {
-                            PlaylistId = new Guid("6882a1ed-2f53-4bc5-b493-8f7b3c1b793b"),
+                            PlaylistId = new Guid("692d6809-6a00-46f3-a638-fd097bce83d3"),
                             PlaylistAvatar = "https://thisis-images.scdn.co/37i9dQZF1DZ06evO0vvwas-large.jpg",
                             PlaylistForeignKey = 6,
                             PlaylistName = "This is MORGENSTERN"
                         },
                         new
                         {
-                            PlaylistId = new Guid("0c7b32f4-c963-4c8f-a996-32607b7e703b"),
+                            PlaylistId = new Guid("358f8792-2ca3-4884-86e6-5f4f73d4e600"),
                             PlaylistAvatar = "https://is5-ssl.mzstatic.com/image/thumb/Music124/v4/19/97/5e/19975ec4-e9a5-0e07-0600-8592238a1765/849320046806.png/1200x1200bf-60.jpg",
                             PlaylistForeignKey = 6,
                             PlaylistName = "Angel Miners & the Lightning Riders"
                         },
                         new
                         {
-                            PlaylistId = new Guid("2d45c52a-0f23-405e-af13-12ebadc472df"),
+                            PlaylistId = new Guid("dd56e402-d2ad-461b-8ba0-dd381e1ff906"),
                             PlaylistAvatar = "https://thisis-images.scdn.co/37i9dQZF1DZ06evO4eXcRP-large.jpg",
                             PlaylistForeignKey = 6,
                             PlaylistName = "This is Basta"
                         },
                         new
                         {
-                            PlaylistId = new Guid("dcae0f06-1474-4880-9a2e-81b31dc2ceb6"),
+                            PlaylistId = new Guid("2c1309ca-991a-4a2b-808f-236f9be2df80"),
                             PlaylistAvatar = "https://i.scdn.co/image/ab67706f00000003e8e28219724c2423afa4d320",
                             PlaylistForeignKey = 6,
                             PlaylistName = "This Is Michael Jackson"
                         },
                         new
                         {
-                            PlaylistId = new Guid("bbd9752e-d26a-445d-b474-9f0aced9cca6"),
+                            PlaylistId = new Guid("c3aa89af-a2dc-472d-84f4-2c21d318d494"),
                             PlaylistAvatar = "https://i.scdn.co/image/ab67706f000000034d26d431869cabfc53c67d8e",
                             PlaylistForeignKey = 6,
                             PlaylistName = "This Is Billie Eilish"
                         },
                         new
                         {
-                            PlaylistId = new Guid("3a06bf5f-23ab-47d1-97f4-86cbab790a8b"),
+                            PlaylistId = new Guid("7120380e-2f45-4db8-9938-adee7f392fe3"),
                             PlaylistAvatar = "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/1200x1200bf-60.jpg",
                             PlaylistForeignKey = 6,
                             PlaylistName = "dont smile at me"
@@ -476,16 +478,7 @@ namespace Spotidie.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            TrackId = new Guid("d2b39755-4a53-4717-a878-db3a248ef910"),
-                            TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/4/49/Cadillac_%28%D0%BF%D0%B5%D1%81%D0%BD%D1%8F%29.jpg",
-                            TrackData = "https://open.spotify.com/track/3aVNCtmLR9BSgFALSySejF?si=c4bac8e332144863",
-                            TrackDuration = 177,
-                            TrackForeignKey = 1,
-                            TrackName = "Timerhan"
-                        },
-                        new
-                        {
-                            TrackId = new Guid("0227ad16-d393-4d7c-a9d5-bea29b5e274c"),
+                            TrackId = new Guid("f75ccc54-9225-4b57-899c-78d45d4ce601"),
                             TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/4/49/Cadillac_%28%D0%BF%D0%B5%D1%81%D0%BD%D1%8F%29.jpg",
                             TrackData = "https://open.spotify.com/track/3aVNCtmLR9BSgFALSySejF?si=c4bac8e332144863",
                             TrackDuration = 177,
@@ -494,7 +487,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("e735cd94-0402-4b35-a69b-03575cc4c66b"),
+                            TrackId = new Guid("d80645c7-2c66-4735-9203-574c3698c924"),
                             TrackAvatar = "https://i.ytimg.com/vi/zdUIpi3WC5s/maxresdefault.jpg",
                             TrackData = "https://open.spotify.com/track/3SOHFsSinxM6flLceYl5BT?si=9a73e3a45760441c",
                             TrackDuration = 160,
@@ -503,7 +496,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("022fcebc-4a7d-48a0-88e7-29e7fa9e0c1a"),
+                            TrackId = new Guid("2fd0227f-4d6b-451a-bba6-bc21d1d78aac"),
                             TrackAvatar = "https://spiritofrock.ru/wp-content/uploads/2021/10/Billie-Eilish-Happier-Than-Ever-Tour-1000x600-1.jpg",
                             TrackData = "https://open.spotify.com/track/0UJAH9v2PmS7sBcuBquprR?si=2fc802a0d83c4470",
                             TrackDuration = 210,
@@ -512,7 +505,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("5bd8322f-3cc9-4f76-bd5f-c38f10556879"),
+                            TrackId = new Guid("b0da1979-4219-47e9-b49a-847b56603ec9"),
                             TrackAvatar = "https://spiritofrock.ru/wp-content/uploads/2021/10/Billie-Eilish-Happier-Than-Ever-Tour-1000x600-1.jpg",
                             TrackData = "https://open.spotify.com/track/4RVwu0g32PAqgUiJoXsdF8?si=62abafa4e4da4f89",
                             TrackDuration = 298,
@@ -521,7 +514,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("8a9f362b-4661-487b-8fc0-828d891e4cf2"),
+                            TrackId = new Guid("b641fb5a-fa99-4be4-94ed-609f20edffde"),
                             TrackAvatar = "https://lastfm.freetls.fastly.net/i/u/ar0/8bccd9c4336ffdbe502671287bc1b85c.jpg",
                             TrackData = "https://open.spotify.com/track/04sN26COy28wTXYj3dMoiZ?si=bccdf3f86317456c",
                             TrackDuration = 180,
@@ -530,7 +523,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("3e181247-1b40-4b61-a35e-37a0bf2fec0c"),
+                            TrackId = new Guid("5e8322d0-c2c8-4d0d-9516-76230023521c"),
                             TrackAvatar = "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/1200x1200bf-60.jpg",
                             TrackData = "https://open.spotify.com/track/1ni8ZTAY1GHXEFOGHl7fdg?si=e6e975f1853f4cf8",
                             TrackDuration = 179,
@@ -539,7 +532,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("61c91065-f631-4120-bebd-04321999fcfc"),
+                            TrackId = new Guid("84f4e973-aed2-461a-8468-65f5a2db91eb"),
                             TrackAvatar = "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/1200x1200bf-60.jpg",
                             TrackData = "https://open.spotify.com/track/1RGasjWLZ4qMN7wbtkLa3u?si=b955ab8d8f994ad2",
                             TrackDuration = 170,
@@ -548,7 +541,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("b5760bc7-e610-47a0-ae66-7ed3f402cf41"),
+                            TrackId = new Guid("191485fd-8c7e-47e1-9c76-b234fcaff41f"),
                             TrackAvatar = "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/1200x1200bf-60.jpg",
                             TrackData = "https://open.spotify.com/track/41zXlQxzTi6cGAjpOXyLYH?si=124307b3504340d4",
                             TrackDuration = 203,
@@ -557,7 +550,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("96e5be83-7fa0-4c21-b959-f8a2878db03d"),
+                            TrackId = new Guid("d18c817b-68f4-4940-873e-16172b49ad7e"),
                             TrackAvatar = "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/1200x1200bf-60.jpg",
                             TrackData = "https://open.spotify.com/track/5w7wuzMzsDer96KqxafeRK?si=5c7991a726b34496",
                             TrackDuration = 194,
@@ -566,7 +559,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("ecefae97-db45-4ea9-978d-3fcefc3d221e"),
+                            TrackId = new Guid("cf9b69dc-c5a7-436b-a8fb-f6fb54a2b29c"),
                             TrackAvatar = "https://i.scdn.co/image/ab67616d0000b27351cbdc2b8a04d0195dd4ab37",
                             TrackData = "https://open.spotify.com/track/1t4wa5r7E7oZ2D4G07JFsI?si=da1d6a276fa44643",
                             TrackDuration = 223,
@@ -575,7 +568,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("c8d6f25a-bca0-4d31-8f0b-22752b52f6d2"),
+                            TrackId = new Guid("2e0d5721-fd75-4eaa-83e6-ce4c5ec41c62"),
                             TrackAvatar = "https://i.scdn.co/image/ab67616d0000b27351cbdc2b8a04d0195dd4ab37",
                             TrackData = "https://open.spotify.com/track/7qVsMCptRS8tf4eIsQVHYR?si=4fee5f08375049a1",
                             TrackDuration = 288,
@@ -584,7 +577,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("07f5af67-04b9-4c9a-83c2-655b2921f345"),
+                            TrackId = new Guid("101bed5e-5bf5-4a0b-bc94-ebb8a13892d9"),
                             TrackAvatar = "https://nemcd.com/wp-content/uploads/2015/07/Basta-Urban.jpg",
                             TrackData = "https://open.spotify.com/track/40FJaSjTBdsIJ0upyx4Vjn?si=4fcc0c1805374334",
                             TrackDuration = 252,
@@ -593,7 +586,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("ba25151a-8eb6-40db-8b2c-2897623cafed"),
+                            TrackId = new Guid("fcd1ec0b-ab6c-457a-ab4a-4a34a1bc50d7"),
                             TrackAvatar = "https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/12/47/06/27/20/5b906d740cd7.jpg",
                             TrackData = "https://open.spotify.com/track/5ISgcj2vuSrL3FjHHnDPZU?si=bdf8fba16d764a66",
                             TrackDuration = 118,
@@ -602,7 +595,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("cd62a5cb-36f6-47b7-8e8b-00d6471481c9"),
+                            TrackId = new Guid("0d5f26a9-ecee-450b-a78a-c082ccaaa2cd"),
                             TrackAvatar = "https://lifemusic.kz/uploads/posts/2020-08/thumbs/1597593257_basta-zivert-ne-bolei.jpg",
                             TrackData = "https://open.spotify.com/track/6xBifM893zgSssatuI6YAf?si=f3abc4ff03074447",
                             TrackDuration = 334,
@@ -611,7 +604,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("2be71124-8133-45ad-9b96-1f70a9fb14ca"),
+                            TrackId = new Guid("07dde7af-5d1a-4805-bf51-44a23a1a5a61"),
                             TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/0/0e/Billie_Jean.jpg",
                             TrackData = "https://open.spotify.com/track/5ChkMS8OtdzJeqyybCc9R5?si=452685936d3646e0",
                             TrackDuration = 233,
@@ -620,7 +613,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("0f7e4663-97bc-4a9d-b2eb-7d6a917529c0"),
+                            TrackId = new Guid("22b47b99-222a-4c9c-b1a1-637d63d93024"),
                             TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/0/0e/Billie_Jean.jpg",
                             TrackData = "https://open.spotify.com/track/1OOtq8tRnDM8kG2gqUPjAj?si=04a0f63ce0394c8c",
                             TrackDuration = 258,
@@ -629,7 +622,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("e52f7bba-7971-4f0b-a295-ceeb66ed2a4f"),
+                            TrackId = new Guid("d474ba32-670a-45bc-ba41-3a12b3eee943"),
                             TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/4/49/Cadillac_%28%D0%BF%D0%B5%D1%81%D0%BD%D1%8F%29.jpg",
                             TrackData = "https://open.spotify.com/track/3aVNCtmLR9BSgFALSySejF?si=c4bac8e332144863",
                             TrackDuration = 177,
@@ -638,7 +631,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("a0280572-4490-4824-a3eb-3b77bb659b34"),
+                            TrackId = new Guid("25079ffe-7d1e-442f-981d-dbded77d9080"),
                             TrackAvatar = "https://i.ytimg.com/vi/zdUIpi3WC5s/maxresdefault.jpg",
                             TrackData = "https://open.spotify.com/track/3SOHFsSinxM6flLceYl5BT?si=9a73e3a45760441c",
                             TrackDuration = 160,
@@ -647,7 +640,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("5f464b32-e68a-45c6-a278-22d8c4308665"),
+                            TrackId = new Guid("1e0997d7-b993-407b-8307-6607bc166809"),
                             TrackAvatar = "https://spiritofrock.ru/wp-content/uploads/2021/10/Billie-Eilish-Happier-Than-Ever-Tour-1000x600-1.jpg",
                             TrackData = "https://open.spotify.com/track/0UJAH9v2PmS7sBcuBquprR?si=2fc802a0d83c4470",
                             TrackDuration = 210,
@@ -656,7 +649,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("9efcccba-d73a-46d8-8abb-8929d603cb59"),
+                            TrackId = new Guid("197d58f1-1542-4919-9c86-d9b2dfb190da"),
                             TrackAvatar = "https://spiritofrock.ru/wp-content/uploads/2021/10/Billie-Eilish-Happier-Than-Ever-Tour-1000x600-1.jpg",
                             TrackData = "https://open.spotify.com/track/4RVwu0g32PAqgUiJoXsdF8?si=62abafa4e4da4f89",
                             TrackDuration = 298,
@@ -665,7 +658,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("89dcef8f-8fa4-4d51-9a3d-8236a411aadc"),
+                            TrackId = new Guid("704c495b-4055-4c07-9d88-46e97a8f3c26"),
                             TrackAvatar = "https://lastfm.freetls.fastly.net/i/u/ar0/8bccd9c4336ffdbe502671287bc1b85c.jpg",
                             TrackData = "https://open.spotify.com/track/04sN26COy28wTXYj3dMoiZ?si=bccdf3f86317456c",
                             TrackDuration = 180,
@@ -674,7 +667,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("103cf2cd-e55d-4889-922c-069c0e0d0414"),
+                            TrackId = new Guid("15451b57-ff52-4765-8b41-34495df26e98"),
                             TrackAvatar = "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/1200x1200bf-60.jpg",
                             TrackData = "https://open.spotify.com/track/1ni8ZTAY1GHXEFOGHl7fdg?si=e6e975f1853f4cf8",
                             TrackDuration = 179,
@@ -683,7 +676,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("c715dad5-9c3a-4d7a-9901-f07f9b5c2b05"),
+                            TrackId = new Guid("901fce18-e9c0-4600-979c-e44f9573481e"),
                             TrackAvatar = "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/1200x1200bf-60.jpg",
                             TrackData = "https://open.spotify.com/track/1RGasjWLZ4qMN7wbtkLa3u?si=b955ab8d8f994ad2",
                             TrackDuration = 170,
@@ -692,7 +685,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("f7b76888-7307-4060-8599-e76cd1856908"),
+                            TrackId = new Guid("155e91a8-db88-4255-8609-4668bec7b7a0"),
                             TrackAvatar = "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/1200x1200bf-60.jpg",
                             TrackData = "https://open.spotify.com/track/41zXlQxzTi6cGAjpOXyLYH?si=124307b3504340d4",
                             TrackDuration = 203,
@@ -701,7 +694,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("1e141e8d-e1e6-4bdf-92de-fd5f35a35cd3"),
+                            TrackId = new Guid("b5d94723-ee3a-4079-b1cc-522e686e9c21"),
                             TrackAvatar = "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/1d/30/021d3036-5503-3ed3-df00-882f2833a6ae/17UM1IM17026.rgb.jpg/1200x1200bf-60.jpg",
                             TrackData = "https://open.spotify.com/track/5w7wuzMzsDer96KqxafeRK?si=5c7991a726b34496",
                             TrackDuration = 194,
@@ -710,7 +703,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("2daba720-b004-4db5-b144-44e018d32f6a"),
+                            TrackId = new Guid("d65f0704-cd93-47f5-87df-c19d3956003f"),
                             TrackAvatar = "https://i.scdn.co/image/ab67616d0000b27351cbdc2b8a04d0195dd4ab37",
                             TrackData = "https://open.spotify.com/track/1t4wa5r7E7oZ2D4G07JFsI?si=da1d6a276fa44643",
                             TrackDuration = 223,
@@ -719,7 +712,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("c10ada98-331a-4683-b1c4-2312578ed926"),
+                            TrackId = new Guid("de03f59d-984c-42e1-9293-58df422481b1"),
                             TrackAvatar = "https://i.scdn.co/image/ab67616d0000b27351cbdc2b8a04d0195dd4ab37",
                             TrackData = "https://open.spotify.com/track/7qVsMCptRS8tf4eIsQVHYR?si=4fee5f08375049a1",
                             TrackDuration = 288,
@@ -728,7 +721,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("0752a91e-06e6-479a-8e39-adbdd733c0c3"),
+                            TrackId = new Guid("6622505d-e126-4ce3-a240-ff6e2e607b8b"),
                             TrackAvatar = "https://nemcd.com/wp-content/uploads/2015/07/Basta-Urban.jpg",
                             TrackData = "https://open.spotify.com/track/40FJaSjTBdsIJ0upyx4Vjn?si=4fcc0c1805374334",
                             TrackDuration = 252,
@@ -737,7 +730,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("72673703-115e-4d34-a36f-a2b2c9008b5b"),
+                            TrackId = new Guid("397a6676-0e1a-486d-baad-0a8f6efdd86b"),
                             TrackAvatar = "https://the-flow.ru/uploads/images/resize/830x0/adaptiveResize/12/47/06/27/20/5b906d740cd7.jpg",
                             TrackData = "https://open.spotify.com/track/5ISgcj2vuSrL3FjHHnDPZU?si=bdf8fba16d764a66",
                             TrackDuration = 118,
@@ -746,7 +739,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("4f7ff5b9-77a0-4f0e-a9c7-873a161b8bbb"),
+                            TrackId = new Guid("4e6f3d2c-0709-4fc3-8114-b5a47664d12a"),
                             TrackAvatar = "https://lifemusic.kz/uploads/posts/2020-08/thumbs/1597593257_basta-zivert-ne-bolei.jpg",
                             TrackData = "https://open.spotify.com/track/6xBifM893zgSssatuI6YAf?si=f3abc4ff03074447",
                             TrackDuration = 334,
@@ -755,7 +748,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("48200435-113d-43de-b4a6-b4d871a1e255"),
+                            TrackId = new Guid("d80e1c19-f5e5-45a4-8c3c-da0c48239d37"),
                             TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/0/0e/Billie_Jean.jpg",
                             TrackData = "https://open.spotify.com/track/5ChkMS8OtdzJeqyybCc9R5?si=452685936d3646e0",
                             TrackDuration = 233,
@@ -764,7 +757,7 @@ namespace Spotidie.DAL.Migrations
                         },
                         new
                         {
-                            TrackId = new Guid("34585709-e59a-42b4-a954-b1f8976b613e"),
+                            TrackId = new Guid("33c5b9af-01fa-4f7f-ad09-01c25d320002"),
                             TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/0/0e/Billie_Jean.jpg",
                             TrackData = "https://open.spotify.com/track/1OOtq8tRnDM8kG2gqUPjAj?si=04a0f63ce0394c8c",
                             TrackDuration = 258,

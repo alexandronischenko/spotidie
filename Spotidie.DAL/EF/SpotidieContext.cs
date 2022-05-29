@@ -149,12 +149,13 @@ namespace Spotidie.DAL.EF
                     new Author{AuthorId = Guid.NewGuid(),AuthorName = "Баста",AuthorAvatar = "https://i.scdn.co/image/ab6761610000e5ebf5c9cb7c03d1e4e5226fc232",AuthorForeignKey = bastaAuthorId},
                     new Author{AuthorId = Guid.NewGuid(),AuthorName = "Michael Jackson",AuthorAvatar = "https://upload.wikimedia.org/wikipedia/commons/4/40/Michael_Jackson_Dangerous_World_Tour_1993.jpg",AuthorForeignKey = michaeljacksonAuthorId},
                     new Author{AuthorId = Guid.NewGuid(),AuthorName = "Billie Eilish",AuthorAvatar = "https://www.buro247.ua/thumb/670x830_0/images/2020/09/billie-eilish-photos-bodyshaming-01.jpg",AuthorForeignKey = billieilishAuthorId},
-                    new Author{AuthorId = Guid.NewGuid(),AuthorName = "Your Favourite Music",AuthorAvatar = "https://sun9-22.userapi.com/s/v1/if1/CSm8zW35urd67tfqeWMkGkJsxa0yobAc4rC3_O6Yh4hRi4PJpzyBeU64yDdrZz6P_KYmAD8v.jpg?size=604x453&quality=96&type=album",AuthorForeignKey = userAuthorId},
+                    new Author{AuthorId = Guid.NewGuid(),AuthorName = "Your Favourite Music",AuthorAvatar = "https://i.ytimg.com/vi/3UF96jzrX4o/hqdefault.jpg",AuthorForeignKey = userAuthorId},
                 });
             
             builder.Entity<Track>().HasData(
                 new Track[]
                 {
+                    new Track{TrackId = Guid.NewGuid(),TrackName = "Timerhan",TrackDuration = 177,TrackData = "https://open.spotify.com/track/3aVNCtmLR9BSgFALSySejF?si=c4bac8e332144863",TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/4/49/Cadillac_%28%D0%BF%D0%B5%D1%81%D0%BD%D1%8F%29.jpg",TrackForeignKey = morgenAuthorId},
                     //Morgen
                     new Track{TrackId = Guid.NewGuid(),TrackName = "Cadillac",TrackDuration = 177,TrackData = "https://open.spotify.com/track/3aVNCtmLR9BSgFALSySejF?si=c4bac8e332144863",TrackAvatar = "https://upload.wikimedia.org/wikipedia/ru/4/49/Cadillac_%28%D0%BF%D0%B5%D1%81%D0%BD%D1%8F%29.jpg",TrackForeignKey = morgenAuthorId},
                     new Track{TrackId = Guid.NewGuid(),TrackName = "Селяви",TrackDuration = 160,TrackData = "https://open.spotify.com/track/3SOHFsSinxM6flLceYl5BT?si=9a73e3a45760441c",TrackAvatar = "https://i.ytimg.com/vi/zdUIpi3WC5s/maxresdefault.jpg",TrackForeignKey = morgenAuthorId},
