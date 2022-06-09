@@ -11,20 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/js/qr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/lib/davidshimjs-qrcodejs-04f46c6/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/lib/davidshimjs-qrcodejs-04f46c6/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/lib/davidshimjs-qrcodejs-04f46c6/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/lib/davidshimjs-qrcodejs-04f46c6/bower.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/lib/davidshimjs-qrcodejs-04f46c6/index-svg.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/lib/davidshimjs-qrcodejs-04f46c6/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/lib/davidshimjs-qrcodejs-04f46c6/index.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/lib/davidshimjs-qrcodejs-04f46c6/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/lib/davidshimjs-qrcodejs-04f46c6/qrcode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/lib/davidshimjs-qrcodejs-04f46c6/qrcode.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
