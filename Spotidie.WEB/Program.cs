@@ -2,11 +2,6 @@ using BLL.Interfaces;
 using BLL.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Owin;
-using Microsoft.AspNet.Identity;
-using Microsoft.Owin;
-using Microsoft.Owin.Security.Cookies;
-using Ninject.Modules;
 using Spotidie.DAL.EF;
 using Spotidie.DAL.Interfaces;
 using Spotidie.DAL.Repositories;
@@ -29,7 +24,8 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 builder.Services.AddHttpClient();
 builder.Services.AddRazorPages();
 builder.Services.AddSignalR();
-
+builder.Services.AddResponseCompression(options=>options.EnableForHttps = true);
+    
 builder.Services.AddScoped<IPlaylistService, PlaylistService>();
 builder.Services.AddScoped<IUnitOfWork, EFUnitOfWork>();
 builder.Services.AddScoped<IUserService, UserService>();
@@ -48,6 +44,8 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+//Minification
+app.UseResponseCompression();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
