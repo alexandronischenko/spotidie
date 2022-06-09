@@ -19,9 +19,9 @@ public class PlaylistViewController : Controller
         _playlistService = playlistService;
     }
     // GET
-    public IActionResult PlaylistView()
+    public IActionResult PlaylistView(Guid id)
     {
-        PlaylistDTO playlistDto = _playlistService.GetPlaylists().First();
+        PlaylistDTO playlistDto = _playlistService.GetPlaylists().Select(x => x).First(x => x.PlaylistId == id);
         var mapper = new MapperConfiguration(cfg => cfg.CreateMap<PlaylistDTO, PlaylistViewModel>()).CreateMapper();
         var playlist = mapper.Map<PlaylistDTO, PlaylistViewModel>(playlistDto);
         
