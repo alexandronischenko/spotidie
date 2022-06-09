@@ -1,4 +1,5 @@
 @using Microsoft.AspNetCore.Identity
+@using Microsoft.CodeAnalysis.Scripting
 @using Spotidie.DAL.EF
 
 @model SearchViewModel
@@ -7,76 +8,61 @@
 @inject UserManager<ApplicationUser> UserManager
 
 <div class="main">
-    @* <div class="user-nav"> *@
-    @*     <div class="head"> *@
-    @*         <div class="head-nav"> *@
-    @*             <div class="navigation-arrows"> *@
-    @*                 <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss"> *@
-    @*                     <path fill="currentColor" d="M15.54 21.15L5.095 12.23 15.54 3.31l.65.76-9.555 8.16 9.555 8.16"></path> *@
-    @*                 </svg> *@
-    @*                 <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss"> *@
-    @*                     <path fill="currentColor" d="M7.96 21.15l-.65-.76 9.555-8.16L7.31 4.07l.65-.76 10.445 8.92"></path> *@
-    @*                 </svg> *@
-    @*             </div> *@
-    @*         </div> *@
-    @*         <div class="user"> *@
-    @*             <button class="reg">ЗАРЕГИСТРИРОВАТЬСЯ</button> *@
-    @*             <button class="log">ВОЙТИ</button> *@
-    @*         </div> *@
-    @*     </div> *@
-        <div class="text-center" style="margin-top: 90px;">
-            <span style="font-size: 180%; margin: 20px;">Поисковик</span>
-        </div>
-        <div class="search" style="margin-left: 150px;">
-            <form class="search" action="">
-                <input class="search-field" type="text" placeholder="Поиск" name="searchString">
-                <button class="search-butt" type="submit" formmethod="post">
-                    <svg viewBox="0 0 512 512" width="27" height="27" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                </button>
-            </form>
-        </div>
-        <div class="search-tracks">
-            <div class="tracks">
-                @if (Model.Authors.Count == 0 && Model.Playlists.Count == 0 && Model.Tracks.Count == 0)
-                {
-                    <p class="notfound">Ничего не найдено.</p>
-                }
-                else
-                {
-                    @foreach (var item in Model.Tracks)
-                    {
-                        <div class="track">
-                            <div style="display: flex;">
-                                <img class="track-logo" src="@Html.DisplayFor(modelItem => item.TrackAvatar)" alt="">
-                                <p class="track-name">@Html.DisplayFor(modelItem => item.TrackName)</p>
-                            </div>
-                            <img class="track-play" src="~/img/play-button-svgrepo-com.svg" alt="">
-                        </div>
-                    }
-                    @foreach (var item in Model.Authors)
-                    {
-                        <div class="track">
-                            <div style="display: flex;">
-                                <img class="track-logo" src="@Html.DisplayFor(modelItem => item.AuthorAvatar)" alt="">
-                                <p class="track-name">@Html.DisplayFor(modelItem => item.AuthorName)</p>
-                            </div>
-                            <img class="track-play" src="~/img/play-button-svgrepo-com.svg" alt="">
-                        </div>
-                    }
-                    @foreach (var item in Model.Playlists)
-                    {
-                        <div class="track">
-                            <div style="display: flex;">
-                                <img class="track-logo" src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="">
-                                <p class="track-name">@Html.DisplayFor(modelItem => item.PlaylistName)</p>
-                            </div>
-                            <img class="track-play" src="~/img/play-button-svgrepo-com.svg" alt="">
-                        </div>
-                    }
-                }
-
-            </div>
+    <div class="text-center" style="margin-top: 90px;">
+        <span style="font-size: 180%; margin: 20px;">Поисковик</span>
+    </div>
+    <div class="search" style="margin-left: 150px;">
+        <form class="search" action="">
+            <input class="search-field" type="text" placeholder="Поиск" name="searchString" id="inputSearch">
+            <button class="search-butt" type="button" id="button">
+                <svg viewBox="0 0 512 512" width="27" height="27" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path>
+                </svg>
+            </button>
+        </form>
+    </div>
+    <div>
+        <div id="results">
+            
         </div>
     </div>
+</div>
+
+@section Scripts
+{
+    <script>
+        $(document).ready(function () {
+            $("#button").on('click', function () {
+                $.ajax({
+                            type: "POST",
+                            url: "/Search/Search/",
+                            dataType: "json",
+                            data: { "searchString": $("#inputSearch").val() },
+                            success: function (result) {
+                                console.log(result);
+                            },
+                            error: function (req, status, error) {
+                                console.log(req, status, error)
+                            }
+                        });
+                });
+                $.ajax({
+                    type: "GET",
+                    url: "/Search/Search/",
+                    dataType: "html",
+                    success: function (result) {
+                        console.log(result);
+                    },
+                    error: function (req, status, error) {
+                        console.log(req, status, error)
+                    }
+                });
+        });
+        
+        
+        
+    </script>
+}
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src='@Url.Content("lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js")'></script>

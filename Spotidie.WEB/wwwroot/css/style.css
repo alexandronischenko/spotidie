@@ -595,3 +595,5 @@ p{
     right: -15px;
     top: -17px;
 }
+
+a { color: inherit; } 

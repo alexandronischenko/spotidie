@@ -70,9 +70,6 @@
             <h1 class="title">
                 Плейлисты
             </h1>
-            @* <span class="see-all"> *@
-            @*     ВСЕ *@
-            @* </span> *@
         </div>
         <div class="albums">
             <ul class="albums-list">
@@ -83,12 +80,22 @@
                     <li class="list-item">
                         <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
                         <div class="album-infos">
-                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
-                            @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
+                            <a asp-controller="PlaylistView" asp-action="PlaylistView" asp-route-playlist="@item.PlaylistId">
+                                @Html.DisplayFor(modelItem => item.PlaylistName)
+                            </a>
+                            <p class="album-creator">"@Html.DisplayFor(modelItem => item.User.UserName)</p>
                         </div>
                     </li>
                 }
             </ul>
+        </div>
+        <div class="header">
+            <h1 class="title">
+                Плейлисты для вас
+            </h1>
+            @* <span class="see-all"> *@
+            @*     ВСЕ *@
+            @* </span> *@
         </div>
         <div class="albums">
             <ul class="albums-list">
@@ -99,7 +106,11 @@
                     <li class="list-item">
                         <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
                         <div class="album-infos">
-                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
+                            <span class="album-title">
+                                <a asp-controller="PlaylistView" asp-action="PlaylistView" asp-route-playlist="@item">
+                                    @Html.DisplayFor(modelItem => item.PlaylistName)
+                                </a>
+                            </span>
                             @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
                         </div>
                     </li>
@@ -115,7 +126,9 @@
                     <li class="list-item">
                         <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
                         <div class="album-infos">
-                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
+                            <a asp-controller="PlaylistView" asp-action="PlaylistView" asp-route-playlist="@item">
+                                @Html.DisplayFor(modelItem => item.PlaylistName)
+                            </a>
                             @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
                         </div>
                     </li>

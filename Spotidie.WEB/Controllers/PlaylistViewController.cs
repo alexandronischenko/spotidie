@@ -18,18 +18,18 @@ public class PlaylistViewController : Controller
         _trackService = trackService;
         _playlistService = playlistService;
     }
-    // GET
-    public IActionResult PlaylistView()
-    {
-        PlaylistDTO playlistDto = _playlistService.GetPlaylists().First();
-        var mapper = new MapperConfiguration(cfg => cfg.CreateMap<PlaylistDTO, PlaylistViewModel>()).CreateMapper();
-        var playlist = mapper.Map<PlaylistDTO, PlaylistViewModel>(playlistDto);
-        
-        IEnumerable<TrackDTO> trackDtos = _trackService.GetTracks(playlistDto.PlaylistForeignKey.ToString());
-        mapper = new MapperConfiguration(cfg => cfg.CreateMap<TrackDTO, TrackViewModel>()).CreateMapper();
-        var tracks = mapper.Map<IEnumerable<TrackDTO>, List<TrackViewModel>>(trackDtos);
-        playlist.Tracks = tracks;
-        return View(playlist);
-    }
     
+    [HttpGet]
+    public Task<IActionResult> PlaylistView(Guid id)
+    {
+        var result = _playlistService.GetPlaylist(id.ToString()).Result;
+        var mapper = new MapperConfiguration(cfg => cfg.CreateMap<PlaylistDTO, PlaylistViewModel>()).CreateMapper();
+        var playlist = mapper.Map<PlaylistDTO, PlaylistViewModel>(result);
+        
+        var trackDtos = _trackService.GetTracks(playlist.PlaylistForeignKey.ToString()).ToList();
+        mapper = new MapperConfiguration(cfg => cfg.CreateMap<TrackDTO, TrackViewModel>()).CreateMapper();
+        var tracks = mapper.Map<List<TrackDTO>, List<TrackViewModel>>(trackDtos);
+        playlist.Tracks = tracks;
+        return Task.FromResult<IActionResult>(View(playlist));
+    }
 }

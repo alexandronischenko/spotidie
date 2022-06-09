@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System.Collections.Immutable;
+using System.Diagnostics;
 using AutoMapper;
 using BLL.Interfaces;
 using BLL.ModelsDTO;
@@ -21,9 +22,12 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        IEnumerable<PlaylistDTO> playlistDtos = _service.GetPlaylists();
+        var playlistDtos = _service.GetPlaylists().ToList();
+        var random = new Random();
+        var randomized = playlistDtos.OrderBy(item => random.Next()).ToList();
+        
         var mapper = new MapperConfiguration(cfg => cfg.CreateMap<PlaylistDTO, PlaylistViewModel>()).CreateMapper();
-        var playlist = mapper.Map<IEnumerable<PlaylistDTO>, List<PlaylistViewModel>>(playlistDtos);
+        var playlist = mapper.Map<IEnumerable<PlaylistDTO>, List<PlaylistViewModel>>(randomized);
         return View(playlist);
     }
 

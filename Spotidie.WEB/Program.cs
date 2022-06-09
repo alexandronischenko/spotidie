@@ -29,6 +29,7 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 builder.Services.AddHttpClient();
 builder.Services.AddRazorPages();
 builder.Services.AddSignalR();
+builder.Services.AddMvc().AddJsonOptions(options => options.JsonSerializerOptions.PropertyNamingPolicy = null);
 
 builder.Services.AddScoped<IPlaylistService, PlaylistService>();
 builder.Services.AddScoped<IUnitOfWork, EFUnitOfWork>();

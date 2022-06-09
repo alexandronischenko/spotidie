@@ -48,11 +48,12 @@ public class TrackService : ITrackService
     
     public IEnumerable<TrackDTO> FindTrack(string name)
     {
+        var result = new List<TrackDTO>();
         if (name == null)
-            throw new Exception("name is null");
+            return result;
         var tracks = Db.Tracks.Find(x => x.TrackName.ToLower().Contains(name.ToLower()));
 
-        var result = new List<TrackDTO>();
+        
         
         foreach (var track in tracks)
         {

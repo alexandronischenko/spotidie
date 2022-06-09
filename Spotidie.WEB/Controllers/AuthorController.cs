@@ -26,7 +26,7 @@ public class AuthorController : Controller
     {
         IEnumerable<AuthorDTO> authorsDtos = _authorService.GetAuthors();
         var mapper = new MapperConfiguration(cfg => cfg.CreateMap<AuthorDTO, AuthorViewModel>()).CreateMapper();
-        var author = mapper.Map<IEnumerable<AuthorDTO>, List<AuthorViewModel>>(authorsDtos).ElementAt(2);
+        var author = mapper.Map<IEnumerable<AuthorDTO>, List<AuthorViewModel>>(authorsDtos).ElementAt(0);
 
         IEnumerable<TrackDTO> trackDtos = _trackService.GetTracks(author.AuthorForeignKey.ToString());
         mapper = new MapperConfiguration(cfg => cfg.CreateMap<TrackDTO, TrackViewModel>()).CreateMapper();
