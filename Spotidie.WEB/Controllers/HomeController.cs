@@ -21,12 +21,12 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        IEnumerable<PlaylistDTO> playlistDtos = _service.GetPlaylists();
+        IEnumerable<PlaylistDTO> playlistDtos = _service.GetRandomPlaylists();
         var mapper = new MapperConfiguration(cfg => cfg.CreateMap<PlaylistDTO, PlaylistViewModel>()).CreateMapper();
         var playlist = mapper.Map<IEnumerable<PlaylistDTO>, List<PlaylistViewModel>>(playlistDtos);
         return View(playlist);
     }
-
+    
     public IActionResult Privacy()
     {
         return View();

@@ -8,14 +8,13 @@ namespace BLL.Services;
 
 public class PlaylistService : IPlaylistService
 {
-    
     public PlaylistService(IUnitOfWork db)
     {
         Db = db;
     }
 
     private IUnitOfWork Db { get; set; }
-    
+
     public async Task<PlaylistDTO> GetPlaylist(string id)
     {
         if (id == null)
@@ -33,7 +32,7 @@ public class PlaylistService : IPlaylistService
     {
         if (playlistDTO == null)
             throw new Exception("Object is empty");
-        
+
         var config = new MapperConfiguration(cfg => cfg.CreateMap<PlaylistDTO, Playlist>());
         var mapper = new Mapper(config);
         var playlist = mapper.Map<PlaylistDTO, Playlist>(playlistDTO);
@@ -44,15 +43,15 @@ public class PlaylistService : IPlaylistService
     {
         if (id == null)
             throw new Exception("Id is null");
-        
+
         Db.Playlists.Delete(Guid.Parse(id));
     }
 
     public IEnumerable<PlaylistDTO> GetPlaylists(string id)
     {
         var playlists = Db.Playlists.GetAll();
-        playlists = playlists.Select(x=>x).Where(x => x.PlaylistForeignKey.ToString() == id);
-                if (playlists == null)
+        playlists = playlists.Select(x => x).Where(x => x.PlaylistForeignKey.ToString() == id);
+        if (playlists == null)
             throw new Exception("Playlist not found");
 
         List<PlaylistDTO> result = new List<PlaylistDTO>();
@@ -64,7 +63,29 @@ public class PlaylistService : IPlaylistService
 
         return result;
     }
-    
+
+    public IEnumerable<PlaylistDTO> GetRandomPlaylists()
+    {
+        var rand = new Random();
+        var playlists = Db.Playlists.GetAll();
+        
+
+        if (playlists == null)
+            throw new Exception("Playlist not found");
+
+        List<PlaylistDTO> result = new List<PlaylistDTO>();
+
+        foreach (var playlist in playlists)
+        {
+            int id = rand.Next(1, 7);
+            playlists = playlists.Select(x => x).Where(x => x.PlaylistForeignKey.ToString() == id.ToString());
+
+            result.Add(DTOMapper.MapPlaylist(playlist));
+        }
+
+        return result;
+    }
+
     public IEnumerable<PlaylistDTO> GetPlaylists()
     {
         var playlists = Db.Playlists.GetAll();
@@ -80,7 +101,7 @@ public class PlaylistService : IPlaylistService
 
         return result;
     }
-    
+
     public IEnumerable<PlaylistDTO> FindPlaylist(string name)
     {
         if (name == null)
@@ -88,10 +109,10 @@ public class PlaylistService : IPlaylistService
         var playlists = Db.Playlists.Find(x => x.PlaylistName.ToLower().Contains(name.ToLower())).ToList();
 
         var result = new List<PlaylistDTO>();
-        
+
         // foreach (var playlist in playlists)
         // {
-            result = DTOMapper.MapPlaylists(playlists).ToList();
+        result = DTOMapper.MapPlaylists(playlists).ToList();
         // }
 
         return result;
