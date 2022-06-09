@@ -12,16 +12,14 @@
   <component name="ChangeListManager">
     <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Spotidie.BLL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Spotidie.BLL.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/Spotidie.DAL.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/Spotidie.DAL.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ConfirmEmail.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ConfirmEmail.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ExternalLogin.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ExternalLogin.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ForgotPassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ForgotPassword.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Register.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Register.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Spotidie.WEB.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ResetPassword.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ResetPassword.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,7 @@
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ExternalLogin.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ForgotPassword.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/LoginWith2fa.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/LoginWith2fa.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Logout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Manage/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />

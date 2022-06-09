@@ -11,7 +11,7 @@
     <meta name="google-signin-client_id" content="553442196148-c9hf913gtmghu5nnlbr38vr6o5l6s8tg.apps.googleusercontent.com">
 </head>
 
-<div class="container-center" style="margin-top: 5%; margin-left:30%;width: 1500px">
+<div class="container-center" style="margin-top: 5%; margin-left:20%;width: 1500px">
     <div class="col-md-4">
         <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
             <h1>Create a new account.</h1>
@@ -34,8 +34,6 @@
             </div>
             <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Register</button>
         </form>
-        
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
         
     </div>
     <div class="col-md-6 col-md-offset-2">
