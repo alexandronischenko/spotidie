@@ -32,7 +32,9 @@ builder.Services.AddRazorPages();
 builder.Services.AddSignalR();
 builder.Services.AddResponseCompression(options=>options.EnableForHttps = true);
 
-// dotnet user-secrets init --project Documents/Github/spotidie/Spotidie.WEB/Spotidie.WEB.csproj  
+// dotnet user-secrets init --project Documents/Github/spotidie/Spotidie.WEB/Spotidie.WEB.csproj
+// dotnet user-secrets set "Authentication:Google:ClientSecret" "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" --project Documents/Github/spotidie/Spotidie.WEB/Spotidie.WEB.csproj
+// dotnet user-secrets set "Authentication:Google:ClientId" "553442196148-c9hf913gtmghu5nnlbr38vr6o5l6s8tg.apps.googleusercontent.com" --project Documents/Github/spotidie/Spotidie.WEB/Spotidie.WEB.csproj
  builder.Services.AddAuthentication().AddGoogle(googleOptions =>
  {
      googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
