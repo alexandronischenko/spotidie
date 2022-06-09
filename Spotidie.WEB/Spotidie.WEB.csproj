@@ -52,6 +52,7 @@
       <Folder Include="wwwroot\Content\Music" />
       <Folder Include="wwwroot\Content\TrackCovers" />
       <Folder Include="wwwroot\Content\UserAvatars" />
+      <Folder Include="wwwroot\lib\qr-code-lib" />
       <Folder Include="wwwroot\temp" />
     </ItemGroup>
 	
