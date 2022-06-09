@@ -11,6 +11,16 @@
     int count3 = 0;
 }
 
+<style>
+a,a:hover,a:click, a:visited{
+  border:none;
+  outline:none;
+  text-decoration:none;
+  color:inherit;
+  -webkit-tap-highlight-color: white;
+}
+</style>
+
 <div class="user-nav">
     <section class="category" style="flex-direction: revert">
         <div class="user container-center" style="padding-bottom: 30px">
@@ -51,7 +61,11 @@
                     <li class="list-item">
                         <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
                         <div class="album-infos">
-                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
+                            <span class="album-title">
+                                <a style="" asp-controller="PlaylistView" asp-action="PlaylistView" asp-route-id="@item.PlaylistId">
+                                    @Html.DisplayFor(modelItem => item.PlaylistName)    
+                                </a>
+                            </span>
                             @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
                         </div>
                     </li>
