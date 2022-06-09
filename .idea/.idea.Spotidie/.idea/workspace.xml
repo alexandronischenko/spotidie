@@ -11,20 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220528061947_123InitialMigration.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220528061947_123InitialMigration.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220528062142_123InitialMigrationsdF.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/20220528062142_123InitialMigrationsdF.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/PackageLocation/Spotidie.WEB.Parameters.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/PackageLocation/Spotidie.WEB.SetParameters.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/PackageLocation/Spotidie.WEB.SourceManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/PackageLocation/Spotidie.WEB.deploy-readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/PackageLocation/Spotidie.WEB.deploy.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Spotidie.WEB/Properties/PublishProfiles/ddd.pubxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/EF/SpotidieContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.DAL/Migrations/SpotidieContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.DAL/Migrations/SpotidieContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/SendMail.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Home/SendMail.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,15 +21,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="MsDeployPackage" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="dev1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,11 +50,15 @@
     <setting file="file://$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.BLL/Services/UserService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ExternalLogin.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ForgotPassword.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Login.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/LoginWith2fa.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Logout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Manage/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Register.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/Register.cshtml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/Account/ResetPassword.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/_ViewImports.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Areas/Identity/Pages/_ViewStart.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
@@ -82,22 +73,7 @@
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Home/Index.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_Layout.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Spotidie.WEB/Views/Shared/_LoginPartial.cshtml" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d43ef061d8284d73a9523604117dc70cb55200/64/4f25d837/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d43ef061d8284d73a9523604117dc70cb55200/c0/64b9a1fe/Guid.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/efba74977a3f49308bc4c731e573a00d72c00/c5/8ff62e69/UserManager`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/155c4297b0eac42935e9a911382fb6262e4d4afaedd48d5cba145f422c10/IClientProxy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/17a25bf4cd58852e31b6bc798fef1d6289441360eea1912bf89a9b4fd337a3/SingleQueryingEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/32a8fec31814a6d95cb2de6313166ce452e65f782d0bf7af8d21d2cc7b12e9a/SignalRDependencyInjectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3b6e6a47179af0cc67d5434bad6aca4c7b77f9b7ba6b4a67bed78c8d3b9e80/AuthorizationMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7262732eee179af215faab36a7f3c3cfac93ba12af52a3888d839fe7e53420/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7733bdb26b2be012c4266979a95d3728e74790201f91a02df4529ee6c2f37/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/795846fb557629c996e9157d4227b4d6f6821536d179c375955fc977527fbb/DefaultHubDispatcher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9d4f4ac7db6d2c5d183ab2d92602280ed4349fd6e6a1b6313546b3d01fdab5/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bcae882191178c8bf44c9add4cdeffa874a7afe629e3e56e9280f5896e953425/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/bebd253e21dcf766929bfdfd74615bfe46e6e1693b289273dbdb82152893/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e4258c75edc3d01abcad9b615683a9bc848e23178c7dca388bd44871fe993d2/ClientProxyExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e4efcb931893386674ac17d2a44a95d3509f6ff87625829bedbcb3bddf6730/IdentityServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/eda66d8c7aff6647d653292d4ea2f696b8f6ba94b9f24bc275d4f924599d8f/ControllerEndpointRouteBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Spotidie.WEB/appsettings.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JsBowerSettings">
     <bower-package value="" />
@@ -107,7 +83,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="27gvfm5tRhOCWFDx0BocdyzesZq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
