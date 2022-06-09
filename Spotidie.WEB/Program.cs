@@ -1,6 +1,11 @@
+using System.Configuration;
 using BLL.Interfaces;
 using BLL.Services;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Spotidie.DAL.EF;
 using Spotidie.DAL.Interfaces;
@@ -8,6 +13,7 @@ using Spotidie.DAL.Repositories;
 using Spotidie.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -25,7 +31,14 @@ builder.Services.AddHttpClient();
 builder.Services.AddRazorPages();
 builder.Services.AddSignalR();
 builder.Services.AddResponseCompression(options=>options.EnableForHttps = true);
-    
+
+// dotnet user-secrets init --project Documents/Github/spotidie/Spotidie.WEB/Spotidie.WEB.csproj  
+ builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+ {
+     googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
+     googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+ });
+
 builder.Services.AddScoped<IPlaylistService, PlaylistService>();
 builder.Services.AddScoped<IUnitOfWork, EFUnitOfWork>();
 builder.Services.AddScoped<IUserService, UserService>();
@@ -43,6 +56,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+app.UseAuthentication();
 
 //Minification
 app.UseResponseCompression();

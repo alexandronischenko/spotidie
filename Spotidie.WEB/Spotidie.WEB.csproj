@@ -5,7 +5,8 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <RootNamespace>Spotidie</RootNamespace>
-    </PropertyGroup>
+      <UserSecretsId>24250acb-5135-4a99-86c1-871271b6f493</UserSecretsId>
+  </PropertyGroup>
 
     <ItemGroup>
 		<ProjectReference Include="..\Spotidie.DAL\Spotidie.DAL.csproj" />
@@ -20,6 +21,7 @@
 		<PackageReference Include="Microsoft.AspNet.Identity.EntityFramework" Version="2.2.3" />
 		<PackageReference Include="Microsoft.AspNet.Identity.Owin" Version="2.2.3" />
 		<PackageReference Include="Microsoft.AspNet.SignalR" Version="2.4.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.5" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.4" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.3">
