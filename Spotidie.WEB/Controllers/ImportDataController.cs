@@ -23,6 +23,8 @@ public class ImportDataController : Controller
     [HttpPost]
     public IActionResult Index(string trackAvatar, string trackName, string playlistName, IFormFile audioFile)
     {
+        
+        
         byte[] imageData = null;
         using (var binaryReader = new BinaryReader(audioFile.OpenReadStream()))
         {

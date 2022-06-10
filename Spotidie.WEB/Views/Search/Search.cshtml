@@ -101,26 +101,26 @@
                                 </script>
                             </div>
                         }
-                        @* @foreach (var item in Model.Authors) *@
-                        @* { *@
-                        @*     <div class="track"> *@
-                        @*         <div style="display: flex;"> *@
-                        @*             <img class="track-logo" src="@Html.DisplayFor(modelItem => item.AuthorAvatar)" alt=""> *@
-                        @*             <p class="track-name">@Html.DisplayFor(modelItem => item.AuthorName)</p> *@
-                        @*         </div> *@
-                        @*         <img class="track-play" src="~/img/play-button-svgrepo-com.svg" alt=""> *@
-                        @*     </div> *@
-                        @* } *@
-                        @* @foreach (var item in Model.Playlists) *@
-                        @* { *@
-                        @*     <div class="track"> *@
-                        @*         <div style="display: flex;"> *@
-                        @*             <img class="track-logo" src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt=""> *@
-                        @*             <p class="track-name">@Html.DisplayFor(modelItem => item.PlaylistName)</p> *@
-                        @*         </div> *@
-                        @*         <img class="track-play" src="~/img/play-button-svgrepo-com.svg" alt=""> *@
-                        @*     </div> *@
-                        @* } *@
+                        @foreach (var item in Model.Authors)
+                        {
+                            <div class="track">
+                                <div style="display: flex;">
+                                    <img class="track-logo" src="@Html.DisplayFor(modelItem => item.AuthorAvatar)" alt="">
+                                    <p class="track-name">@Html.DisplayFor(modelItem => item.AuthorName)</p>
+                                </div>
+                                <img class="track-play" src="~/img/play-button-svgrepo-com.svg" alt="">
+                            </div>
+                        }
+                        @foreach (var item in Model.Playlists)
+                        {
+                            <div class="track">
+                                <div style="display: flex;">
+                                    <img class="track-logo" src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="">
+                                    <p class="track-name">@Html.DisplayFor(modelItem => item.PlaylistName)</p>
+                                </div>
+                                <img class="track-play" src="~/img/play-button-svgrepo-com.svg" alt="">
+                            </div>
+                        }
                     }
 
                 </div>
