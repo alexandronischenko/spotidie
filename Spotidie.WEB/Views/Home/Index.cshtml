@@ -52,57 +52,31 @@ a,a:hover,a:click, a:visited{
             @*     ВСЕ *@
             @* </span> *@
         </div>
+
+
         <div class="albums">
             <ul class="albums-list">
-                @foreach (var item in Model)
-                {
-                    count1++;
-                    if (count1 == 5) break;
-                    <li class="list-item">
-                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
-                        <div class="album-infos">
-                            <span class="album-title">
-                                <a style="" asp-controller="PlaylistView" asp-action="PlaylistView" asp-route-id="@item.PlaylistId">
-                                    @Html.DisplayFor(modelItem => item.PlaylistName)    
-                                </a>
-                            </span>
-                            @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
-                        </div>
-                    </li>
-                }
+                <div style="display: grid;
+                                                                       grid-template-columns: repeat(4, 1fr);
+                                                                       grid-auto-rows: minmax(100px, auto);">
+                    @foreach (var item in Model)
+                    {
+                        <li class="list-item">
+                            <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
+                            <div class="album-infos">
+                                <span class="album-title">
+                                    <a style="" asp-controller="PlaylistView" asp-action="PlaylistView" asp-route-id="@item.PlaylistId">
+                                        @Html.DisplayFor(models => item.PlaylistName)
+                                    </a>
+                                </span>
+                                @* <p class="album-creator">"@Html.DisplayFor(modelItem => item.)</p> *@
+                            </div>
+                        </li>
+                    }
+                </div>
             </ul>
         </div>
-        <div class="albums">
-            <ul class="albums-list">
-                @foreach (var item in Model)
-                {
-                    count2++;
-                    if (count2 == 5) break;
-                    <li class="list-item">
-                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
-                        <div class="album-infos">
-                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
-                            @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
-                        </div>
-                    </li>
-                }
-            </ul>
-        </div>
-        <div class="albums">
-            <ul class="albums-list">
-                @foreach (var item in Model)
-                {
-                    count3++;
-                    if (count3 == 5) break;
-                    <li class="list-item">
-                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
-                        <div class="album-infos">
-                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
-                            @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
-                        </div>
-                    </li>
-                }
-            </ul>
-        </div>
+
+
     </section>
 </div>
