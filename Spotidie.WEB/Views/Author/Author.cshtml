@@ -61,7 +61,9 @@
                     <li class="list-item">
                         <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
                         <div class="album-infos">
-                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
+                            <span class="album-title"><a style="" asp-controller="PlaylistView" asp-action="PlaylistView" asp-route-id="@item.PlaylistId">
+                                @Html.DisplayFor(models => item.PlaylistName)
+                            </a></span>
                             <p class="album-creator">@Html.DisplayFor(modelItem => modelItem.AuthorName)</p>
                         </div>
                     </li>
