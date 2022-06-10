@@ -1,0 +1,42 @@
+@using Microsoft.AspNetCore.Identity
+@using Spotidie.DAL.EF
+
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <form class="container-center" method="post" enctype="multipart/form-data">
+        <div style="margin-top: 100px">
+            <div class="mb-3">
+                <label for="trackName" class="form-label">Картинка</label>
+                <input type="text" class="form-control" id="trackAvatar" name="trackAvatar" placeholder="-">
+            </div>
+
+            <div class="mb-3">
+                <label for="trackName" class="form-label">Название трека</label>
+                <input type="text" class="form-control" id="trackName" name="trackName" placeholder="-">
+            </div>
+
+            <div class="mb-3">
+                <label for="playlistName" class="form-label">Название плейлиста</label>
+                <input type="text" class="form-control" id="playlistName" name="playlistName" placeholder="-">
+            </div>
+
+            <div class="mb-3">
+                <label for="audioFile" class="form-label">Вставьте аудиофайл</label>
+                <input class="form-control" type="file" name="audioFile" id="audioFile">
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </div>
+    </form>
+}
+else
+{
+    <div class="container-center" style="margin-top: 100px">
+        Необходимо зарегистрироваться, чтобы загружать свои треки
+    </div>
+}

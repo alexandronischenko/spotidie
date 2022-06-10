@@ -11,39 +11,17 @@
     int count3 = 0;
 }
 
+<style>
+a,a:hover,a:click, a:visited{
+  border:none;
+  outline:none;
+  text-decoration:none;
+  color:inherit;
+  -webkit-tap-highlight-color: white;
+}
+</style>
+
 <div class="user-nav">
-    <div class="head">
-        @* <div class="head-nav"> *@
-        @*     <div class="navigation-arrows"> *@
-        @*         <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss"> *@
-        @*             <path fill="currentColor" d="M15.54 21.15L5.095 12.23 15.54 3.31l.65.76-9.555 8.16 9.555 8.16"></path> *@
-        @*         </svg> *@
-        @*         <svg viewBox="0 0 24 24" class="_6be6d9f3103325b95e6d4c0f6b10b783-scss"> *@
-        @*             <path fill="currentColor" d="M7.96 21.15l-.65-.76 9.555-8.16L7.31 4.07l.65-.76 10.445 8.92"></path> *@
-        @*         </svg> *@
-        @*     </div> *@
-        @* </div> *@
-        @if (SignInManager.IsSignedIn(User))
-        {
-            <li class="nav-item">
-                <a id="manage" class="nav-link text-white" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @UserManager.GetUserName(User)!</a>
-            </li>
-            <li class="nav-item">
-                <form id="logoutForm" class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new {area = ""})">
-                    <button id="logout" type="submit" class="nav-link btn btn-link text-white">Logout</button>
-                </form>
-            </li>
-        }
-        else
-        {
-            <li class="nav-item">
-                <a class="nav-link text-dark" id="register" asp-area="Identity" asp-page="/Account/Register">Register</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" id="login" asp-area="Identity" asp-page="/Account/Login">Login</a>
-            </li>
-        }
-    </div>
     <section class="category" style="flex-direction: revert">
         <div class="user container-center" style="padding-bottom: 30px">
             <p class="subsc">Больше возможностей с подпиской!</p>
@@ -74,53 +52,31 @@
             @*     ВСЕ *@
             @* </span> *@
         </div>
+
+
         <div class="albums">
             <ul class="albums-list">
-                @foreach (var item in Model)
-                {
-                    count1++;
-                    if (count1 == 5) break;
-                    <li class="list-item">
-                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
-                        <div class="album-infos">
-                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
-                            @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
-                        </div>
-                    </li>
-                }
+                <div style="display: grid;
+                                                                       grid-template-columns: repeat(4, 1fr);
+                                                                       grid-auto-rows: minmax(100px, auto);">
+                    @foreach (var item in Model)
+                    {
+                        <li class="list-item">
+                            <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
+                            <div class="album-infos">
+                                <span class="album-title">
+                                    <a style="" asp-controller="PlaylistView" asp-action="PlaylistView" asp-route-id="@item.PlaylistId">
+                                        @Html.DisplayFor(models => item.PlaylistName)
+                                    </a>
+                                </span>
+                                @* <p class="album-creator">"@Html.DisplayFor(modelItem => item.)</p> *@
+                            </div>
+                        </li>
+                    }
+                </div>
             </ul>
         </div>
-        <div class="albums">
-            <ul class="albums-list">
-                @foreach (var item in Model)
-                {
-                    count2++;
-                    if (count2 == 5) break;
-                    <li class="list-item">
-                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
-                        <div class="album-infos">
-                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
-                            @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
-                        </div>
-                    </li>
-                }
-            </ul>
-        </div>
-        <div class="albums">
-            <ul class="albums-list">
-                @foreach (var item in Model)
-                {
-                    count3++;
-                    if (count3 == 5) break;
-                    <li class="list-item">
-                        <img src="@Html.DisplayFor(modelItem => item.PlaylistAvatar)" alt="album" class="album-image">
-                        <div class="album-infos">
-                            <span class="album-title">@Html.DisplayFor(modelItem => item.PlaylistName)</span>
-                            @* <p class="album-creator">"@Html.DisplayFor(modelItem => item)</p> *@
-                        </div>
-                    </li>
-                }
-            </ul>
-        </div>
+
+
     </section>
 </div>

@@ -4,6 +4,8 @@
     ViewData["Title"] = "Register";
 }
 
+<div class="container-center" style="margin-top: 5%; margin-left:30%;width: 1500px">
+
 <h1>@ViewData["Title"]</h1>
 <h2 id="external-login-title">Associate your @Model.ProviderDisplayName account.</h2>
 <hr />
@@ -14,7 +16,6 @@
     logging in.
 </p>
 
-<div class="row">
     <div class="col-md-4">
         <form asp-page-handler="Confirmation" asp-route-returnUrl="@Model.ReturnUrl" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>

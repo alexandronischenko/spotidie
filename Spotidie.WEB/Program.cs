@@ -1,18 +1,19 @@
+using System.Configuration;
 using BLL.Interfaces;
 using BLL.Services;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Owin;
-using Microsoft.AspNet.Identity;
-using Microsoft.Owin;
-using Microsoft.Owin.Security.Cookies;
-using Ninject.Modules;
 using Spotidie.DAL.EF;
 using Spotidie.DAL.Interfaces;
 using Spotidie.DAL.Repositories;
 using Spotidie.Utils;
 
 var builder = WebApplication.CreateBuilder(args);
+var configuration = builder.Configuration;
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -29,6 +30,16 @@ builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.R
 builder.Services.AddHttpClient();
 builder.Services.AddRazorPages();
 builder.Services.AddSignalR();
+builder.Services.AddResponseCompression(options=>options.EnableForHttps = true);
+
+// dotnet user-secrets init --project Documents/Github/spotidie/Spotidie.WEB/Spotidie.WEB.csproj
+// dotnet user-secrets set "Authentication:Google:ClientSecret" "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" --project Documents/Github/spotidie/Spotidie.WEB/Spotidie.WEB.csproj
+// dotnet user-secrets set "Authentication:Google:ClientId" "553442196148-c9hf913gtmghu5nnlbr38vr6o5l6s8tg.apps.googleusercontent.com" --project Documents/Github/spotidie/Spotidie.WEB/Spotidie.WEB.csproj
+ builder.Services.AddAuthentication().AddGoogle(googleOptions =>
+ {
+     googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
+     googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+ });
 
 builder.Services.AddScoped<IPlaylistService, PlaylistService>();
 builder.Services.AddScoped<IUnitOfWork, EFUnitOfWork>();
@@ -48,6 +59,10 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.UseAuthentication();
+
+//Minification
+app.UseResponseCompression();
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();

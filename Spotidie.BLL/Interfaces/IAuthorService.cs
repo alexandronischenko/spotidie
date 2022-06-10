@@ -10,9 +10,9 @@ public interface IAuthorService
 
     Task DeleteAuthor(string id);
     
-    IEnumerable<AuthorDTO> GetAuthor();
+    IEnumerable<AuthorDTO> GetAuthorById(string id);
 
     IEnumerable<AuthorDTO> GetAuthors();
 
-    IEnumerable<AuthorDTO> FindAuthor(string name);
+    IEnumerable<AuthorDTO> FindAuthor(string? name);
 }

@@ -29,28 +29,27 @@ public class SearchController : Controller
     }
     
     [HttpPost]
-    public Task<IActionResult> Search(string searchString)
+    public Task<IActionResult> Search(string? searchString)
     {
-        if (searchString == "")
+        if (searchString != null)
         {
+            var result = _trackService.FindTrack(searchString);
+            var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TrackDTO, TrackViewModel>()).CreateMapper();
+            var tracks = mapper.Map<IEnumerable<TrackDTO>, List<TrackViewModel>>(result).ToList();
+            _searchViewModel.Tracks = tracks;
+        
+            IEnumerable<PlaylistDTO> playlistDtos = _playlistService.FindPlaylist(searchString);
+            mapper = new MapperConfiguration(cfg => cfg.CreateMap<PlaylistDTO, PlaylistViewModel>()).CreateMapper();
+            List<Models.PlaylistViewModel> playlists = mapper.Map<IEnumerable<PlaylistDTO>, List<PlaylistViewModel>>(playlistDtos);
+            _searchViewModel.Playlists = playlists;
+        
+            IEnumerable<AuthorDTO> authorDtos = _authorService.FindAuthor(searchString);
+            mapper = new MapperConfiguration(cfg => cfg.CreateMap<AuthorDTO, AuthorViewModel>()).CreateMapper();
+            var authors = mapper.Map<IEnumerable<AuthorDTO>, List<AuthorViewModel>>(authorDtos);
+            _searchViewModel.Authors = authors;
             return Task.FromResult<IActionResult>(View(_searchViewModel));
         }
-        var result = _trackService.FindTrack(searchString);
-        var mapper = new MapperConfiguration(cfg => cfg.CreateMap<TrackDTO, TrackViewModel>()).CreateMapper();
-        var tracks = mapper.Map<IEnumerable<TrackDTO>, List<TrackViewModel>>(result).ToList();
-        _searchViewModel.Tracks = tracks;
-        
-        IEnumerable<PlaylistDTO> playlistDtos = _playlistService.FindPlaylist(searchString);
-        mapper = new MapperConfiguration(cfg => cfg.CreateMap<PlaylistDTO, PlaylistViewModel>()).CreateMapper();
-        List<Models.PlaylistViewModel> playlists = mapper.Map<IEnumerable<PlaylistDTO>, List<PlaylistViewModel>>(playlistDtos);
-        _searchViewModel.Playlists = playlists;
-        
-        IEnumerable<AuthorDTO> authorDtos = _authorService.FindAuthor(searchString);
-        mapper = new MapperConfiguration(cfg => cfg.CreateMap<AuthorDTO, AuthorViewModel>()).CreateMapper();
-        var authors = mapper.Map<IEnumerable<AuthorDTO>, List<AuthorViewModel>>(authorDtos);
-        _searchViewModel.Authors = authors;
-        
-        
+
         return Task.FromResult<IActionResult>(View(_searchViewModel));
     }
 }

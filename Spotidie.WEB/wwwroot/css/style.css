@@ -595,3 +595,65 @@ p{
     right: -15px;
     top: -17px;
 }
+
+.chatt-fields{
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.chatt-field-input{
+    display: flex;
+}
+.cahtt-user-s{
+    font-size: 12px;
+    padding-left: 10px;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 350px;
+    border: none;
+}
+.chatt-message-s{
+    border-radius: 5px;
+    padding-left: 10px;
+    height: 30px;
+    width: 350px;
+    max-width: 350px;
+    font-size: 12px;
+    padding-top: 8px;
+    border: none;
+}
+.cahtt-send-s{
+
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(1, 121, 1);
+    font-family:'Circular Std';
+    color: #fff;
+    font-size: 16px;
+}
+.chatt-user-message{
+    display: flex;
+    flex-direction: column;
+}
+.chatt-mes-s{
+    background-color: #888888;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 20px 50px;
+    padding-bottom: 0px;
+}
+.cahtt-nik{
+    font-family:'Circular Std';
+}
+.mes{
+    display: flex;
+    padding-bottom: 20px;
+}
+.chatt-messsss{
+    margin-left: 10px;
+    font-family:'Circular Std';
+    color: #fff;
+}

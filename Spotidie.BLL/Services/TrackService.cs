@@ -46,7 +46,7 @@ public class TrackService : ITrackService
         return result;
     }
     
-    public IEnumerable<TrackDTO> FindTrack(string name)
+    public IEnumerable<TrackDTO> FindTrack(string? name)
     {
         if (name == null)
             throw new Exception("name is null");

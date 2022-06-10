@@ -6,17 +6,23 @@ let connection = new signalR.HubConnectionBuilder().withUrl("/chat/hub").configu
 document.getElementById("sendButton").disabled = true;
 
 connection.on("ReceiveMessage", function (user, message) {
-    console.log("get")
+    console.log("get");
     console.log(message);
     console.log(user);
     
-    var h = document.createElement("h5");
-    h.style.color = "white"
-    document.getElementById("messagesList").appendChild(h);
-    // We can assign user-supplied strings to an element's textContent because it
-    // is not interpreted as markup. If you're assigning in any other way, you 
-    // should be aware of possible script injection concerns.
-    h.textContent = `${user}: ${message}`;
+    let result = message.match(/^\s*$/)
+    
+    if (result == null) {
+        var h = document.createElement("h5");
+        h.style.color = "white"
+        document.getElementById("messagesList").appendChild(h);
+        // We can assign user-supplied strings to an element's textContent because it
+        // is not interpreted as markup. If you're assigning in any other way, you 
+        // should be aware of possible script injection concerns.
+        h.textContent = `${user}: ${message}`;
+    } else {
+        alert("Вы не можете отправить пустое сообщение")
+    }
 });
 
 connection.start().then(function () {

@@ -37,13 +37,18 @@ public class AuthorService : IAuthorService
     {
         throw new NotImplementedException();
     }
-    
-    public IEnumerable<AuthorDTO> FindAuthor(string name)
+
+    public IEnumerable<AuthorDTO> GetAuthorById()
+    {
+        throw new NotImplementedException();
+    }
+
+    public IEnumerable<AuthorDTO> FindAuthor(string? name)
     {
         if (name == null)
             throw new Exception("name is null");
-        var authors = Db.Authors.Find(x => x.AuthorName.ToLower().Contains(name.ToLower()));
-
+        var authors = Db.Authors.Find(x => x.AuthorForeignKey.ToString()==name);
+        
         var result = new List<AuthorDTO>();
         
         foreach (var author in authors)
@@ -54,10 +59,14 @@ public class AuthorService : IAuthorService
         return result;
     }
 
-    public IEnumerable<AuthorDTO> GetAuthor()
+    public IEnumerable<AuthorDTO> GetAuthorById(string id)
     {
-        throw new NotImplementedException();
-    }
+        var authors = Db.Authors.GetAll();
+        
+        if (authors == null)
+            throw new Exception("Playlist not found");
+
+        return DTOMapper.MapAuthors(authors);    }
 
     public IEnumerable<AuthorDTO> GetAuthors()
     {
