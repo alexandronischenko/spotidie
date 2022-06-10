@@ -31,6 +31,7 @@ public class SearchController : Controller
     [HttpGet]
     public JsonResult SearchResult()
     {
+        // return new JsonResult(PartialView(_searchViewModel));
         return Json(_searchViewModel);
     }
     
@@ -56,8 +57,8 @@ public class SearchController : Controller
         var authors = mapper.Map<IEnumerable<AuthorDTO>, List<AuthorViewModel>>(authorDtos);
         _searchViewModel.Authors = authors;
         
-        
+        // return Json(_searchViewModel);
         return new JsonResult(PartialView(_searchViewModel));
-        return Json(_searchViewModel);
+        // return Json(PartialView(_searchViewModel));
     }
 }

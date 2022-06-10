@@ -33,30 +33,36 @@
     <script>
         $(document).ready(function () {
             $("#button").on('click', function () {
+            var self;
                 $.ajax({
                             type: "POST",
                             url: "/Search/Search/",
                             dataType: "json",
                             data: { "searchString": $("#inputSearch").val() },
                             success: function (result) {
-                                console.log(result);
+                                alert(result);
+                                                                $.ajax({
+                                                                    type: "GET",
+                                                                    url: "/Search/SearchResult/",
+                                                                    dataType: "json",
+                                                                    success: function (result) {
+                                                                        alert(result);
+                                                                    },
+                                                                    error: function (req, status, error) {
+                                                                        console.log(req, status, error)
+                                                                    }
+                                                                });
                             },
                             error: function (req, status, error) {
                                 console.log(req, status, error)
                             }
-                        });
+                        }
+                        );
+                
+                              
+                                
                 });
-                $.ajax({
-                    type: "GET",
-                    url: "/Search/Search/",
-                    dataType: "html",
-                    success: function (result) {
-                        console.log(result);
-                    },
-                    error: function (req, status, error) {
-                        console.log(req, status, error)
-                    }
-                });
+              
         });
         
         
