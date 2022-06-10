@@ -8,8 +8,9 @@
 @{
     ViewData["Title"] = "Author";
     int count = 0;
+    int secondCount = 0;
 }
-<div class="main">
+<div class="main" style="margin-left: 20%">
     <div class="author-card">
         <div class="author-img" style="width: 600px;height: 600px;background-image: url( @Html.DisplayFor(model => model.AuthorAvatar));" alt="avatar"></div>
         <div class="author-info">
@@ -18,34 +19,35 @@
 
         @foreach (var item in Model.Tracks)
         {
+            secondCount++;
+            if (secondCount == 7) break;
             <div class="tracks">
                 <div class="track">
                     <div style="display: flex;">
                         <img class="track-logo" src="@Html.DisplayFor(modelItem => item.TrackAvatar)" alt="">
                         <p class="track-name">@Html.DisplayFor(modelItem => item.TrackName)</p>
-                        @* <audio controls id ="audio" src="~/temp/MORGEN.mp3"></audio> *@
-
                     </div>
-                    <button id="playTrack" onClick="playPause()" style="background-image: url(img/play-button-svgrepo-com.svg);" class="track-play">
-                        <audio src="~/temp/MORGEN.mp3">
-                        </audio>
-                        Play
-                    </button>
-
+                    
+                    @* <button id="playTrack" onClick="playPause()" style="background-image: url(img/play-button-svgrepo-com.svg);" class="track-play"> *@
+                    <audio src="~/temp/MORGEN.mp3" controls>
+                    </audio>
+                    @* Play *@
+                    @* </button> *@
+                    
                     <script>
-                          var aud = document.getElementById("playTrack").children[0];
-                          var isPlaying = false;
-                          aud.pause();
-                        
-                          function playPause() {
-                           if (isPlaying) {
-                              aud.pause();
-                           } else {
-                              aud.play();
-                            }
-                            isPlaying = !isPlaying;
-                          }
-                        </script>
+                                              var aud = document.getElementById("playTrack").children[0];
+                                              var isPlaying = false;
+                                              aud.pause();
+                                            
+                                              function playPause() {
+                                               if (isPlaying) {
+                                                  aud.pause();
+                                               } else {
+                                                  aud.play();
+                                                }
+                                                isPlaying = !isPlaying;
+                                              }
+                                            </script>
                 </div>
             </div>
         }

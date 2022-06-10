@@ -47,8 +47,8 @@ public class AuthorService : IAuthorService
     {
         if (name == null)
             throw new Exception("name is null");
-        var authors = Db.Authors.Find(x => x.AuthorName.ToLower().Contains(name.ToLower()));
-
+        var authors = Db.Authors.Find(x => x.AuthorForeignKey.ToString()==name);
+        
         var result = new List<AuthorDTO>();
         
         foreach (var author in authors)
@@ -62,9 +62,7 @@ public class AuthorService : IAuthorService
     public IEnumerable<AuthorDTO> GetAuthorById(string id)
     {
         var authors = Db.Authors.GetAll();
-
-        // var author = Db.Authors.Find(x => x.AuthorName.ToLower().Contains().ToList();
-
+        
         if (authors == null)
             throw new Exception("Playlist not found");
 
