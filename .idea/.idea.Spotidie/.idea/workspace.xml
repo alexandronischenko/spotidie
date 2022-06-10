@@ -12,17 +12,7 @@
   <component name="ChangeListManager">
     <list default="true" id="748fcbda-50db-47f5-aabc-752ed3e15c02" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spotidie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IAuthorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IAuthorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IPlaylistService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/IPlaylistService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/ITrackService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Interfaces/ITrackService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/TrackDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/ModelsDTO/TrackDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/AuthorService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/AuthorService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/PlaylistService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/PlaylistService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.BLL/Services/TrackService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Controllers/ImportDataController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Controllers/ImportDataController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Controllers/SearchController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Controllers/SearchController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Author/Author.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Author/Author.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/Views/Search/Search.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/Views/Search/Search.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/js/chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/Spotidie.WEB/wwwroot/js/chat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
