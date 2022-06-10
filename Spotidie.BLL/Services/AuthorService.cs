@@ -43,7 +43,7 @@ public class AuthorService : IAuthorService
         throw new NotImplementedException();
     }
 
-    public IEnumerable<AuthorDTO> FindAuthor(string name)
+    public IEnumerable<AuthorDTO> FindAuthor(string? name)
     {
         if (name == null)
             throw new Exception("name is null");

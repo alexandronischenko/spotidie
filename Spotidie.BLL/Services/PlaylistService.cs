@@ -102,7 +102,7 @@ public class PlaylistService : IPlaylistService
         return result;
     }
 
-    public IEnumerable<PlaylistDTO> FindPlaylist(string name)
+    public IEnumerable<PlaylistDTO> FindPlaylist(string? name)
     {
         if (name == null)
             throw new Exception("name is null");

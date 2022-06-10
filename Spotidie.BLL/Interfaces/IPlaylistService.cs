@@ -16,5 +16,5 @@ public interface IPlaylistService
 
     IEnumerable<PlaylistDTO> GetRandomPlaylists();
     
-    IEnumerable<PlaylistDTO> FindPlaylist(string name);
+    IEnumerable<PlaylistDTO> FindPlaylist(string? name);
 }

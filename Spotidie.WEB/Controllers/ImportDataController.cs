@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using BLL.Interfaces;
 using BLL.ModelsDTO;
 using Microsoft.AspNetCore.Mvc;
@@ -21,10 +22,20 @@ public class ImportDataController : Controller
     }
     
     [HttpPost]
-    public IActionResult Index(string trackAvatar, string trackName, string playlistName, IFormFile audioFile)
+    public IActionResult Index(string? trackAvatar, string trackName, string playlistName, IFormFile? audioFile)
     {
+        if (trackAvatar == null && trackAvatar == null && playlistName == null && audioFile == null)
+        {
+            return View();
+        }
         
+        Regex r = new Regex(@"^([ \u00c0-\u01ffa-zA-Z'\-])+$");
+        if (!(r.IsMatch(trackName) & r.IsMatch(playlistName)))
+        {
+            return View();
+        }
         
+
         byte[] imageData = null;
         using (var binaryReader = new BinaryReader(audioFile.OpenReadStream()))
         {

@@ -8,7 +8,7 @@ public class TrackDTO
     public string TrackData { get; set; }
     
     public byte[] TrackDataByte { get; set; }
-    public string TrackAvatar{ get; set; }
+    public string? TrackAvatar{ get; set; }
     
     public int TrackForeignKey{ get; set; }
     public PlaylistDTO Playlist { get; set; }

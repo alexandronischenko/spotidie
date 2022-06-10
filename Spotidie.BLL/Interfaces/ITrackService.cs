@@ -9,7 +9,7 @@ public interface ITrackService
     
     IEnumerable<TrackDTO> GetTracks(string id);
 
-    IEnumerable<TrackDTO> FindTrack(string name);
+    IEnumerable<TrackDTO> FindTrack(string? name);
 
     Task CreateTrack(TrackDTO track);
 
