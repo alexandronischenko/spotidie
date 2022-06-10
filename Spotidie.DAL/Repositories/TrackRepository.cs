@@ -22,6 +22,7 @@ namespace Spotidie.DAL.Repositories
         public void Create(Track item)
         {
             _db.Tracks.Add(item);
+            _db.SaveChanges();
         }
 
         public void Delete(Guid id)
