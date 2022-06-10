@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Design;
 namespace Spotidie.DAL.EF
 {
 
-    //dotnet ef migrations add InitialMigration -s Spotidie.WEB -p Spotidie.DAL --verbose
+    //dotnet ef migrations add LastMigration -s Spotidie.WEB -p Spotidie.DAL --verbose
     //dotnet ef database update -s Spotidie.WEB -p Spotidie.DAL --verbose
     public class SpotidieContextFactory : IDesignTimeDbContextFactory<SpotidieContext>
     {

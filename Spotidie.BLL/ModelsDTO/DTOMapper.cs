@@ -58,6 +58,7 @@ public class DTOMapper
             TrackName = track.TrackName,
             TrackDuration = track.TrackDuration,
             TrackData = track.TrackData,
+            TrackDataByte = track.TrackDataByte,
             TrackAvatar = track.TrackAvatar,
             TrackForeignKey = track.TrackForeignKey
         };
